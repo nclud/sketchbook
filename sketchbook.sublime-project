@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/jaredlaser/work/sketchbook",
+      "folder_exclude_patterns": ["node_modules", ".jekyll", ".tmp"]
+		}
+	]
+}
