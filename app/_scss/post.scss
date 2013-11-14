@@ -1,0 +1,41 @@
+@import 'style.scss';
+
+/* POST SPECIFIC */
+#post-content {
+	@include rem(padding-top,1.5rem);
+
+	img,
+	.fluid-width-video-wrapper {
+		margin-bottom: 1.2em;
+	}
+}
+
+#date-time-block {
+	position: absolute;
+	left: -13%;
+	@include rem(width,3rem);
+	top: 0;
+	z-index: 10;
+}
+
+#post-footer {
+	padding-left: 18%;
+	border-top: 1px solid rgba($dark-blue,0.35);
+	@include rem(margin-top,4rem);
+	@include rem(padding-top,2rem);
+
+	.post-author-photo {
+		position: absolute;
+		@include rem(top,1.5rem);
+		left: 0;
+		width: 14%;
+		@include border-radius(2px);
+
+		@include breakpoint(portrait) {
+			@include rem(top,2rem);
+		}
+		@include breakpoint(mobile) {
+			@include rem(top,2rem);
+		}
+	}
+}

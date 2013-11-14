@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+$experimental-support-for-khtml: false;
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/css3/box";
+@import "compass/css3/columns";
+@import "compass/css3/transform";
+
+@import "includes/_rem.scss";
+@import "includes/_animation.scss";
+
+
+/* MIX-INS */
+@mixin breakpoint($point) {
+	@if $point == large {
+		@media only screen and (min-width : 1401px) and (min-height : 850px) { @content; }
+	}
+	@if $point == widescreen {
+		@media only screen and (min-width : 1300px) and (max-height : 850px) { @content; }
+	}
+	@else if $point == landscape {
+		@media only screen and (min-width : 802px) and (max-width : 1100px) { @content; }
+	}
+	@else if $point == portrait {
+		@media only screen and (min-width : 642px) and (max-width : 801px) { @content; }
+	}
+	@else if $point == mobile {
+		@media only screen and (max-width : 641px) { @content; }
+	}
+}
+
+@mixin calc($property, $expression) {
+	#{$property}: -moz-calc(#{$expression});
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+}
+
+$light-green: #83b557;
+$blue: #415766;
+$light-blue: #7ea2b2;
+$dark-blue: #0F2733;
+
+
+/* RESET */
+html {
+	min-height: 100%;
+	height: 100%;
+	-webkit-text-size-adjust: none;
+
+	background: darken($dark-blue,7%);
+
+	@include breakpoint(large) {
+		font-size: 105%;
+	}
+	@include breakpoint(portrait) {
+		font-size: 92%;
+	}
+	@include breakpoint(mobile) {
+		font-size: 88%;
+	}
+}
+body {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+
+	&.case-study {
+		background: darken(white,1.5%);
+	}
+}
+* {
+	@include box-sizing(border-box);
+
+	&:before,
+	&:after {
+		@include box-sizing(border-box);
+	}
+}
+
+
+/* CLEAR & FLOATS */
+.clear { clear: both !important; }
+.left { float: left !important; }
+.right { float: right !important; }
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+
+
+.no-mobile {
+	@include breakpoint(mobile) {
+		display: none;
+	}
+}
+
+
+/* FIX FOR IE10 */
+a,
+input,
+button {
+    -ms-touch-action: none !important;
+}
+
+
+/* IMPORTED FILES */
+@import 'base/_fonts.scss';
+
+@import 'base/_base-grid.scss';
+@import 'base/_images.scss';
+@import 'base/_text.scss';
+
+@import 'base/_top-nav.scss';
+@import 'base/_header.scss';
+@import 'base/_sections.scss';
+@import 'base/_footer.scss';
+

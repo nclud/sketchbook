@@ -1,0 +1,25 @@
+/* BEERCAMP FOOTER */
+
+.study-footer {
+	#video-screen {
+		background: image-url('pages/beercamp/footer-screen.jpg') no-repeat;
+		background-size: cover;
+
+		video {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.background {
+		background: image-url('pages/beercamp/city.jpg') no-repeat;
+		background-size: cover;
+		background-position: center center;
+
+		@include breakpoint(large) {
+			background: image-url('pages/beercamp/city-large.jpg') no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+/* FOOTER */
+footer {
+	background: darken($dark-blue,7%);
+	//@include rem(height,15rem);
+	border-top: 1px solid darken($dark-blue,15%);
+	z-index: 5;
+	@include rem(padding-top,1.5rem);
+	@include rem(padding-bottom,2.5rem);
+
+	a {
+		@include opacity(0.75);
+		@include transition(0.15s);
+
+		&:hover {
+			@include opacity(1);
+		}
+	}
+
+	&.post-footer {
+		@include breakpoint(landscape) {
+		//	@include rem(padding-bottom,11rem);
+		}
+		@include breakpoint(portrait) {
+		//	@include rem(padding-bottom,8rem);
+		}
+		@include breakpoint(mobile) {
+		//	@include rem(padding-bottom,6rem);
+		}
+	}
+}
+
+#share {
+	float: left;
+	width: 17%;
+
+	@include breakpoint(mobile) {
+		float: none;
+		width: 40%;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
