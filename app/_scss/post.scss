@@ -31,6 +31,12 @@
 		width: 14%;
 		@include border-radius(2px);
 
+		@include breakpoint(large) {
+			@include rem(top,1.2rem);
+		}
+		@include breakpoint(widescreen) {
+			@include rem(top,1.2rem);
+		}
 		@include breakpoint(portrait) {
 			@include rem(top,2rem);
 		}
