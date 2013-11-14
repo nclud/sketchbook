@@ -38,21 +38,29 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/front.css">
+
+    <link rel="stylesheet" href="/css/post.css">
+
     <!-- endbuild -->
 
-    <script type="text/javascript" src="JS/headload.js"></script>
+    <!-- build:js(app) /js/scripts.js -->
+    <script src="/js/headload.js"></script>
+    <!-- endbuild -->
+
     <script>
         head.js("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-            .js("JS/fastclick.js")
-            .js("JS/share.js")
-            .js("JS/skrollr.js")
-            .js("JS/fitvids.js");
+            .js("/js/fastclick.js")
+            .js("/js/skrollr.js")
+            .js("/js/skrollr.menu.js")
+            .js("/js/share.js")
+            .js("/js/pages/beercamp/reel.js")
+            .js("/js/fitvids.js");
     </script>
 
     <!--[if lt IE 9]>
-        <script type="text/javascript" src="JS/modernizr.js"></script>
-        <script type="text/javascript" src="JS/selectivizr.js"></script>
-        <script type="text/javascript" src="JS/skrollr.ie.js"></script>
+        <script type="text/javascript" src="/js/modernizr.js"></script>
+        <script type="text/javascript" src="/js/selectivizr.js"></script>
+        <script type="text/javascript" src="/js/skrollr.ie.js"></script>
     <![endif]-->
 </head>
 <body>
