@@ -1,9 +1,22 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+<header id="post-header" class="padded-horizontal-large single-post">
+    <img src="/img/posts/post-header.jpg">
+
+    <h1>{{ page.title }}</h1>
+    <span class="date-time">{{ page.date | date_to_string }}</span>
+</header>
+
+<article id="post-content" class="padded-horizontal-large padded-vertical">
+
+    {{ content }}
+
+    <section id="post-footer">
+        <img src="/img/posts/post-author.jpg" class="post-author-photo">
+
+        <a href="https://twitter.com/duqe" target="_blank" class="post-author">Maxim Leyzerovich</a>
+        <span class="post-author-bio">Maxim is a Senior Experience Designer at nclud ‒ focused on the visual conception and interface development for interactive products, Maxim is also the brand evangelist for nclud to the industry, community, & our clients.</span>
+    </section>
+</article>

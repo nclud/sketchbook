@@ -111,6 +111,7 @@ module.exports = function (grunt) {
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/_scss',
         cssDir: '.tmp/css',
+        fontsDir: '.tmp/fonts',
         imagesDir: '<%= yeoman.app %>/img',
         javascriptsDir: '<%= yeoman.app %>/js',
         relativeAssets: false,

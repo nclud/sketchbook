@@ -5,22 +5,23 @@ title: Your New Jekyll Site
 
 <article id="featured-story" class="padded-horizontal-large">
     <a href="beercamp.html" class="featured-logo">
-        <img src="IMG/pages/beercamp/beercamp-logo.svg">
+        <img src="/img/pages/beercamp/beercamp-logo.svg">
     </a>
 
     <p class="subtitle">See how we created an in-browser multiplayer platform game.</p>
 
-    <a href="beercamp.html" class="featured-link" style="background-image:url('IMG/featured/beercamp.jpg');"></a>
+    <a href="/create/beercamp" class="featured-link" style="background-image:url('/img/featured/beercamp.jpg');"></a>
 </article>
 
 <section id="article-listing" class="padded-horizontal-large padded-vertical">
 
+    {% for post in site.posts %}
     <article class="article-listing-single">
-        <h2><a href="post.html">Decorating the new office space</a></h2>
-        <span class="date-time">October 31, 2013</span>
-
-        <p>Since 2009, Beercamp has been an annual event hosted by nclud at Austin’s South By Southwest Interactive festival. The goal? Network, mingle, talk about technology, and have a few drinks with some new friends.</p>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <span class="date-time">{{ post.date | date_to_string }}</span>
+        <p>post.summary</p>
     </article>
+    {% endfor %}
 
     <div id="pagination" class="clearfix">
         <a href="page2.html" class="newer-posts">Newe<span>r</span></a>

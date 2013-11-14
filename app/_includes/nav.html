@@ -1,7 +1,7 @@
 <nav id="scroll-nav" class="front-page" data-anchor-target="#featured-story" data-51-top-bottom="" data-50-top-bottom="">
     <div class="logo-nav">
         <div class="logo-wrapper">
-            <a href="index.html"><img src="IMG/nclud-logo.svg"></a>
+            <a href="/"><img src="/img/nclud-logo.svg"></a>
         </div>
         <a href="#" class="menu-btn right"></a>
     </div>
@@ -23,9 +23,23 @@
 </nav>
 
 <div id="skrollr-body">
-<nav id="top-nav" class="padded-horizontal-large">
-    <div class="nav-wrapper">
-        <a href="index.html"><img src="IMG/nclud-logo.svg"></a>
-        <a href="#" class="menu-btn right"></a>
-    </div>
-</nav>
+
+
+    {% if page.path contains '_posts' %}
+    <nav id="top-nav" class="padded-horizontal-large dark">
+        <div class="nav-wrapper">
+            <a href="/"><img src="/img/nclud-logo-dark.svg"></a>
+            <a href="#" class="menu-btn right"></a>
+        </div>
+    </nav>
+    {% else %}
+
+    <nav id="top-nav" class="padded-horizontal-large">
+        <div class="nav-wrapper">
+            <a href="/"><img src="/img/nclud-logo.svg"></a>
+            <a href="#" class="menu-btn right"></a>
+        </div>
+    </nav>
+    {% endif %}
+
+
