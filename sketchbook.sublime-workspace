@@ -411,14 +411,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/_includes/nav.html",
-			"settings":
-			{
-				"buffer_size": 1493,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -796,23 +788,44 @@
 	},
 	"file_history":
 	[
-		"/Users/jaredlaser/work/sketchbook/app/_scss/style.scss",
-		"/Users/jaredlaser/work/sketchbook/app/index.html",
-		"/Users/jaredlaser/work/sketchbook/app/_layouts/default.html",
+		"/Users/jaredlaser/work/sketchbook/app/created/beercamp/index.html",
 		"/Users/jaredlaser/work/sketchbook/app/_includes/head.html",
-		"/Users/jaredlaser/work/sketchbook/app/_layouts/post.html",
-		"/Users/jaredlaser/work/sketchbook/app/_posts/2013-11-13-welcome-to-jekyll.md",
-		"/Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss",
 		"/Users/jaredlaser/work/sketchbook/app/_includes/footer.html",
-		"/Users/jaredlaser/work/sketchbook/app/js/pages/beercamp/stick.js",
-		"/Users/jaredlaser/work/sketchbook/_config.yml",
+		"/Users/jaredlaser/work/sketchbook/app/js/pages/beercamp.js",
+		"/Users/jaredlaser/work/sketchbook/app/js/pages/beercamp/reel.js",
+		"/Users/jaredlaser/work/sketchbook/app/js/index.js",
 		"/Users/jaredlaser/work/sketchbook/app/_includes/nav.html",
+		"/Users/jaredlaser/work/sketchbook/app/_layouts/post.html",
+		"/Users/jaredlaser/work/sketchbook/app/js/share.js",
+		"/Users/jaredlaser/work/sketchbook/app/js/skrollr.menu.js",
+		"/Users/jaredlaser/work/sketchbook/app/js/skrollr.js",
+		"/Users/jaredlaser/work/sketchbook/app/js/fastclick.js",
 		"/Users/jaredlaser/work/sketchbook/Gruntfile.js",
+		"/Users/jaredlaser/work/sketchbook/app/index.html",
+		"/Users/jaredlaser/work/sketchbook/_config.yml",
+		"/Users/jaredlaser/work/sketchbook/app/_layouts/default.html",
+		"/Users/jaredlaser/work/sketchbook/sketchbook.sublime-project",
+		"/Users/jaredlaser/work/sketchbook/app/_posts/2013-11-13-welcome-to-jekyll.md",
+		"/Users/jaredlaser/work/sketchbook/app/_posts/2013-11-13-yo-jekyllrb.md",
+		"/Users/jaredlaser/work/sketchbook/app/page/beercamp/index.html",
+		"/Users/jaredlaser/work/sketchbook/app/beercamp/index.html",
+		"/Users/jaredlaser/work/sketchbook/app/beercamp.html",
+		"/Users/jaredlaser/work/sketchbook/dist/beercamp/index.html",
+		"/Users/jaredlaser/work/sketchbook/app/_data/authors.yml",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/jaredlaser/work/sketchbook/dist/index.html",
+		"/Users/jaredlaser/work/sketchbook/app/_scss/syntax.scss",
+		"/Users/jaredlaser/work/sketchbook/app/_scss/base/_fonts.scss",
+		"/Users/jaredlaser/.ssh/config",
+		"/Users/jaredlaser/work/sketchbook/Gemfile.lock",
+		"/Users/jaredlaser/work/sketchbook/app/_scss/base/_header.scss",
+		"/Users/jaredlaser/work/sketchbook/app/case/beercamp.html",
+		"/Users/jaredlaser/work/sketchbook/app/_scss/style.scss",
+		"/Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss",
+		"/Users/jaredlaser/work/sketchbook/app/js/pages/beercamp/stick.js",
 		"/Users/jaredlaser/work/sketchbook/.tmp/css/front.css",
 		"/Users/jaredlaser/work/sketchbook/.jshintrc",
 		"/Users/jaredlaser/work/sketchbook/.bowerrc",
-		"/Users/jaredlaser/work/sketchbook/app/js/pages/beercamp/reel.js",
-		"/Users/jaredlaser/work/sketchbook/app/js/index.js",
 		"/Users/jaredlaser/work/sketchbook/.jekyll/index.html",
 		"/Users/jaredlaser/work/sketchbook/.editorconfig",
 		"/Users/jaredlaser/work/sketchbook/app/js/main.js",
@@ -820,7 +833,6 @@
 		"/Users/jaredlaser/work/sketchbook/app/_scss/readme.md",
 		"/Users/jaredlaser/work/sketchbook/.gitignore",
 		"/private/etc/hosts",
-		"/private/etc/apache2/extra/httpd-vhosts.conf",
 		"/Users/jaredlaser/work/sketchbook/.tmp/css/syntax.css",
 		"/Users/jaredlaser/work/sketchbook/README.md",
 		"/Users/jaredlaser/work/scroogled_2/3.html",
@@ -903,27 +915,7 @@
 		"/Users/jaredlaser/playground/qanda/build/js/index.js",
 		"/Users/jaredlaser/sites/paperhouses-ee/js/index.js",
 		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/content.group/.home-content.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/includes.group/.header.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/includes.group/.footer.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/sass/section/_home.scss",
-		"/Users/jaredlaser/sites/paperhouses-ee/sass/section/_footer.scss",
-		"/Users/jaredlaser/sites/paperhouses-ee/js/rotator.js",
-		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/content.group/.rotator.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/content.group/index.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/assets/images/transparent-logo.png",
-		"/Users/jaredlaser/sites/paperhouses-ee/sass/_base.scss",
-		"/Users/jaredlaser/sites/paperhouses-ee/sass/component/_forms.scss",
-		"/Users/jaredlaser/sites/paperhouses-ee/sass/lib/_type.scss",
-		"/Users/jaredlaser/sites/paperhouses-ee/sass/component/_entry.scss",
-		"/Users/jaredlaser/sites/paperhouses-ee/sass/lib/fonts/_humanist.scss",
-		"/Users/jaredlaser/sites/paperhouses-ee/js/lib/html5shiv.js",
-		"/Users/jaredlaser/sites/paperhouses-ee/sass/_defaults.scss",
-		"/Users/jaredlaser/sites/paperhouses-ee/config/deploy/staging.rb",
-		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/dev.group/.home-content.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/dev.group/.rotator.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/dev.group/.header.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/dev.group/index.html",
-		"/Users/jaredlaser/sites/paperhouses-ee/system/expressionengine/config/config.php"
+		"/Users/jaredlaser/sites/paperhouses-ee/templates/default_site/includes.group/.header.html"
 	],
 	"find":
 	{
@@ -931,9 +923,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/jaredlaser/work/sketchbook/app/js",
+			"/Users/jaredlaser/work/sketchbook/app/_scss",
 			"/Users/jaredlaser/sites/paperhouses-ee/sass",
 			"/Users/jaredlaser/playground/generator",
 			"/Users/jaredlaser/sites/paperhouses-ee/sass",
@@ -1042,9 +1036,25 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			".js(\"",
+			"#featured-story",
+			"if",
+			"gavin",
+			"css",
+			"compass",
+			"fonts",
+			"27bfda",
+			"img/",
+			"IMG/",
+			"IMG",
+			"src=\"IMG/",
+			"IMG/",
+			"index",
+			"img src=\"IMG",
+			"<a href=\"index.html\">",
 			"page",
 			"IMG/",
 			"JS/",
@@ -1156,23 +1166,7 @@
 			"?",
 			"promos",
 			"console.log",
-			"language",
-			"data",
-			"watch",
-			"closer",
-			"console",
-			"pager",
-			"<div class=\"home-grid--row\">",
-			"<div class=\"home-grid-row\">",
-			"<div class=\"home-grid--row\">",
-			"<a href=\"#\">",
-			"<a href=\"#\"><img",
-			"content-home",
-			"\" width",
-			"src=\"\"",
-			"http://placehold.it/",
-			"</a>",
-			"<a href=\"#\">"
+			"language"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1208,42 +1202,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/_includes/nav.html",
-					"settings":
-					{
-						"buffer_size": 1493,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								567,
-								567
-							]
-						],
-						"settings":
-						{
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1297,6 +1257,118 @@
 		"selected_items":
 		[
 			[
+				"beercam",
+				"app/js/pages/beercamp.js"
+			],
+			[
+				"jsindex",
+				"app/js/index.js"
+			],
+			[
+				"footer",
+				"app/_includes/footer.html"
+			],
+			[
+				"created",
+				"app/created/beercamp/index.html"
+			],
+			[
+				"beerca",
+				"app/js/pages/beercamp.js"
+			],
+			[
+				"skro",
+				"app/js/skrollr.menu.js"
+			],
+			[
+				"skroll",
+				"app/js/skrollr.js"
+			],
+			[
+				"js/fast",
+				"app/js/fastclick.js"
+			],
+			[
+				"post.",
+				"app/_layouts/post.html"
+			],
+			[
+				"index.",
+				"app/index.html"
+			],
+			[
+				"nav.ht",
+				"app/_includes/nav.html"
+			],
+			[
+				"index.js",
+				"app/js/index.js"
+			],
+			[
+				"nav.",
+				"app/_includes/nav.html"
+			],
+			[
+				"head",
+				"app/_includes/head.html"
+			],
+			[
+				"config",
+				"_config.yml"
+			],
+			[
+				"head.h",
+				"app/_includes/head.html"
+			],
+			[
+				"head.ht",
+				"app/_includes/head.html"
+			],
+			[
+				"default",
+				"app/_layouts/default.html"
+			],
+			[
+				"createdbeer",
+				"app/created/beercamp/index.html"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"gruntfil",
+				"Gruntfile.js"
+			],
+			[
+				"synt",
+				"app/_scss/syntax.scss"
+			],
+			[
+				"skrollr",
+				"app/js/skrollr.menu.js"
+			],
+			[
+				"head.",
+				"app/_includes/head.html"
+			],
+			[
+				"header",
+				"app/_scss/base/_header.scss"
+			],
+			[
+				"head.t",
+				"app/_includes/head.html"
+			],
+			[
+				"head.htm",
+				"app/_includes/head.html"
+			],
+			[
 				"nav",
 				"app/_includes/nav.html"
 			],
@@ -1309,24 +1381,8 @@
 				"app/_scss/base/_text.scss"
 			],
 			[
-				"head",
-				"app/_includes/head.html"
-			],
-			[
-				"nav.ht",
-				"app/_includes/nav.html"
-			],
-			[
 				"front.",
 				".tmp/css/front.css"
-			],
-			[
-				"head.",
-				"app/_includes/head.html"
-			],
-			[
-				"index.js",
-				"app/js/index.js"
 			],
 			[
 				"index.html",
@@ -1337,16 +1393,8 @@
 				".jekyll/index.html"
 			],
 			[
-				"head.htm",
-				"app/_includes/head.html"
-			],
-			[
 				"editor",
 				".editorconfig"
-			],
-			[
-				"head.h",
-				"app/_includes/head.html"
 			],
 			[
 				"main.js",
@@ -1357,24 +1405,12 @@
 				"Gruntfile.js"
 			],
 			[
-				"gruntfil",
-				"Gruntfile.js"
-			],
-			[
-				"default",
-				"app/_layouts/default.html"
-			],
-			[
 				"defa",
 				"app/_layouts/default.html"
 			],
 			[
 				"gitig",
 				".gitignore"
-			],
-			[
-				"grunt",
-				"Gruntfile.js"
 			],
 			[
 				"syntax.css",
@@ -1487,10 +1523,6 @@
 			[
 				"answer",
 				"build/views/answer.html"
-			],
-			[
-				"index",
-				"views/index.html"
 			],
 			[
 				"view",
@@ -1657,10 +1689,6 @@
 				"templates/default_site/content.group/index.html"
 			],
 			[
-				"header",
-				"sass/section/_header.scss"
-			],
-			[
 				".home",
 				"templates/default_site/dev.group/.home-content.html"
 			],
@@ -1739,74 +1767,6 @@
 			[
 				"carousel.scss",
 				"sass/section/_carousel.scss"
-			],
-			[
-				"extends.s",
-				"sass/modules/_extends.scss"
-			],
-			[
-				"tools.scss",
-				"sass/_tools.scss"
-			],
-			[
-				"function",
-				"sass/modules/_functions.scss"
-			],
-			[
-				"sassicons",
-				"sass/icons/icons.fallback.css"
-			],
-			[
-				"secheader.scss",
-				"sass/section/_header.scss"
-			],
-			[
-				"git",
-				".gitignore"
-			],
-			[
-				"form.",
-				"sass/component/_forms.scss"
-			],
-			[
-				"ayout.scss",
-				"sass/_layout.scss"
-			],
-			[
-				"question_as",
-				"build/views/question_ask.html"
-			],
-			[
-				"question_ask",
-				"build/views/question_ask.html"
-			],
-			[
-				"question_dis",
-				"build/views/question_display.html"
-			],
-			[
-				"js/ut",
-				"build/js/util.js"
-			],
-			[
-				"js/",
-				"build/js/index.js"
-			],
-			[
-				"inde.",
-				"routes/index.js"
-			],
-			[
-				"app.js",
-				"app.js"
-			],
-			[
-				"asviewlay",
-				"assets/views/layout.html"
-			],
-			[
-				"scripts",
-				"views/includes/scripts.swig"
 			]
 		],
 		"width": 0.0
@@ -1823,6 +1783,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 163.0,
+	"side_bar_width": 159.0,
 	"status_bar_visible": true
 }

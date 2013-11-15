@@ -1,5 +1,6 @@
-head.ready(function(){
-    // INITIALIZE FASTCLICK
+jQuery(document).ready(function() {
+
+      // INITIALIZE FASTCLICK
     FastClick.attach(document.body);
 
 
@@ -14,8 +15,9 @@ head.ready(function(){
 
 
     //TOP NAV FUNCTIONALITY
-    $('.menu-btn').click(function(){
+    $('.menu-btn').click(function(e){
+        e.preventDefault();
         $('#scroll-nav').toggleClass('active');
-        return false;
     });
+
 });
