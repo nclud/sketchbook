@@ -10,7 +10,11 @@
         <div id="menu-pages">
             <div class="half">
                 <span class="menu-header">Stories</span>
-                <a class="menu-link" href="beercamp.html">Beercamp 2013</a>
+                {% for page in site.pages %}
+                {% if page.url != "/index.html" %}
+                <a class="menu-link" href="{{ page.url | replace: 'index.html', '' }}">{{page.title}}</a>
+                {% endif %}
+                {% endfor %}
             </div>
 
             <div class="half">
