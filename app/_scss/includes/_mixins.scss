@@ -1,0 +1,28 @@
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media only screen and (min-width : 1401px) and (min-height : 850px) { @content; }
+  }
+  @if $point == widescreen {
+    @media only screen and (min-width : 1300px) and (max-height : 850px) { @content; }
+  }
+  @else if $point == landscape {
+    @media only screen and (min-width : 802px) and (max-width : 1100px) { @content; }
+  }
+  @else if $point == portrait {
+    @media only screen and (min-width : 642px) and (max-width : 801px) { @content; }
+  }
+  @else if $point == mobile {
+    @media only screen and (max-width : 641px) { @content; }
+  }
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+$light-green: #83b557;
+$blue: #415766;
+$light-blue: #7ea2b2;
+$dark-blue: #0F2733;

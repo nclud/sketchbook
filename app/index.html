@@ -19,7 +19,9 @@ title: Your New Jekyll Site
     <article class="article-listing-single">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <span class="date-time">{{ post.date | date_to_string }}</span>
-        <p>post.summary</p>
+        {% if post.summary %}
+        <p>{{ post.summary }}</p>
+        {% endif %}
     </article>
     {% endfor %}
 

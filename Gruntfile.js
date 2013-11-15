@@ -111,7 +111,7 @@ module.exports = function (grunt) {
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/_scss',
         cssDir: '.tmp/css',
-        fontsDir: '.tmp/fonts',
+        fontsDir: '/fonts',
         imagesDir: '<%= yeoman.app %>/img',
         javascriptsDir: '<%= yeoman.app %>/js',
         relativeAssets: false,
@@ -357,7 +357,7 @@ module.exports = function (grunt) {
     'uglify',
     'imagemin',
     'svgmin',
-    'rev',
+    // 'rev',
     'usemin',
     'htmlmin'
     ]);

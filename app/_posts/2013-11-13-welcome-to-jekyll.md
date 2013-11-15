@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2013-11-13 15:07:58
+summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, natus quia eligendi! Possimus ducimus provident soluta quae dolorum repudiandae distinctio ipsa accusantium ipsum?
 ---
 
 <h1>Lorëm Ipsúm Dolor’s “Sit Amet”!</h1>
