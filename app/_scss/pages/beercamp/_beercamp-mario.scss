@@ -9,6 +9,7 @@
 	@include rem(padding-top,5.5rem);
 	@include rem(padding-bottom,12rem);
 	z-index: 10;
+	overflow-x: hidden;
 
 	h2,
 	p {
