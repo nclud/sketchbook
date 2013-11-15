@@ -117,22 +117,22 @@ page_dir:
 <section id="mario" class="padded-horizontal-medium padded-vertical" data-160-top="" data-161-top="">
     <h2>The Mario Fix</h2>
 
-        <p>During final user testing, we received consistent complaints from players that jumping was broken or too hard. We kept trying to figure out why, eventually narrowing it down to the fact that users would jump, hit a platform edge, then fall to the ground. The technical reason for this was that we were using Box2D, a common physics engine for games. When players hit an edge, the engine would cause their horizontal velocity to go to zero, causing them to fall to the ground below.</p>
+    <p>During final user testing, we received consistent complaints from players that jumping was broken or too hard. We kept trying to figure out why, eventually narrowing it down to the fact that users would jump, hit a platform edge, then fall to the ground. The technical reason for this was that we were using Box2D, a common physics engine for games. When players hit an edge, the engine would cause their horizontal velocity to go to zero, causing them to fall to the ground below.</p>
 
-        <p>Why did users think they should float up and onto the platform, even when they hit the edge? Because of <em>Super Mario Bros</em>. Yes, the original Nintendo Entertainment System game that everyone grew up playing had physics that trained the player to hold a directional arrow key down to continue up and onto a platform.</p>
+    <p>Why did users think they should float up and onto the platform, even when they hit the edge? Because of <em>Super Mario Bros</em>. Yes, the original Nintendo Entertainment System game that everyone grew up playing had physics that trained the player to hold a directional arrow key down to continue up and onto a platform.</p>
 
-        <p>With that in mind, we used design to solve a technical complaint. Instead of reworking the entire physics engine, we approached it from a user’s point of view, simulating keystrokes to push players up and onto the ledge. We called this "The Mario Fix.”</p>
+    <p>With that in mind, we used design to solve a technical complaint. Instead of reworking the entire physics engine, we approached it from a user’s point of view, simulating keystrokes to push players up and onto the ledge. We called this "The Mario Fix.”</p>
 
-        <div class="level-clouds"></div>
-        <div class="level">
-            <div class="plumber"></div>
-        </div>
+    <div class="level-clouds"></div>
+    <div class="level">
+        <div class="plumber"></div>
+    </div>
 </section>
 
 <section id="conclusion" class="padded-horizontal padded-vertical centered conclusion">
     <h2>Conclusion</h2>
 
-    <p>The 2013 Beercamp site launched in full multiplayer form at the actual event in Austin, immediately drawing rave reviews from attendees. With everything in place (including a full custom soundtrack courtesy of <a href="https://www.facebook.com/thegreyareadc" target="_blank">The Grey Area</a>), the game had thousands of repeat visits even after the event was over.</p>
+    <p>The 2013 Beercamp site launched in full multiplayer form at the actual event in Austin, immediately drawing rave reviews from attendees. With everything in place (including a full custom soundtrack courtesy of <a href="https://www.facebook.com/thegreyareadc" target="_blank">The Grey Area</a>), the game had hundreds of repeat visits even after the event was over.</p>
 
     <p>From a technical perspective, the game was a huge success. Using Node’s multi-threading and optimized information flow allowed users to play without worrying about crashing, and the improved “bouncer queue” kept the servers running flawlessly. Design-wise, users lauded the unique illustrated humorous style throughout the game, especially as you progressed through the levels.</p>
 
@@ -154,9 +154,7 @@ page_dir:
                 <source src="/img/video/beercamp.webm" type="video/webm"/>-->
             </video>
         </div>
-
         <img src="/img/footer-monitor.jpg">
     </div>
-
     <div class="background"></div>
 </section>
