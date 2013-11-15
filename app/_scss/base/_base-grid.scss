@@ -28,6 +28,10 @@ section {
 	}
 }
 
+#skrollr-body {
+	overflow-x: hidden;
+}
+
 .padded-vertical {
 	@include rem(padding-top, 4.65rem);
 	@include rem(padding-bottom, 5rem);
