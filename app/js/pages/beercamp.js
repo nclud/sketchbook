@@ -7,13 +7,13 @@ jQuery(document).ready(function() {
     // IMAGE PRELOADING FOR ANIMATION
     var frameCount = 50;
     var scrollSpeed = 65;
-    if (windowWidth > 768 && windowWidth < 1100) {
-        var scrollSpeed = 45;
-    }
-
     var imgPath = '/img/pages/beercamp/frames/frames_';
     var imgType = 'jpg';
-    var frameArray = new Array();
+    var frameArray = [];
+
+    if (windowWidth > 768 && windowWidth < 1100) {
+        scrollSpeed = 45;
+    }
 
     function padNumbers(number) {
         if (number<=99) {
@@ -21,6 +21,7 @@ jQuery(document).ready(function() {
         }
         return number;
     }
+
     for (var i=0; i<frameCount; i++) {
         frameArray[i]=imgPath+padNumbers(i+1)+'.'+imgType;
     }
@@ -63,48 +64,50 @@ jQuery(document).ready(function() {
         smoothScrolling: false,
         mobileDeceleration: 1,
         render: function(data) {
-            var designFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
-            var animationStart = (designFrames - 625);
-            $('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
+            if ( document.getElementById('design') ) {
+              var designFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
+              var animationStart = (designFrames - 625);
+              $('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
 
-            var videoTop = $('#video-screen').offset().top;
-            if (heightToggle && ((data.curTop + windowHeight) >= (videoTop - 75)) && !navigator.userAgent.match(/mobile/i)) {
-                $('#video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.ogv" type="video/ogg"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
-                heightToggle = false;
+              var videoTop = $('#video-screen').offset().top;
+              if (heightToggle && ((data.curTop + windowHeight) >= (videoTop - 75)) && !navigator.userAgent.match(/mobile/i)) {
+                  $('#video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.ogv" type="video/ogg"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
+                  heightToggle = false;
+              }
             }
         }
     });
-    s.refresh($('#skrollr-body'));
 
+    s.refresh($('#skrollr-body'));
 
     // LAYERS OF DEV WITH INFO
     $('.layer-description').css('display','none');
-    $('#dev-layers li img').click(function(){
+    $('#dev-layers li img').on('click', function(e){
         var layer_info = $(this).attr('title');
+        e.preventDefault();
 
-        if ($(this).parent('li').hasClass('active')) {
+        if ( $(this).parent('li').hasClass('active') ) {
             $(this).parent('li').removeClass('active');
             $(this).parent('li').siblings().removeClass('background');
             $('#'+layer_info).css('display','none');
-        }
-        else {
+        } else {
             $(this).parent('li').siblings().removeClass('active').addClass('background');
             $('.layer-description').css('display','none');
             $(this).parent('li').addClass('active').removeClass('background');
             $('#'+layer_info).css('display','block');
         }
-        return false;
+
     });
 
 
     // SCROLL TO TOP
-    skrollr.menu.init(s, {
-        animate: true,
-        easing: 'linear',
-        duration: function(currentTop, targetTop) {
-            return 3250;
-        }
-    });
+    // skrollr.menu.init(s, {
+    //     animate: true,
+    //     easing: 'linear',
+    //     duration: function(currentTop, targetTop) {
+    //         return 3250;
+    //     }
+    // });
 
 
     // SOCIAL SHARING & FOOTER FIX

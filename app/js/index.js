@@ -10,8 +10,7 @@ jQuery(document).ready(function() {
     }
 
     // INITIALIZE SKROLLR
-    var s = skrollr.init({ smoothScrolling: false });
-
+    // var a = skrollr.init({ smoothScrolling: false });
 
     //TOP NAV FUNCTIONALITY
     $('.menu-btn').click(function(e){
