@@ -71,7 +71,7 @@ jQuery(document).ready(function() {
 
               var videoTop = $('#video-screen').offset().top;
               if (heightToggle && ((data.curTop + windowHeight) >= (videoTop - 75)) && !navigator.userAgent.match(/mobile/i)) {
-                  $('#video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.ogv" type="video/ogg"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
+                  $('#video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
                   heightToggle = false;
               }
             }
