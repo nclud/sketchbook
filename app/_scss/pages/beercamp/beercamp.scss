@@ -1,9 +1,9 @@
-@import "includes/_noncompiled.scss";
+@import "../../includes/_noncompiled.scss";
 
 /* BEERCAMP IMPORTS IMPORTS */
-@import 'pages/beercamp/_beercamp-header.scss';
-@import 'pages/beercamp/_beercamp-concept.scss';
-@import 'pages/beercamp/_beercamp-design.scss';
-@import 'pages/beercamp/_beercamp-dev.scss';
-@import 'pages/beercamp/_beercamp-mario.scss';
-@import 'pages/beercamp/_beercamp-footer.scss';
+@import '_beercamp-header.scss';
+@import '_beercamp-concept.scss';
+@import '_beercamp-design.scss';
+@import '_beercamp-dev.scss';
+@import '_beercamp-mario.scss';
+@import '_beercamp-footer.scss';

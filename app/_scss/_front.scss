@@ -24,7 +24,7 @@
 	}
 	.subtitle {
 		width: 50%;
-		@include rem(margin,1.75rem auto 0);
+		@include rem(margin, 1.75rem auto 0);
 
 		@include breakpoint(landscape) {
 			width: 60%;
@@ -47,7 +47,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center bottom;
-		@include opacity(0.85);
+		opacity: 0.85;
 		@include transition(opacity 0.2s);
 		@include backface-visibility(hidden);
 
@@ -64,7 +64,7 @@
 
 	&:hover {
 		.featured-link {
-			@include opacity(1);
+			opacity: 1;
 		}
 	}
 

@@ -8,11 +8,11 @@ footer {
 	@include rem(padding-bottom,2.5rem);
 
 	a {
-		@include opacity(0.75);
+		opacity: 0.75;
 		@include transition(0.15s);
 
 		&:hover {
-			@include opacity(1);
+			opacity: 1;
 		}
 	}
 

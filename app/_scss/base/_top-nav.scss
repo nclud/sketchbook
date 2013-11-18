@@ -24,11 +24,11 @@
 	}
 
 	a {
-		@include opacity(0.75);
+		opacity: 0.75;
 		@include transition(0.15s);
 
 		&:hover {
-			@include opacity(1);
+			opacity: 1;
 		}
 	}
 
@@ -48,7 +48,7 @@
 		height: 50px;
 		padding: 13px 3% 13px 0;
 		z-index: 998;
-		@include translate3d(0,-50px,0);
+		@include transform( translate3d(0,-50px,0) );
 		@include transition(0.2s);
 	}
 
@@ -61,34 +61,34 @@
 		background: darken($dark-blue,3%);
 		border-bottom: 1px solid darken($dark-blue,12%);
 		z-index: 990;
-		@include translate3d(0,-100px,0);
+		@include transform( translate3d(0,-100px,0) );
 		@include transition(0.2s);
 
 		@include breakpoint(mobile) {
 			height: 150px;
-			@include translate3d(0,-150px,0);
+			@include transform( translate3d(0,-150px,0) );
 		}
 	}
 
 	&.skrollable-after {
 		.logo-nav {
-			@include translate3d(0,0,0);
+			@include transform( translate3d(0,0,0) );
 			@include transition(0.25s);
 		}
 
 		.bkg-nav {
-			@include translate3d(0,-50px,0);
+			@include transform( translate3d(0,-50px,0) );
 			@include transition(0.25s);
 
 			@include breakpoint(mobile) {
-				@include translate3d(0,-100px,0);
+				@include transform( translate3d(0,-100px,0) );
 			}
 		}
 	}
 
 	&.active {
 		.logo-nav {
-			@include translate3d(0,0,0);
+			@include transform( translate3d(0,0,0) );
 			@include transition(0.25s);
 			pointer-events:none;
 
@@ -98,7 +98,7 @@
 		}
 
 		.bkg-nav {
-			@include translate3d(0,0,0);
+			@include transform( translate3d(0,0,0) );
 			@include transition(0.25s);
 		}
 
@@ -125,11 +125,11 @@
 		img {
 			height: 100%;
 			width: auto;
-			@include opacity(0.85);
+			opacity: 0.85;
 			@include transition(0.15s);
 
 			&:hover {
-				@include opacity(1);
+				opacity: 1;
 			}
 		}
 
@@ -154,11 +154,11 @@
 	}
 
 	a {
-		@include opacity(0.75);
+		opacity: 0.75;
 		@include transition(0.15s);
 
 		&:hover {
-			@include opacity(1);
+			opacity: 1;
 		}
 	}
 
@@ -181,7 +181,7 @@
 	width: 35%;
 	height: 100%;
 	padding: 13px 0;
-	@include opacity(0);
+	opacity: 0;
 	@include transition(opacity 0.125s);
 	pointer-events: none;
 
@@ -208,7 +208,7 @@
 
 	.active & {
 		@include transition-delay(0.15s);
-		@include opacity(1);
+		opacity: 1;
 		pointer-events: auto;
 	}
 

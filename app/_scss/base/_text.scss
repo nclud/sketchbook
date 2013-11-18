@@ -43,11 +43,11 @@ h2 {
 		a {
 			text-decoration: none;
 			color: $dark-blue;
-			@include opacity(0.875);
+			opacity: 0.875;
 			@include transition(0.125s);
 
 			&:hover {
-				@include opacity(1);
+				opacity: 1;
 			}
 		}
 	}
@@ -72,7 +72,7 @@ p {
 
 	&.subtitle {
 		@include rem(font-size,1.15rem);
-		@include opacity(0.7);
+		opacity: 0.7;
 		font-family: 'Avenir-Black';
 		line-height: 1.25;
 		color: white;
@@ -82,7 +82,7 @@ p {
 		z-index: 5;
 
 		#featured-story & {
-			@include opacity(0.85);
+			opacity: 0.85;
 		}
 
 		@include breakpoint(large) {
@@ -138,8 +138,7 @@ a {
 		letter-spacing: 0.35em;
 		@include rem(padding,1.5em 1.65em 1.25em 2em);
 		@include transition(0.125s);
-		@include border-radius(10px);
-		//@include border-radius(3px);
+		border-radius:10px;
 
 		&:hover {
 			background: $light-green;
@@ -350,7 +349,7 @@ hr {
 	text-transform: uppercase;
 	@include rem(font-size,0.875rem);
 	color: $dark-blue;
-	@include opacity(0.65);
+	opacity: 0.65;
 	@include rem(padding-top,0.5rem);
 	display: inline-block;
 

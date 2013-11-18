@@ -1,218 +1,204 @@
 /* BEERCAMP DESIGN SECTION */
 
 #design-container {
-	background: lighten($dark-blue,5%);
-	min-height: 100vh;
-	position: relative;
+  background: lighten($dark-blue,5%);
+  min-height: 100vh;
+  position: relative;
 }
 
 #design {
-	overflow: hidden;
-	height: 100vh;
-	width: 100%;
-	@include rem(padding-top,5rem);
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  @include rem(padding-top,5rem);
 
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 
-	&.skrollable-before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-	}
-	.skrollr-desktop &.skrollable-between {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-	}
-	&.skrollable-after {
-		position: absolute;
-		top: auto;
-		left: 0;
-		right: 0;
-		bottom: 0;
-	}
+  &.skrollable-after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
-	@include breakpoint(landscape) {
-		@include rem(padding-top,4rem);
-	}
-	@include breakpoint(portrait) {
-		@include rem(padding-top,6rem);
-	}
+  @include breakpoint(landscape) {
+    @include rem(padding-top,4rem);
+  }
+  @include breakpoint(portrait) {
+    @include rem(padding-top,6rem);
+  }
 }
 
 #design-text {
-	float: right;
-	width: 73%;
-	z-index: 5;
-	@include opacity(1);
+  float: right;
+  width: 73%;
+  z-index: 5;
+  opacity: 1;
 
-	h2,
-	p {
-		color: white;
-		-webkit-font-smoothing: antialiased;
-	}
-	h2 {
-		@include breakpoint(landscape) {
-			margin-bottom: 0.25em;
-		}
+  h2,
+  p {
+    color: white;
+    -webkit-font-smoothing: antialiased;
+  }
+  h2 {
+    @include breakpoint(landscape) {
+      margin-bottom: 0.25em;
+    }
 
-	}
-	p {
-		@include breakpoint(landscape) {
-			margin-bottom: 0.8em;
-		}
-	}
-	p:last-of-type {
-		@include rem(padding-bottom,3.5rem);
-	}
+  }
+  p {
+    @include breakpoint(landscape) {
+      margin-bottom: 0.8em;
+    }
+  }
+  p:last-of-type {
+    @include rem(padding-bottom,3.5rem);
+  }
 
-	@include breakpoint(landscape) {
-		width: 68%;
-	}
-	@include breakpoint(portrait) {
-		width: 70%;
-	}
+  @include breakpoint(landscape) {
+    width: 68%;
+  }
+  @include breakpoint(portrait) {
+    width: 70%;
+  }
 }
 
 #design-laptop {
-	position: absolute;
-	z-index: 10;
-	bottom: 0;
-	//left: -65%;
-	left: 0;
-	width: 100%;
-	padding: 0 12%;
-	@include translate3d(-65%,0,0);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  //left: -65%;
+  left: 0;
+  width: 100%;
+  padding: 0 12%;
+  @include transform(translate3d(-65%,0,0));
 
-	.screen {
-		position: absolute;
-		z-index: 5;
-		top: 6.4%;
-		right: 13%;
-		left: 13%;
-		bottom: 3.1%;
-		background-color: lighten(black,10%);
-		@include box-shadow(inset 0 0 5px black);
-		overflow: hidden;
+  .screen {
+    position: absolute;
+    z-index: 5;
+    top: 6.4%;
+    right: 13%;
+    left: 13%;
+    bottom: 3.1%;
+    background-color: lighten(black,10%);
+    box-shadow: inset 0 0 5px black;
+    overflow: hidden;
 
-		&.illustrator {
-			background-image: image-url('illustrator.png');
-			background-size: 100% 100%;
-		}
+    &.illustrator {
+      background-image: url('/img/illustrator.png');
+      background-size: 100% 100%;
+    }
 
-		#scroll-animation-container {
-			position: absolute;
-			bottom: 1.7%;
-			top: 11.9%;
-			left: 2.6%;
-			right: 3.6%;
-			overflow: hidden;
+    #scroll-animation-container {
+      position: absolute;
+      bottom: 1.7%;
+      top: 11.9%;
+      left: 2.6%;
+      right: 3.6%;
+      overflow: hidden;
 
-			img {
-				@include border-radius(0);
-				@include box-shadow(0 0 0);
-				width: 100%;
-				height: 100%;
-			}
+      img {
+        border-radius: 0;
+        box-shadow: 0 0 0;
+        width: 100%;
+        height: 100%;
+      }
 
-			@include breakpoint(large) {
-				top: 12%;
-			}
-			@include breakpoint(landscape) {
-				top: 11.9%;
-				bottom: 1.7%;
-				left: 2.7%;
-			}
-			@include breakpoint(portrait) {
-				right: 3.5%;
-				bottom: 1.5%;
-			}
-		}
+      @include breakpoint(large) {
+        top: 12%;
+      }
+      @include breakpoint(landscape) {
+        top: 11.9%;
+        bottom: 1.7%;
+        left: 2.7%;
+      }
+      @include breakpoint(portrait) {
+        right: 3.5%;
+        bottom: 1.5%;
+      }
+    }
 
-		@include breakpoint(landscape) {
-			left: 8.5%;
-			right: 8.5%;
-		}
-		@include breakpoint(portrait) {
-			top: 10%;
-			left: 15.6%;
-			right: 16%;
-			bottom: 46.5%;
-		}
-	}
+    @include breakpoint(landscape) {
+      left: 8.5%;
+      right: 8.5%;
+    }
+    @include breakpoint(portrait) {
+      top: 10%;
+      left: 15.6%;
+      right: 16%;
+      bottom: 46.5%;
+    }
+  }
 
-	.macbook-screen-only {
-		display: block;
-		@include box-shadow(0 0 30px rgba(black,0.5));
-		@include border-top-radius(3.5% 5.5%);
+  .macbook-screen-only {
+    display: block;
+    box-shadow: 0 0 30px rgba(black,0.5);
+    @include border-top-radius(3.5% 5.5%);
 
-		@include breakpoint(portrait) {
-			display: none;
-		}
-	}
-	.macbook-full {
-		display: none;
+    @include breakpoint(portrait) {
+      display: none;
+    }
+  }
+  .macbook-full {
+    display: none;
 
-		@include breakpoint(portrait) {
-			display: block;
-		}
-	}
+    @include breakpoint(portrait) {
+      display: block;
+    }
+  }
 
-	@include breakpoint(landscape) {
-		padding: 0 6%;
-	}
-	@include breakpoint(portrait) {
-		padding: 0 6%;
-		bottom: 0%;
-	}
+  @include breakpoint(landscape) {
+    padding: 0 6%;
+  }
+  @include breakpoint(portrait) {
+    padding: 0 6%;
+    bottom: 0%;
+  }
 
 
-	&.touch-active {
-		@include translateX(65%);
-	}
+  &.touch-active {
+    @include transform(translateX(65%));
+  }
 }
 
 #mobile-demo-btn {
-	display: none;
+  display: none;
 
-	.skrollr-mobile & {
-		z-index: 99;
-		display: block;
-		position: absolute;
-		@include rem(width,7rem);
-		@include rem(height,7rem);
-		top: 22%;
-		right: 14%;
-		@include border-radius(100%);
-		border: 12px solid $light-green;
+  .skrollr-mobile & {
+    z-index: 99;
+    display: block;
+    position: absolute;
+    @include rem(width,7rem);
+    @include rem(height,7rem);
+    top: 22%;
+    right: 14%;
+    border-radius: 100%;
+    border: 12px solid $light-green;
 
-		&:before,
-		&:after {
-			display: block;
-			position: absolute;
-			background: $light-green;
-		}
-		&:before {
-			@include rem(width,0.8rem);
-			left: 50%;
-			@include rem(margin-left,-0.4rem);
-			top: 17px;
-			bottom: 17px;
-			content: "";
-		}
-		&:after {
-			@include rem(height,0.8rem);
-			top: 50%;
-			@include rem(margin-top,-0.4rem);
-			left: 17px;
-			right: 17px;
-			content: "";
-		}
-	}
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      background: $light-green;
+    }
+    &:before {
+      @include rem(width,0.8rem);
+      left: 50%;
+      @include rem(margin-left,-0.4rem);
+      top: 17px;
+      bottom: 17px;
+      content: "";
+    }
+    &:after {
+      @include rem(height,0.8rem);
+      top: 50%;
+      @include rem(margin-top,-0.4rem);
+      left: 17px;
+      right: 17px;
+      content: "";
+    }
+  }
 }
