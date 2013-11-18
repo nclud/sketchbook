@@ -48,8 +48,17 @@ jQuery(document).ready(function() {
     $('#design-container').css('height',designContainer);
     $('#design').css('height',windowHeight);
 
-    $('#design').attr('data-0-top','top: 0px;');
-    $('#design').attr('data--' + designFinal + '-top','top: ' + designFinal + 'px;');
+    //$('#design').attr('data-0-top','top: 0px;');
+    //$('#design').attr('data--' + designFinal + '-top','top: ' + designFinal + 'px;');
+
+    if (!navigator.userAgent.match(/mobile/i)) {
+        $('#design').attr('data-0-top','');
+        $('#design').attr('data-bottom-bottom','');
+    }
+    if (navigator.userAgent.match(/mobile/i) && windowWidth > 640) {
+        $('#design').attr('data-0-top','top: 0px;');
+        $('#design').attr('data--' + designFinal + '-top','top: ' + designFinal + 'px;');
+    }
 
     if (windowWidth > 768) {
         var devFinal = $('#develop').height() - ($('#right-diagram').outerHeight()/2);
@@ -65,9 +74,20 @@ jQuery(document).ready(function() {
         mobileDeceleration: 1,
         render: function(data) {
             if ( document.getElementById('design') ) {
-              var designFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
-              var animationStart = (designFrames - 625);
-              $('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
+              //var designFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
+              //var animationStart = (designFrames - 625);
+              //$('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
+              if (navigator.userAgent.match(/mobile/i)) {
+                  var designFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
+                  var animationStart = (designFrames - 625);
+                  $('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
+              }
+              else {
+                  var designFrames = $('#design').offset();
+                  var designTop = $('#design-container').offset();
+                  var animationStart = ((designFrames.top-625)-designTop.top)
+                  $('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
+              }
 
               var videoTop = $('#video-screen').offset().top;
               if (heightToggle && ((data.curTop + windowHeight) >= (videoTop - 75)) && !navigator.userAgent.match(/mobile/i)) {
