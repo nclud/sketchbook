@@ -1,0 +1,1542 @@
+/* line 14, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 23, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+html {
+  line-height: 1; }
+
+/* line 27, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 31, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 36, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 42, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+q, blockquote {
+  quotes: none; }
+
+/* line 45, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 50, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+a img {
+  border: none; }
+
+/* line 54, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 61, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+html {
+  min-height: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  background: #071217; }
+  @media only screen and (min-width: 1401px) and (min-height: 850px) {
+    html {
+      font-size: 105%; } }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    html {
+      font-size: 92%; } }
+  @media only screen and (max-width: 641px) {
+    html {
+      font-size: 88%; } }
+
+/* line 78, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0; }
+  /* line 86, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+  body.case-study {
+    background: #fbfbfb; }
+
+/* line 90, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  /* line 94, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_reset.scss */
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/* CLEAR & FLOATS */
+/* line 2, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+.clear {
+  clear: both !important; }
+
+/* line 3, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+.left {
+  float: left !important; }
+
+/* line 4, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+.right {
+  float: right !important; }
+
+/* line 5, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 13, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 23, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+.clearfix {
+  display: inline-block; }
+
+/* line 26, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+* html .clearfix {
+  height: 1%; }
+
+/* line 29, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+.clearfix {
+  display: block; }
+
+@media only screen and (max-width: 641px) {
+  .no-mobile {
+    display: none; } }
+
+/* line 42, /Users/jaredlaser/work/sketchbook/app/_scss/includes/_tools.scss */
+a, input, button {
+  -ms-touch-action: none !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight {
+  background-color: #073642;
+  color: #93a1a1; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .c {
+  color: #586e75 !important;
+  font-style: italic !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .cm {
+  color: #586e75 !important;
+  font-style: italic !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .cp {
+  color: #586e75 !important;
+  font-style: italic !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .c1 {
+  color: #586e75 !important;
+  font-style: italic !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .cs {
+  color: #586e75 !important;
+  font-weight: bold !important;
+  font-style: italic !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .err {
+  color: #dc322f !important;
+  background: none !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .k {
+  color: #cb4b16 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .o {
+  color: #93a1a1 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .p {
+  color: #93a1a1 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .ow {
+  color: #2aa198 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gd {
+  color: #93a1a1 !important;
+  background-color: #372c34 !important;
+  display: inline-block; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gd .x {
+  color: #93a1a1 !important;
+  background-color: #4d2d33 !important;
+  display: inline-block; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .ge {
+  color: #93a1a1 !important;
+  font-style: italic !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gr {
+  color: #aa0000; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gh {
+  color: #586e75 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gi {
+  color: #93a1a1 !important;
+  background-color: #1a412b !important;
+  display: inline-block; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gi .x {
+  color: #93a1a1 !important;
+  background-color: #355720 !important;
+  display: inline-block; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .go {
+  color: #888888; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gp {
+  color: #555555; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gs {
+  color: #93a1a1 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gu {
+  color: #6c71c4 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .gt {
+  color: #aa0000; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .kc {
+  color: #859900 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .kd {
+  color: #268bd2 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .kp {
+  color: #cb4b16 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .kr {
+  color: #d33682 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .kt {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .n {
+  color: #268bd2 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .na {
+  color: #268bd2 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .nb {
+  color: #859900 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .nc {
+  color: #d33682 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .no {
+  color: #b58900 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .ni {
+  color: purple; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .nl {
+  color: #859900 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .ne {
+  color: #268bd2 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .nf {
+  color: #268bd2 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .nn {
+  color: #b58900 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .nt {
+  color: #268bd2 !important;
+  font-weight: bold !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .nx {
+  color: #b58900 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .bp {
+  color: #999999; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .vc {
+  color: teal; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .vg {
+  color: #268bd2 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .vi {
+  color: #268bd2 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .nv {
+  color: #268bd2 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .w {
+  color: #bbbbbb; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .mf {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .m {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .mh {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .mi {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .mo {
+  color: #009999; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .s {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .sb {
+  color: #dd1144; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .sc {
+  color: #dd1144; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .sd {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .s2 {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .se {
+  color: #dc322f !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .sh {
+  color: #dd1144; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .si {
+  color: #268bd2 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .sx {
+  color: #dd1144; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .sr {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .s1 {
+  color: #2aa198 !important; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .ss {
+  color: #990073; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight .il {
+  color: #009999; }
+
+/* line 65, /Users/jaredlaser/work/sketchbook/app/_scss/_syntax.scss */
+.highlight div .gd, .highlight div .gd .x, .highlight div .gi, .highlight div .gi .x {
+  display: inline-block;
+  width: 100%; }
+
+/* FONTS */
+/* AVENIR FONTS */
+@import url("//hello.myfonts.net/count/27bfda");
+@font-face {
+  font-family: 'Avenir-Black';
+  src: url('/fonts/27BFDA_0_0.eot');
+  src: url('/fonts/27BFDA_0_0.eot?#iefix') format('embedded-opentype'), url('/fonts/27BFDA_0_0.woff') format('woff'), url('/fonts/27BFDA_0_0.ttf') format('truetype'); }
+
+@font-face {
+  font-family: 'Avenir-Light';
+  src: url('/fonts/27BFDA_1_0.eot');
+  src: url('/fonts/27BFDA_1_0.eot?#iefix') format('embedded-opentype'), url('/fonts/27BFDA_1_0.woff') format('woff'), url('/fonts/27BFDA_1_0.ttf') format('truetype'); }
+
+/* BASE GRID */
+/* line 8, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+section, div, nav, article, header, footer, main {
+  display: block;
+  position: relative; }
+
+/* line 12, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+article {
+  background: #fbfbfb; }
+
+/* line 15, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+section {
+  z-index: 2;
+  background: #fbfbfb; }
+  /* line 19, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+  section:after {
+    clear: both;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    content: ""; }
+
+/* line 31, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+.padded-vertical {
+  padding-top: 4.65rem;
+  padding-top:  4.65rem;
+  padding-bottom: 5rem;
+  padding-bottom:  5rem; }
+  @media only screen and (min-width: 802px) and (max-width: 1100px) {
+    .padded-vertical {
+      padding-top: 4rem;
+      padding-top:  4rem;
+      padding-bottom: 4.5rem;
+      padding-bottom:  4.5rem; } }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    .padded-vertical {
+      padding-top: 4rem;
+      padding-top:  4rem;
+      padding-bottom: 4.5rem;
+      padding-bottom:  4.5rem; } }
+  @media only screen and (max-width: 641px) {
+    .padded-vertical {
+      padding-top: 3rem;
+      padding-top:  3rem;
+      padding-bottom: 4rem;
+      padding-bottom:  4rem; } }
+
+/* line 49, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+.padded-vertical-top {
+  padding-top: 6.5rem;
+  padding-top:  6.5rem;
+  padding-bottom: 5rem;
+  padding-bottom:  5rem; }
+
+/* line 54, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+.padded-horizontal {
+  padding-left: 5rem;
+  padding-left:  5rem;
+  padding-right: 5rem;
+  padding-right:  5rem; }
+  @media only screen and (min-width: 802px) and (max-width: 1100px) {
+    .padded-horizontal {
+      padding-left: 3rem;
+      padding-left:  3rem;
+      padding-right: 3rem;
+      padding-right:  3rem; } }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    .padded-horizontal {
+      padding-left: 3rem;
+      padding-left:  3rem;
+      padding-right: 3rem;
+      padding-right:  3rem; } }
+
+/* line 67, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+.padded-horizontal-medium {
+  padding-left: 15%;
+  padding-right: 15%; }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    .padded-horizontal-medium {
+      padding-left: 9%;
+      padding-right: 9%; } }
+
+/* line 76, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+.padded-horizontal-large {
+  padding-left: 23%;
+  padding-right: 23%; }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    .padded-horizontal-large {
+      padding-left: 15%;
+      padding-right: 15%; } }
+  @media only screen and (max-width: 641px) {
+    .padded-horizontal-large {
+      padding-left: 5%;
+      padding-right: 5%; } }
+
+/* line 90, /Users/jaredlaser/work/sketchbook/app/_scss/base/_base-grid.scss */
+.centered {
+  padding-left: 25%;
+  padding-right: 25%; }
+  @media only screen and (min-width: 802px) and (max-width: 1100px) {
+    .centered {
+      padding-left: 20%;
+      padding-right: 20%; } }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    .centered {
+      padding-left: 15%;
+      padding-right: 15%; } }
+
+/* IMAGES */
+/* line 2, /Users/jaredlaser/work/sketchbook/app/_scss/base/_images.scss */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* TEXT */
+/* line 2, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+h1 {
+  font-family: 'Avenir-Black';
+  text-transform: capitalize; }
+  /* line 6, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  nav h1 {
+    font-size: 18px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    line-height: 27px;
+    float: left; }
+    @media only screen and (min-width: 642px) and (max-width: 801px) {
+      nav h1 {
+        display: none; } }
+    @media only screen and (max-width: 641px) {
+      nav h1 {
+        display: none; } }
+  /* line 22, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .single-post h1 {
+    color: #0f2733;
+    font-size: 2.25rem;
+    font-size:  2.25rem; }
+
+/* line 27, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+h2 {
+  margin-bottom: 0.5em;
+  font-family: 'Avenir-Black';
+  font-size: 2.25rem;
+  font-size:  2.25rem;
+  color: #1a1a1a; }
+  /* line 34, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .centered h2 {
+    text-align: center; }
+  /* line 38, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .article-listing-single h2 {
+    margin-bottom: 0;
+    font-size: 1.875rem;
+    font-size:  1.875rem;
+    text-transform: capitalize; }
+    /* line 43, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+    .article-listing-single h2 a {
+      text-decoration: none;
+      color: #0f2733;
+      opacity: 0.875;
+      -webkit-transition: 0.125s;
+      -moz-transition: 0.125s;
+      transition: 0.125s; }
+      /* line 49, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+      .article-listing-single h2 a:hover {
+        opacity: 1; }
+
+/* line 55, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+h3 {
+  font-family: 'Avenir-Black';
+  margin-bottom: 0.15rem;
+  margin-bottom:  0.15rem;
+  font-size: 1.25rem;
+  font-size:  1.25rem;
+  color: #1a1a1a; }
+  /* line 61, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  #post-content h3 {
+    font-size: 1.4rem;
+    font-size:  1.4rem; }
+
+/* line 66, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+p {
+  font-family: georgia;
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-size:  1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.2em; }
+  /* line 73, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  p.subtitle {
+    font-size: 1.15rem;
+    font-size:  1.15rem;
+    opacity: 0.7;
+    font-family: 'Avenir-Black';
+    line-height: 1.25;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    text-align: center;
+    z-index: 5; }
+    /* line 84, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+    #featured-story p.subtitle {
+      opacity: 0.85; }
+    @media only screen and (min-width: 1401px) and (min-height: 850px) {
+      p.subtitle {
+        line-height: 1.4; } }
+  /* line 92, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  p.subtext {
+    font-size: 0.9rem;
+    font-size:  0.9rem; }
+  /* line 97, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  section:not(#post-content) p:last-of-type {
+    margin-bottom: 0; }
+  /* line 102, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  p a {
+    color: #7ea2b2;
+    text-decoration: none; }
+    /* line 106, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+    p a:hover {
+      text-decoration: underline; }
+  @media only screen and (min-width: 802px) and (max-width: 1100px) {
+    p {
+      font-size: 1.05rem;
+      font-size:  1.05rem; } }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    p {
+      font-size: 1.15rem;
+      font-size:  1.15rem; } }
+
+/* line 118, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+em {
+  font-style: italic; }
+
+/* line 121, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+strong {
+  font-weight: bold; }
+
+/* line 127, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+a.big-button {
+  display: inline-block;
+  font-family: 'Avenir-Black';
+  text-transform: uppercase;
+  border: 5px solid #83b557;
+  color: #83b557;
+  text-decoration: none;
+  font-size: 1rem;
+  font-size:  1rem;
+  letter-spacing: 0.35em;
+  padding: 1.5em 1.65em 1.25em 2em;
+  padding:  1.5em 1.65em 1.25em 2em;
+  -webkit-transition: 0.125s;
+  -moz-transition: 0.125s;
+  transition: 0.125s;
+  border-radius: 10px; }
+  /* line 143, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  a.big-button:hover {
+    background: #83b557;
+    color: white;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 153, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+#post-content ul, #post-content ol {
+  padding-left: 1.25em;
+  margin-bottom: 1.2em; }
+  /* line 157, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  #post-content ul li, #post-content ol li {
+    padding-left: 1em;
+    font-family: georgia;
+    color: #1a1a1a;
+    font-size: 1.2rem;
+    font-size:  1.2rem;
+    line-height: 1.5;
+    margin-bottom: 0.15em; }
+    /* line 165, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+    #post-content ul li:last-child, #post-content ol li:last-child {
+      margin-bottom: 0; }
+
+/* line 173, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+#post-content ul li {
+  list-style-type: disc; }
+
+/* line 180, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+#post-content ol li {
+  list-style-type: decimal; }
+
+/* line 186, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+blockquote {
+  margin-bottom: 0.6em;
+  width: 110%;
+  margin-left: -10%; }
+  /* line 191, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  blockquote p {
+    color: #83b557;
+    font-family: 'Avenir-Light';
+    font-size: 2rem;
+    font-size:  2rem;
+    line-height: 1.3; }
+    /* line 197, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+    blockquote p .source {
+      display: block;
+      font-family: 'Avenir-Black';
+      font-size: 0.9rem;
+      font-size:  0.9rem;
+      color: #78a84a;
+      text-align: right;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-top: 8px; }
+    /* line 208, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+    blockquote p em {
+      font-style: italic; }
+    /* line 212, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+    blockquote p a {
+      color: #78a84a;
+      text-decoration: underline; }
+      /* line 216, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+      blockquote p a:hover {
+        color: #74a348; }
+  @media only screen and (max-width: 641px) {
+    blockquote {
+      width: 100%;
+      margin-left: 0; } }
+
+/* line 229, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+code {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  white-space: pre\9;
+  line-height: 1.4;
+  font-family: monospace;
+  color: #333333;
+  font-weight: bold;
+  display: block;
+  background: whitesmoke;
+  margin-top: -0.5em;
+  padding: 0.75rem;
+  padding:  0.75rem;
+  padding-top: 0.6rem;
+  padding-top:  0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+  font-size:  1rem; }
+  /* line 247, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  p code {
+    margin-bottom: 0;
+    display: inline-block;
+    padding: 5px 3px 5px 6px;
+    margin-top: -3px;
+    line-height: 1; }
+
+/* line 256, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+hr {
+  display: block;
+  width: 50%;
+  border: 0;
+  height: 2px;
+  background: #333333;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+/* line 269, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.menu-btn {
+  font-family: 'Avenir-Black';
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-size:  1.25rem; }
+  /* line 277, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .menu-btn:after {
+    line-height: 1.75rem;
+    line-height:  1.75rem;
+    content: "\2630"; }
+  /* line 282, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .dark .menu-btn {
+    color: #0f2733; }
+
+/* line 287, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.menu-header {
+  font-family: 'Avenir-Black';
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  margin-bottom: 9px;
+  display: block; }
+
+/* line 299, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.menu-link {
+  font-family: 'Avenir-Black';
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 5px;
+  cursor: pointer; }
+  /* line 309, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .menu-link.spacer {
+    padding-bottom: 20px; }
+  /* line 313, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .menu-link:hover {
+    text-decoration: underline; }
+
+/* line 322, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.newer-posts, .older-posts {
+  font-family: 'Avenir-Black';
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-size:  0.75rem;
+  display: block;
+  border-top: 3px solid #0f2733;
+  color: #0f2733;
+  letter-spacing: 2px;
+  padding: 1.25em 0 0; }
+  /* line 333, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .newer-posts span, .older-posts span {
+    letter-spacing: 0; }
+
+/* line 337, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.newer-posts {
+  float: left; }
+
+/* line 340, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.older-posts {
+  float: right; }
+
+/* line 347, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.date-time {
+  font-family: 'Avenir-Black';
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-size:  0.875rem;
+  color: #0f2733;
+  opacity: 0.65;
+  padding-top: 0.5rem;
+  padding-top:  0.5rem;
+  display: inline-block; }
+  /* line 356, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .article-listing-single .date-time {
+    padding-bottom: 0.6rem;
+    padding-bottom:  0.6rem; }
+
+/* line 361, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.post-author {
+  font-family: 'Avenir-Black';
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-size:  1rem;
+  text-decoration: none;
+  color: #0f2733; }
+  /* line 368, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .post-author:hover {
+    text-decoration: underline; }
+
+/* line 372, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.post-author-bio {
+  padding-top: 5px;
+  display: block;
+  font-family: georgia;
+  color: #4d4d4d;
+  font-size: 0.875rem;
+  font-size:  0.875rem;
+  line-height: 1.4; }
+
+/* line 383, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+#scroll-to-top {
+  font-family: 'Avenir-Black';
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  font-size: 11px;
+  float: right;
+  text-decoration: none; }
+  /* line 392, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  #scroll-to-top span {
+    margin-left: 15px;
+    font-size: 10px; }
+
+/* line 398, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+.bottom-home {
+  width: 100%;
+  height: 16px;
+  clear: both;
+  text-align: center;
+  display: block;
+  margin-top: 2rem;
+  margin-top:  2rem;
+  text-decoration: none; }
+  /* line 407, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .bottom-home span {
+    font-family: 'Avenir-Black';
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline-block; }
+    @media only screen and (max-width: 641px) {
+      .bottom-home span {
+        line-height: 1.3; } }
+  /* line 420, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .bottom-home img {
+    height: 16px;
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -3px; }
+    @media only screen and (max-width: 641px) {
+      .bottom-home img {
+        margin-bottom: 10px;
+        margin-right: 0;
+        margin-top: 0; } }
+  /* line 435, /Users/jaredlaser/work/sketchbook/app/_scss/base/_text.scss */
+  .bottom-home:first-child {
+    margin-top: 0; }
+
+/* TOP BAR & NAV */
+/* line 3, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  height: 4rem;
+  height:  4rem; }
+  /* line 12, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  #top-nav .nav-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.25rem;
+    padding-top:  1.25rem;
+    padding-bottom: 1rem;
+    padding-bottom:  1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
+  /* line 20, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  #top-nav img {
+    height: 60%;
+    width: auto;
+    display: inline-block; }
+  /* line 26, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  #top-nav a {
+    opacity: 0.75;
+    -webkit-transition: 0.15s;
+    -moz-transition: 0.15s;
+    transition: 0.15s; }
+    /* line 30, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+    #top-nav a:hover {
+      opacity: 1; }
+  /* line 36, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  #top-nav.dark .nav-wrapper {
+    border-bottom: 1px solid rgba(15, 39, 51, 0.35); }
+
+/* line 43, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav .logo-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 13px 3% 13px 0;
+  z-index: 998;
+  -webkit-transform: translate3d(0, -50px, 0);
+  -moz-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  -o-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s; }
+/* line 55, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav .bkg-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: #0c1e27;
+  border-bottom: 1px solid #010304;
+  z-index: 990;
+  -webkit-transform: translate3d(0, -100px, 0);
+  -moz-transform: translate3d(0, -100px, 0);
+  -ms-transform: translate3d(0, -100px, 0);
+  -o-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s; }
+  @media only screen and (max-width: 641px) {
+    #scroll-nav .bkg-nav {
+      height: 150px;
+      -webkit-transform: translate3d(0, -150px, 0);
+      -moz-transform: translate3d(0, -150px, 0);
+      -ms-transform: translate3d(0, -150px, 0);
+      -o-transform: translate3d(0, -150px, 0);
+      transform: translate3d(0, -150px, 0); } }
+/* line 74, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav.skrollable-after .logo-nav {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s; }
+/* line 79, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav.skrollable-after .bkg-nav {
+  -webkit-transform: translate3d(0, -50px, 0);
+  -moz-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  -o-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s; }
+  @media only screen and (max-width: 641px) {
+    #scroll-nav.skrollable-after .bkg-nav {
+      -webkit-transform: translate3d(0, -100px, 0);
+      -moz-transform: translate3d(0, -100px, 0);
+      -ms-transform: translate3d(0, -100px, 0);
+      -o-transform: translate3d(0, -100px, 0);
+      transform: translate3d(0, -100px, 0); } }
+/* line 90, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav.active .logo-nav {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+  pointer-events: none; }
+  /* line 95, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  #scroll-nav.active .logo-nav a {
+    pointer-events: auto; }
+/* line 100, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav.active .bkg-nav {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s; }
+/* line 106, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav.active .menu-btn:after {
+  line-height: 23px;
+  font-size: 1.5rem;
+  font-size:  1.5rem;
+  content: "\00D7"; }
+/* line 117, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav .logo-wrapper {
+  height: 25px;
+  display: block;
+  float: left;
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 2px 3% 3px;
+  margin-right: 3%; }
+  /* line 125, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  #scroll-nav .logo-wrapper img {
+    height: 100%;
+    width: auto;
+    opacity: 0.85;
+    -webkit-transition: 0.15s;
+    -moz-transition: 0.15s;
+    transition: 0.15s; }
+    /* line 131, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+    #scroll-nav .logo-wrapper img:hover {
+      opacity: 1; }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    #scroll-nav .logo-wrapper {
+      border-right: 0; } }
+  @media only screen and (max-width: 641px) {
+    #scroll-nav .logo-wrapper {
+      border-right: 0; } }
+/* line 145, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav .menu-btn:after {
+  line-height: 25px; }
+@media only screen and (max-width: 641px) {
+  #scroll-nav .menu-btn {
+    top: 13px;
+    right: 13px;
+    position: absolute; } }
+/* line 156, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav a {
+  opacity: 0.75;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  transition: 0.15s; }
+  /* line 160, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  #scroll-nav a:hover {
+    opacity: 1; }
+/* line 166, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#scroll-nav.front-page .logo-wrapper {
+  border-right: 0; }
+@media only screen and (max-width: 641px) {
+  #scroll-nav {
+    padding-right: 0; } }
+
+/* line 176, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+#menu-pages {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5%;
+  width: 35%;
+  height: 100%;
+  padding: 13px 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.125s;
+  -moz-transition: opacity 0.125s;
+  transition: opacity 0.125s;
+  pointer-events: none; }
+  /* line 188, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  #menu-pages .half {
+    float: left;
+    width: 50%;
+    padding-right: 7%;
+    z-index: 999; }
+    @media only screen and (max-width: 641px) {
+      #menu-pages .half {
+        width: 45%;
+        margin-right: 10%;
+        padding-right: 0; }
+        /* line 199, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+        #menu-pages .half:nth-child(2n) {
+          margin-right: 0; } }
+  /* line 205, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  .skrollable-before #menu-pages {
+    -webkit-transition: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    transition: opacity 0.1s; }
+  /* line 209, /Users/jaredlaser/work/sketchbook/app/_scss/base/_top-nav.scss */
+  .active #menu-pages {
+    -webkit-transition-delay: 0.15s;
+    -moz-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+    opacity: 1;
+    pointer-events: auto; }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    #menu-pages {
+      width: 45%; } }
+  @media only screen and (max-width: 641px) {
+    #menu-pages {
+      position: relative;
+      width: 100%;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      height: auto;
+      clear: both;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 20px; } }
+
+/* HEADER */
+/* line 3, /Users/jaredlaser/work/sketchbook/app/_scss/base/_header.scss */
+header.single-post {
+  background: #fbfbfb;
+  padding-top: 5.5rem;
+  padding-top:  5.5rem; }
+  /* line 8, /Users/jaredlaser/work/sketchbook/app/_scss/base/_header.scss */
+  header.single-post img, header.single-post .fluid-width-video-wrapper {
+    width: 120%;
+    margin-left: -10%;
+    margin-bottom: 1.75rem;
+    margin-bottom:  1.75rem; }
+    @media only screen and (max-width: 641px) {
+      header.single-post img, header.single-post .fluid-width-video-wrapper {
+        width: 100%;
+        margin-left: 0; } }
+/* line 20, /Users/jaredlaser/work/sketchbook/app/_scss/base/_header.scss */
+header.case-study {
+  height: 40rem;
+  height:  40rem;
+  height: 95vh;
+  overflow: hidden;
+  background: #262626; }
+  /* line 26, /Users/jaredlaser/work/sketchbook/app/_scss/base/_header.scss */
+  header.case-study .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    z-index: 1; }
+  /* line 35, /Users/jaredlaser/work/sketchbook/app/_scss/base/_header.scss */
+  header.case-study:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    content: ""; }
+  @media only screen and (min-width: 802px) and (max-width: 1100px) {
+    header.case-study {
+      height: 35rem;
+      height:  35rem;
+      height: 86vh; } }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    header.case-study {
+      height: 70vh; } }
+
+/* SECTION SPECIFIC */
+/* line 2, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+.intro {
+  padding-bottom: 12rem;
+  padding-bottom:  12rem; }
+
+/* line 6, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+.concept {
+  background: #f6f6f6; }
+  /* line 9, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+  .concept .concept-laptop-air {
+    width: 76%;
+    margin: 0 auto;
+    margin-top: -13.5rem;
+    margin-top:  -13.5rem;
+    margin-bottom: 2rem;
+    margin-bottom:  2rem; }
+    /* line 15, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+    .concept .concept-laptop-air .screen {
+      position: absolute;
+      z-index: 2;
+      top: 8.9%;
+      right: 19.3%;
+      left: 19.3%;
+      bottom: 32.6%;
+      background: #1a1a1a;
+      box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5); }
+    @media only screen and (min-width: 802px) and (max-width: 1100px) {
+      .concept .concept-laptop-air {
+        width: 80%;
+        margin-top: -12rem;
+        margin-top:  -12rem; } }
+    @media only screen and (min-width: 642px) and (max-width: 801px) {
+      .concept .concept-laptop-air {
+        width: 84%;
+        margin-top: -12rem;
+        margin-top:  -12rem; } }
+  /* line 36, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+  .concept h2 {
+    margin-left: auto;
+    margin-right: auto; }
+
+/* line 42, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+.design {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+
+
+/* line 51, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+.conclusion {
+  border-top: 1px solid rgba(0, 0, 0, 0.75); }
+  /* line 54, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+  .conclusion .button-row {
+    padding: 2.5rem 0 0;
+    padding:  2.5rem 0 0;
+    text-align: center; }
+
+/* line 61, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+.study-footer {
+  margin-top: -1.5rem;
+  margin-top:  -1.5rem; }
+  /* line 64, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+  .study-footer .monitor {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    margin: 0 auto; }
+    /* line 70, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+    .study-footer .monitor .screen {
+      position: absolute;
+      z-index: 3;
+      top: 7.5%;
+      right: 4.6%;
+      left: 4.6%;
+      bottom: 0;
+      background: #1a1a1a;
+      box-shadow: inset 0 0 6px black; }
+    /* line 81, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+    .study-footer .monitor img {
+      display: block;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+      border-top-left-radius: 3% 4.5%;
+      border-top-right-radius: 3% 4.5%; }
+    @media only screen and (min-width: 642px) and (max-width: 801px) {
+      .study-footer .monitor {
+        width: 80%; } }
+  /* line 92, /Users/jaredlaser/work/sketchbook/app/_scss/base/_sections.scss */
+  .study-footer .background {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a1a1a; }
+
+/* FOOTER */
+/* line 2, /Users/jaredlaser/work/sketchbook/app/_scss/base/_footer.scss */
+footer {
+  background: #071217;
+  border-top: 1px solid black;
+  z-index: 5;
+  padding-top: 1.5rem;
+  padding-top:  1.5rem;
+  padding-bottom: 2.5rem;
+  padding-bottom:  2.5rem; }
+  /* line 10, /Users/jaredlaser/work/sketchbook/app/_scss/base/_footer.scss */
+  footer a {
+    opacity: 0.75;
+    -webkit-transition: 0.15s;
+    -moz-transition: 0.15s;
+    transition: 0.15s; }
+    /* line 14, /Users/jaredlaser/work/sketchbook/app/_scss/base/_footer.scss */
+    footer a:hover {
+      opacity: 1; }
+  @media only screen and (min-width: 802px) and (max-width: 1100px) { }
+  @media only screen and (min-width: 642px) and (max-width: 801px) { }
+  @media only screen and (max-width: 641px) { }
+
+/* line 32, /Users/jaredlaser/work/sketchbook/app/_scss/base/_footer.scss */
+#share {
+  float: left;
+  width: 17%; }
+  @media only screen and (max-width: 641px) {
+    #share {
+      float: none;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto; } }
+
+/* FRONT PAGE SPECIFIC */
+/* line 2, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+#featured-story {
+  padding-top: 13rem;
+  padding-top:  13rem;
+  padding-bottom: 12rem;
+  padding-bottom:  12rem;
+  background: #333333;
+  text-align: center; }
+  /* line 8, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+  #featured-story .featured-logo {
+    position: relative;
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    z-index: 5; }
+    @media only screen and (min-width: 802px) and (max-width: 1100px) {
+      #featured-story .featured-logo {
+        width: 60%; } }
+    @media only screen and (min-width: 642px) and (max-width: 801px) {
+      #featured-story .featured-logo {
+        width: 60%; } }
+    @media only screen and (max-width: 641px) {
+      #featured-story .featured-logo {
+        width: 80%; } }
+  /* line 25, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+  #featured-story .subtitle {
+    width: 50%;
+    margin: 1.75rem auto 0;
+    margin:  1.75rem auto 0; }
+    @media only screen and (min-width: 802px) and (max-width: 1100px) {
+      #featured-story .subtitle {
+        width: 60%; } }
+    @media only screen and (min-width: 642px) and (max-width: 801px) {
+      #featured-story .subtitle {
+        width: 60%; } }
+    @media only screen and (max-width: 641px) {
+      #featured-story .subtitle {
+        width: 80%; } }
+  /* line 40, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+  #featured-story .featured-link {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    opacity: 0.85;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+    /* line 54, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+    #featured-story .featured-link:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.15);
+      content: ""; }
+  /* line 66, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+  #featured-story:hover .featured-link {
+    opacity: 1; }
+  @media only screen and (min-width: 642px) and (max-width: 801px) {
+    #featured-story {
+      padding-top: 11rem;
+      padding-top:  11rem;
+      padding-bottom: 10rem;
+      padding-bottom:  10rem; } }
+  @media only screen and (max-width: 641px) {
+    #featured-story {
+      padding-top: 11rem;
+      padding-top:  11rem;
+      padding-bottom: 10rem;
+      padding-bottom:  10rem; } }
+
+/* line 81, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+.article-listing-single {
+  padding-bottom: 2.5rem;
+  padding-bottom:  2.5rem;
+  margin-bottom: 2.5rem;
+  margin-bottom:  2.5rem;
+  border-bottom: 1px solid rgba(15, 39, 51, 0.35); }
+  /* line 87, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+  .article-listing-single:last-child, .article-listing-single:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+/* line 94, /Users/jaredlaser/work/sketchbook/app/_scss/_front.scss */
+#pagination {
+  width: 100%;
+  padding-top: 3.5rem;
+  padding-top:  3.5rem; }
+
+/* POST SPECIFIC */
+/* line 2, /Users/jaredlaser/work/sketchbook/app/_scss/_post.scss */
+#post-content {
+  padding-top: 1.5rem;
+  padding-top:  1.5rem; }
+  /* line 6, /Users/jaredlaser/work/sketchbook/app/_scss/_post.scss */
+  #post-content img, #post-content .fluid-width-video-wrapper {
+    margin-bottom: 1.2em; }
+
+/* line 11, /Users/jaredlaser/work/sketchbook/app/_scss/_post.scss */
+#date-time-block {
+  position: absolute;
+  left: -13%;
+  width: 3rem;
+  width:  3rem;
+  top: 0;
+  z-index: 10; }
+
+/* line 19, /Users/jaredlaser/work/sketchbook/app/_scss/_post.scss */
+#post-footer {
+  padding-left: 18%;
+  border-top: 1px solid rgba(15, 39, 51, 0.35);
+  margin-top: 4rem;
+  margin-top:  4rem;
+  padding-top: 2rem;
+  padding-top:  2rem; }
+  /* line 25, /Users/jaredlaser/work/sketchbook/app/_scss/_post.scss */
+  #post-footer .post-author-photo {
+    position: absolute;
+    top: 1.5rem;
+    top:  1.5rem;
+    left: 0;
+    width: 14%;
+    border-radius: 2px; }
+    @media only screen and (min-width: 1401px) and (min-height: 850px) {
+      #post-footer .post-author-photo {
+        top: 1.2rem;
+        top:  1.2rem; } }
+    @media only screen and (min-width: 1300px) and (max-height: 850px) {
+      #post-footer .post-author-photo {
+        top: 1.2rem;
+        top:  1.2rem; } }
+    @media only screen and (min-width: 642px) and (max-width: 801px) {
+      #post-footer .post-author-photo {
+        top: 2rem;
+        top:  2rem; } }
+    @media only screen and (max-width: 641px) {
+      #post-footer .post-author-photo {
+        top: 2rem;
+        top:  2rem; } }

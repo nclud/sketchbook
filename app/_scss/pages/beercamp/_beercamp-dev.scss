@@ -97,19 +97,19 @@
 			z-index: 1;
 
 			img {
-				@include opacity(0.8);
+				opacity: 0.8;
 			}
 		}
 
 		img {
 			@include transform(skewX(20deg));
 			cursor: pointer;
-			@include opacity(0.75);
+			opacity: 0.75;
 			@include transition(0.15s);
 			background: rgba(black,0.35);
 
 			&:hover {
-				@include opacity(0.9);
+				opacity: 0.9;
 				background: rgba(black,0.65);
 			}
 		}
@@ -130,14 +130,14 @@
 			}
 
 			img {
-				@include opacity(1);
+				opacity: 1;
 				background: rgba(black,0.65);
 			}
 		}
 
 		&.background {
 			img {
-				@include opacity(0.5);
+				opacity: 0.5;
 			}
 		}
 	}
@@ -172,7 +172,7 @@
 		background: darken(white,20%);
 		border-right: 1px solid rgba(black,0.03);
 		border-bottom: 1px solid rgba(black,0.03);
-		@include rotate(45deg);
+		@include transform(rotate(45deg));
 		content: "";
 	}
 

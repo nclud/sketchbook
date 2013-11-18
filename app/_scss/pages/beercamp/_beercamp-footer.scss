@@ -2,7 +2,7 @@
 
 .study-footer {
 	#video-screen {
-		background: image-url('pages/beercamp/footer-screen.jpg') no-repeat;
+		background: url('/img/pages/beercamp/footer-screen.jpg') no-repeat;
 		background-size: cover;
 
 		video {
@@ -12,12 +12,12 @@
 	}
 
 	.background {
-		background: image-url('pages/beercamp/city.jpg') no-repeat;
+		background: url('/img/pages/beercamp/city.jpg') no-repeat;
 		background-size: cover;
 		background-position: center center;
 
 		@include breakpoint(large) {
-			background: image-url('pages/beercamp/city-large.jpg') no-repeat;
+			background: url('/img/pages/beercamp/city-large.jpg') no-repeat;
 			background-size: cover;
 			background-position: center center;
 		}

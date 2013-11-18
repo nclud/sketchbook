@@ -21,13 +21,9 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
     watch: {
-      compass: {
+      sass: {
         files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
-        tasks: ['compass:server']
-      },
-      autoprefixer: {
-        files: ['<%= yeoman.app %>/css/**/*.css'],
-        tasks: ['copy:stageCss', 'autoprefixer:server']
+        tasks: ['sass:server']
       },
       jekyll: {
         files: [
@@ -104,34 +100,49 @@ module.exports = function (grunt) {
         '.jekyll'
       ]
     },
-    compass: {
-      options: {
-        // If you're using global Sass gems, require them here.
-        // require: ['singularity', 'jacket'],
-        bundleExec: true,
-        sassDir: '<%= yeoman.app %>/_scss',
-        cssDir: '.tmp/css',
-        fontsDir: '/fonts',
-        imagesDir: '<%= yeoman.app %>/img',
-        javascriptsDir: '<%= yeoman.app %>/js',
-        relativeAssets: false,
-        httpImagesPath: '/img',
-        httpGeneratedImagesPath: '/img/generated',
-        outputStyle: 'expanded',
-        raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
-      },
-      dist: {
-        options: {
-          generatedImagesDir: '<%= yeoman.dist %>/img/generated'
-        }
-      },
+    sass: {
       server: {
         options: {
-          debugInfo: true,
-          generatedImagesDir: '.tmp/img/generated'
+          sourceComments: 'normal'
+        },
+        // files: [
+        //   '.tmp/css/screen.css' :'app/_scss/screen.scss',
+        //   '.tmp/css/pages/beercamp/beercamp.css' :'app/_scss/pages/beercamp/beercamp.scss'
+        // ]
+        files: {
+          'app/css/screen.css': 'app/_scss/screen.scss',
+          'app/css/pages/beercamp/beercamp.css' :'app/_scss/pages/beercamp/beercamp.scss'
         }
       }
     },
+    // compass: {
+    //   options: {
+    //     // If you're using global Sass gems, require them here.
+    //     // require: ['singularity', 'jacket'],
+    //     bundleExec: true,
+    //     sassDir: '<%= yeoman.app %>/_scss',
+    //     cssDir: '.tmp/css',
+    //     fontsDir: '/fonts',
+    //     imagesDir: '<%= yeoman.app %>/img',
+    //     javascriptsDir: '<%= yeoman.app %>/js',
+    //     relativeAssets: false,
+    //     httpImagesPath: '/img',
+    //     httpGeneratedImagesPath: '/img/generated',
+    //     outputStyle: 'expanded',
+    //     raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
+    //   },
+    //   dist: {
+    //     options: {
+    //       generatedImagesDir: '<%= yeoman.dist %>/img/generated'
+    //     }
+    //   },
+    //   server: {
+    //     options: {
+    //       debugInfo: true,
+    //       generatedImagesDir: '.tmp/img/generated'
+    //     }
+    //   }
+    // },
     jekyll: {
       options: {
         bundleExec: true,
@@ -188,10 +199,6 @@ module.exports = function (grunt) {
         }]
       }
     },
-    // Usemin adds files to concat
-    concat: {},
-    // Usemin adds files to uglify
-    uglify: {},
     // Usemin adds files to cssmin
     cssmin: {
       dist: {
@@ -260,54 +267,6 @@ module.exports = function (grunt) {
           ]
         }
       }
-    },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
-      },
-      all: [
-        'Gruntfile.js',
-        '<%= yeoman.app %>/js/**/*.js',
-        'test/spec/**/*.js',
-        '!<%= yeoman.app %>/js/vendor/**/*'
-      ]
-    },
-    csscss: {
-      options: {
-        bundleExec: true,
-        minMatch: 2,
-        ignoreSassMixins: false,
-        compass: true,
-        colorize: true,
-        shorthand: false,
-        verbose: true
-      },
-      check: {
-       src: ['<%= yeoman.app %>/css/**/*.css',
-             '<%= yeoman.app %>/_scss/**/*.scss']
-      }
-    },
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      check: {
-        src: [
-          '<%= yeoman.app %>}/css/**/*.css',
-          '<%= yeoman.app %>}/_scss/**/*.scss'
-        ]
-      }
-    },
-    concurrent: {
-      server: [
-        'compass:server',
-        'jekyll:server'
-      ],
-      dist: [
-        'compass:dist',
-        'copy:dist'
-      ]
     }
   });
 
@@ -319,7 +278,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'concurrent:server',
+      'jekyll:server',
       'connect:livereload',
       'watch'
     ]);
@@ -330,36 +289,20 @@ module.exports = function (grunt) {
     grunt.task.run(['serve']);
   });
 
-  // No real tests yet. Add your own.
-  grunt.registerTask('test', [
-  //   'clean:server',
-  //   'concurrent:test',
-  //   'connect:test'
-  ]);
-
-  grunt.registerTask('check', [
-    'clean:server',
-    'jekyll:check',
-    'compass:server',
-    'jshint:all',
-    'csscss:check',
-    'csslint:check'
-  ]);
-
   grunt.registerTask('build', [
-    'clean:dist',
+    'clean:dist'
     // Jekyll cleans files from the target directory, so must run first
-    'jekyll:dist',
-    'concurrent:dist',
-    'useminPrepare',
-    'concat',
-    'cssmin',
-    'uglify',
-    'imagemin',
-    'svgmin',
-    // 'rev',
-    'usemin',
-    'htmlmin'
+    , 'jekyll:dist'
+    , 'copy:dist'
+    , 'useminPrepare'
+    , 'concat'
+    , 'cssmin'
+    , 'uglify'
+    // , 'imagemin'
+    // , 'svgmin'
+    // , 'rev'
+    , 'usemin'
+    // , 'htmlmin'
     ]);
 
   grunt.registerTask('default', [

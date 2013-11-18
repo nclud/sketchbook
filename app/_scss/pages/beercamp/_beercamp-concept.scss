@@ -2,7 +2,7 @@
 	.concept-laptop-air {
 		.screen {
 			background-color: black;
-			background-image: image-url('pages/beercamp/space-invaders.gif'), image-url('pages/beercamp/space-invaders-static.png');
+			background-image: url('/img/pages/beercamp/space-invaders.gif'), url('/img/pages/beercamp/space-invaders-static.png');
 			background-position: center center, center center;
 			background-size: cover, cover;
 			background-repeat: no-repeat, no-repeat;
