@@ -1,6 +1,16 @@
         </div>{% comment %}end #skrollr body{% endcomment %}
 
-        <footer class="padded-horizontal">
+        <footer class="padded-horizontal-medium">
+
+            {% if page.type == "case_study" %}
+            <div class="clearfix">
+                {% if page.social_desc %}
+                <div id="share" data-url="{{site.url}}{{ page.url | replace: 'index.html', '' }}" data-text="{{ page.social_desc }}"></div>
+                {% endif %}
+                <a id="scroll-to-top" href="#beercamp-header">Back to top <span>&#9650;</span></a>
+            </div>
+            {% endif %}
+
             <div class="bottom-home">
                 <a href="http://www.nclud.com" target="_blank"><img src="/img/nclud-logo-small.svg"><span>An nclud creation, proudly made in Washington, DC</span></a>
             </div>
