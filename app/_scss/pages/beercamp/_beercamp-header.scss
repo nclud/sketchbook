@@ -73,7 +73,7 @@ header {
     }
     @include breakpoint(mobile) {
       width: 70%;
-      @include translateY(-2.75rem);
+      @include transform(translateY(-2.75rem));
     }
   }
 
