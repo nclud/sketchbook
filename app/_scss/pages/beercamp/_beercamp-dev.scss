@@ -34,11 +34,12 @@
 		float: none;
 	}
 
-	//&.skrollable-between {
-	//	position: fixed;
-	//	z-index: 50;
-	//	top: 40px;
-	//}
+	.skrollr-desktop &.skrollable-between {
+		position: fixed;
+		z-index: 50;
+		top: 0;
+		padding-bottom: 0;
+	}
 	&.skrollable-after {
 		position: absolute;
 		bottom: 0;
