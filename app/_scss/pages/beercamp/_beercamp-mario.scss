@@ -100,7 +100,7 @@
         @include animation-delay(0, 0, 7.5s);
       }
       @include breakpoint(portrait) {
-        @include animation-delay(0, 0, 7.45s);
+        @include animation-delay(0, 0, 7.15s);
       }
     }
   }

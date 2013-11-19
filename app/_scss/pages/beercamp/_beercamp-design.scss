@@ -111,13 +111,16 @@
         top: 12%;
       }
       @include breakpoint(landscape) {
-        top: 11.9%;
-        bottom: 1.7%;
-        left: 2.7%;
+          top: 12%;
+          bottom: 1.8%;
+          left: 2.9%;
+          right: 3.7%;
       }
       @include breakpoint(portrait) {
-        right: 3.5%;
-        bottom: 1.5%;
+          right: 3.7%;
+          left: 2.8%;
+          top: 12%;
+          bottom: 2%;
       }
     }
 
