@@ -25,4 +25,8 @@ jQuery(document).ready(function() {
         }
     });
 
+    if (navigator.userAgent.match(/mobile/i)) {
+        $('footer').css('padding-bottom','150px');
+    }
+
 });

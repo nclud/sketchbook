@@ -30,6 +30,14 @@
   @include breakpoint(portrait) {
     @include rem(padding-top,6rem);
   }
+  @include breakpoint(mobile) {
+    height: auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    overflow: visible;
+  }
 }
 
 #design-text {
@@ -63,6 +71,10 @@
   }
   @include breakpoint(portrait) {
     width: 70%;
+  }
+  @include breakpoint(mobile) {
+    float: none;
+    width: 100%;
   }
 }
 
@@ -164,44 +176,5 @@
 
   &.touch-active {
     @include transform(translateX(65%));
-  }
-}
-
-#mobile-demo-btn {
-  display: none;
-
-  .skrollr-mobile & {
-    z-index: 99;
-    display: block;
-    position: absolute;
-    @include rem(width,7rem);
-    @include rem(height,7rem);
-    top: 22%;
-    right: 14%;
-    border-radius: 100%;
-    border: 12px solid $light-green;
-
-    &:before,
-    &:after {
-      display: block;
-      position: absolute;
-      background: $light-green;
-    }
-    &:before {
-      @include rem(width,0.8rem);
-      left: 50%;
-      @include rem(margin-left,-0.4rem);
-      top: 17px;
-      bottom: 17px;
-      content: "";
-    }
-    &:after {
-      @include rem(height,0.8rem);
-      top: 50%;
-      @include rem(margin-top,-0.4rem);
-      left: 17px;
-      right: 17px;
-      content: "";
-    }
   }
 }

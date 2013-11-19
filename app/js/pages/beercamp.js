@@ -4,6 +4,21 @@ jQuery(document).ready(function() {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
 
+    // REMOVE UNNECESSARY / NONWORKING ELEMENTS ON MOBILE/TOUCH DEVICES
+    if (navigator.userAgent.match(/mobile/i)) {
+        $('.no-touch').remove();
+    }
+    if (navigator.userAgent.match(/mobile/i) && windowWidth <= 640) {
+        $('.no-mobile').remove();
+
+        $('.character-foreground, .character-background').removeAttr('data-top-top').removeAttr('data--100p-top');
+        $('#design-text').removeAttr('data--200-top').removeAttr('data--350-top');
+
+        $('#mario').removeAttr('data-160-top').removeAttr('data-161-top');
+        $('#mario').attr('data-96p-bottom','');
+        $('#mario').attr('data-97p-bottom','');
+    }
+
     // IMAGE PRELOADING FOR ANIMATION
     var frameCount = 50;
     var scrollSpeed = 65;
@@ -21,24 +36,27 @@ jQuery(document).ready(function() {
         }
         return number;
     }
-
-    for (var i=0; i<frameCount; i++) {
-        frameArray[i]=imgPath+padNumbers(i+1)+'.'+imgType;
+    if (windowWidth > 640) {
+        for (var i=0; i<frameCount; i++) {
+            frameArray[i]=imgPath+padNumbers(i+1)+'.'+imgType;
+        }
     }
 
     // FRAMES ON SCROLL
-    $('#scroll-animation').reel({
-        cursor: 'default',
-        draggable: false,
-        loops: false,
-        frames: frameCount,
-        images: frameArray
-    });
+    if (windowWidth > 640) {
+        $('#scroll-animation').reel({
+            cursor: 'default',
+            draggable: false,
+            loops: false,
+            frames: frameCount,
+            images: frameArray
+        });
 
-    $('#scroll-animation-reel img').each(function(){
-        $(this).removeAttr('width');
-        $(this).removeAttr('height');
-    });
+        $('#scroll-animation-reel img').each(function(){
+            $(this).removeAttr('width');
+            $(this).removeAttr('height');
+        });
+    }
 
 
     // SET HEIGHT / FIXED POSITIONING WITHOUT ACTUALLY FIXING POSITIONING
@@ -73,15 +91,12 @@ jQuery(document).ready(function() {
         mobileDeceleration: 1,
         render: function(data) {
             if ( document.getElementById('design') ) {
-              //var designFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
-              //var animationStart = (designFrames - 625);
-              //$('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
-              if (navigator.userAgent.match(/mobile/i)) {
+              if (navigator.userAgent.match(/mobile/i) && windowWidth > 640) {
                   var designFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
                   var animationStart = (designFrames - 625);
                   $('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
               }
-              else {
+              else if (!navigator.userAgent.match(/mobile/i)) {
                   var designFrames = $('#design').offset();
                   var designTop = $('#design-container').offset();
                   var animationStart = ((designFrames.top-625)-designTop.top)
@@ -120,13 +135,13 @@ jQuery(document).ready(function() {
 
 
     // SCROLL TO TOP
-    // skrollr.menu.init(s, {
-    //     animate: true,
-    //     easing: 'linear',
-    //     duration: function(currentTop, targetTop) {
-    //         return 3250;
-    //     }
-    // });
+    skrollr.menu.init(s, {
+        animate: false,
+        easing: 'linear',
+        duration: function(currentTop, targetTop) {
+            return 0;
+        }
+    });
 
 
     // SOCIAL SHARING & FOOTER FIX

@@ -40,9 +40,8 @@ section {
     @include rem(padding-top,4rem);
     @include rem(padding-bottom,4.5rem);
   }
-
   @include breakpoint(mobile) {
-    @include rem(padding-top,3rem);
+    @include rem(padding-top,4rem);
     @include rem(padding-bottom,4rem);
   }
 }
@@ -63,6 +62,10 @@ section {
     @include rem(padding-left,3rem);
     @include rem(padding-right,3rem);
   }
+  @include breakpoint(mobile) {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
 .padded-horizontal-medium{
   padding-left: 15%;
@@ -71,6 +74,10 @@ section {
   @include breakpoint(portrait) {
     padding-left: 9%;
     padding-right: 9%;
+  }
+  @include breakpoint(mobile) {
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 .padded-horizontal-large {
@@ -82,8 +89,8 @@ section {
     padding-right: 15%;
   }
   @include breakpoint(mobile) {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 
@@ -98,5 +105,9 @@ section {
   @include breakpoint(portrait) {
     padding-left: 15%;
     padding-right: 15%;
+  }
+  @include breakpoint(mobile) {
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }

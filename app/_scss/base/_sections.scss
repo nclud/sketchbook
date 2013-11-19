@@ -1,6 +1,10 @@
 /* SECTION SPECIFIC */
 .intro {
 	@include rem(padding-bottom,12rem);
+
+	@include breakpoint(mobile) {
+		@include rem(padding-bottom,8rem);
+	}
 }
 
 .concept {
@@ -30,6 +34,10 @@
 		@include breakpoint(portrait) {
 			width: 84%;
 			@include rem(margin-top,-12rem);
+		}
+		@include breakpoint(mobile) {
+			width: 96%;
+			@include rem(margin-top,-8rem);
 		}
 	}
 
@@ -86,6 +94,9 @@
 
 		@include breakpoint(portrait) {
 			width: 80%;
+		}
+		@include breakpoint(mobile) {
+			width: 100%;
 		}
 	}
 

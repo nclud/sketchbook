@@ -16,6 +16,11 @@ header {
       background-size: auto 110%;
       background-position: center 0%;
     }
+    @include breakpoint(mobile) {
+      background: image-url('pages/beercamp/city-mobile.jpg') no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
   }
 
   #main-logo {
@@ -35,6 +40,11 @@ header {
     @include breakpoint(portrait) {
       width: 120%;
       margin-left: -10%;
+    }
+    @include breakpoint(mobile) {
+      margin-top: 23vh;
+      width: 180%;
+      margin-left: -40%;
     }
   }
 
@@ -61,6 +71,10 @@ header {
       width: 40%;
       @include transform(translateY(-4.5rem));
     }
+    @include breakpoint(mobile) {
+      width: 70%;
+      @include translateY(-2.75rem);
+    }
   }
 
   .character-foreground {
@@ -80,6 +94,11 @@ header {
       width: 116%;
       left: -8%;
     }
+    @include breakpoint(mobile) {
+      width: 124%;
+      left: -12%;
+      bottom: 0;
+    }
   }
   .character-background {
     position: absolute;
@@ -98,6 +117,11 @@ header {
       margin-bottom: 11%;
       width: 124%;
       left: -12%;
+    }
+    @include breakpoint(mobile) {
+      width: 122%;
+      left: -11%;
+      bottom: 9vh;
     }
   }
   .header-explosions {

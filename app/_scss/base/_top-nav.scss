@@ -147,9 +147,13 @@
 		}
 
 		@include breakpoint(mobile) {
-			top: 13px;
-			right: 13px;
+			top: 0;
+			right: 0;
+			padding-right: 13px;
+			padding-top: 13px;
 			position: absolute;
+			padding-left: 20px;
+			padding-bottom: 20px;
 		}
 	}
 
@@ -226,6 +230,6 @@
 		clear: both;
 		padding-left: 3%;
 		padding-right: 3%;
-		padding-top: 20px;
+		padding-top: 60px;
 	}
 }

@@ -88,6 +88,9 @@ p {
 		@include breakpoint(large) {
 			line-height: 1.4;
 		}
+		@include breakpoint(mobile) {
+			@include rem(font-size,0.9rem);
+		}
 	}
 	&.subtext {
 		@include rem(font-size,0.9rem);
@@ -144,6 +147,14 @@ a {
 			background: $light-green;
 			color: white;
 			-webkit-font-smoothing: antialiased;
+		}
+
+		@include breakpoint(mobile) {
+			width: 100%;
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
+			letter-spacing: 0.1em;
 		}
 	}
 }
@@ -392,6 +403,16 @@ hr {
 	span {
 		margin-left: 15px;
 		font-size: 10px;
+	}
+
+	@include breakpoint(mobile) {
+		float: none;
+		width: 100%;
+		clear: both;
+		text-align: center;
+		padding-top: 35px;
+		padding-bottom: 10px;
+		display: block;
 	}
 }
 
