@@ -1,8 +1,11 @@
-<nav id="scroll-nav" class="front-page" data-anchor-target=".skroll-nav-toggle" data-51-top-bottom="" data-50-top-bottom="">
+<nav id="scroll-nav"{% if page.url == "/index.html" %} class="front-page"{% endif %} data-anchor-target=".skroll-nav-toggle" data-51-top-bottom="" data-50-top-bottom="">
     <div class="logo-nav">
         <div class="logo-wrapper">
             <a href="/"><img src="/img/nclud-logo.svg"></a>
         </div>
+        {% if page.url != "/index.html" %}
+        <h1>{{ page.title }}</h1>
+        {% endif %}
         <a href="#" class="menu-btn right"></a>
     </div>
 
@@ -27,7 +30,6 @@
 </nav>
 
 <div id="skrollr-body">
-
 
     {% if page.path contains '_posts' %}
     <nav id="top-nav" class="padded-horizontal-large dark">
