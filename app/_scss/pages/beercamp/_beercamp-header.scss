@@ -32,16 +32,13 @@ header {
     margin-top: 17vh;
     @include transform-origin(50% 50%);
     @include transform(translate3d(0,0,0));
-
     opacity: 0;
     @include transition(opacity 0.15s);
-
     &.skrollable-before,
     &.skrollable-between,
     &.skrollable-after {
       opacity: 1;
     }
-
     @include breakpoint(portrait) {
       width: 120%;
       margin-left: -10%;
