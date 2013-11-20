@@ -18,7 +18,7 @@ header .background {
       background-position: center 0%; } }
   @media only screen and (max-width: 641px) {
     header .background {
-      background: url("/pages/beercamp/city-mobile.jpg") no-repeat;
+      background: url('/img/pages/beercamp/city-mobile.jpg') no-repeat;
       background-size: cover;
       background-position: center center; } }
 /* line 26, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
