@@ -31,11 +31,16 @@ header {
     @include rem(margin-top,8.75rem);
     margin-top: 17vh;
     @include transform-origin(50% 50%);
-    // @include scale(0.375);
-
     @include transform(translate3d(0,0,0));
-    //@include backface-visibility(hidden);
-    //@include perspective(1000);
+
+    @include opacity(0);
+    @include transition(opacity 0.25s);
+
+    &.skrollable-before,
+    &.skrollable-between,
+    &.skrollable-after {
+      @include opacity(1);
+    }
 
     @include breakpoint(portrait) {
       width: 120%;
