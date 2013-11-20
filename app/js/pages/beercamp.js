@@ -31,8 +31,10 @@ jQuery(document).ready(function() {
     var designContainer = (windowHeight + 625 + (frameCount * scrollSpeed) + 200);
     var designFinal = designContainer - windowHeight;
 
-    $('#design-container').css('height',designContainer);
-    $('#design').css('height',windowHeight);
+    if (windowWidth > 640) {
+        $('#design-container').css('height',designContainer);
+        $('#design').css('height',windowHeight);
+    }
 
     if (!navigator.userAgent.match(/mobile/i)) {
         $('#design').attr('data-0-top','');
