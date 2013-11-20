@@ -17,8 +17,22 @@
   left: 0;
   right: 0;
 
+  &.skrollable-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .skrollr-desktop &.skrollable-between {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
   &.skrollable-after {
     position: absolute;
+    top: auto;
     left: 0;
     right: 0;
     bottom: 0;
