@@ -24,6 +24,30 @@ jQuery(document).ready(function() {
         $('#mario').attr('data-97p-bottom','');
     }
 
+    // SET HEIGHT / FIXED POSITIONING WITHOUT ACTUALLY FIXING POSITIONING
+    var designContainer = (windowHeight + 625 + (frameCount * scrollSpeed) + 200);
+    var designFinal = designContainer - windowHeight;
+
+    $('#design-container').css('height',designContainer);
+    $('#design').css('height',windowHeight);
+
+    if (!navigator.userAgent.match(/mobile/i)) {
+        $('#design').attr('data-0-top','');
+        $('#design').attr('data-bottom-bottom','');
+
+        $('#right-diagram').attr('data-0-top','');
+        $('#right-diagram').attr('data-bottom-bottom','');
+    }
+    if (navigator.userAgent.match(/mobile/i) && windowWidth > 640) {
+        $('#design').attr('data-0-top','top: 0px;');
+        $('#design').attr('data--' + designFinal + '-top','top: ' + designFinal + 'px;');
+    }
+    if (navigator.userAgent.match(/mobile/i) && windowWidth > 768) {
+        var devFinal = $('#develop').height() - ($('#right-diagram').outerHeight()/2);
+        $('#right-diagram').attr('data-0-top','top: 0px;');
+        $('#right-diagram').attr('data--' + devFinal + '-top','top: ' + devFinal + 'px;');
+    }
+
     // LAYERS OF DEV WITH INFO
     $('.layer-description').css('display','none');
     $('#dev-layers li img').on('click', function(e){
@@ -118,31 +142,6 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
             $(this).removeAttr('width');
             $(this).removeAttr('height');
         });
-    }
-
-
-    // SET HEIGHT / FIXED POSITIONING WITHOUT ACTUALLY FIXING POSITIONING
-    var designContainer = (windowHeight + 625 + (frameCount * scrollSpeed) + 200);
-    var designFinal = designContainer - windowHeight;
-
-    $('#design-container').css('height',designContainer);
-    $('#design').css('height',windowHeight);
-
-    if (!navigator.userAgent.match(/mobile/i)) {
-        $('#design').attr('data-0-top','');
-        $('#design').attr('data-bottom-bottom','');
-
-        $('#right-diagram').attr('data-0-top','');
-        $('#right-diagram').attr('data-bottom-bottom','');
-    }
-    if (navigator.userAgent.match(/mobile/i) && windowWidth > 640) {
-        $('#design').attr('data-0-top','top: 0px;');
-        $('#design').attr('data--' + designFinal + '-top','top: ' + designFinal + 'px;');
-    }
-    if (navigator.userAgent.match(/mobile/i) && windowWidth > 768) {
-        var devFinal = $('#develop').height() - ($('#right-diagram').outerHeight()/2);
-        $('#right-diagram').attr('data-0-top','top: 0px;');
-        $('#right-diagram').attr('data--' + devFinal + '-top','top: ' + devFinal + 'px;');
     }
 
 

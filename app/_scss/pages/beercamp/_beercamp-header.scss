@@ -17,7 +17,7 @@ header {
       background-position: center 0%;
     }
     @include breakpoint(mobile) {
-      background: image-url('pages/beercamp/city-mobile.jpg') no-repeat;
+      background: image-url('img/pages/beercamp/city-mobile.jpg') no-repeat;
       background-size: cover;
       background-position: center center;
     }
