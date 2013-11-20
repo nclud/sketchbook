@@ -39,7 +39,14 @@ header #main-logo {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0);
+  opacity: 0;
+  -webkit-transition: opacity 0.15s;
+  -moz-transition: opacity 0.15s;
+  transition: opacity 0.15s; }
+  /* line 41, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
+  header #main-logo.skrollable-before, header #main-logo.skrollable-between, header #main-logo.skrollable-after {
+    opacity: 1; }
   @media only screen and (min-width: 642px) and (max-width: 801px) {
     header #main-logo {
       width: 120%;
@@ -49,7 +56,7 @@ header #main-logo {
       margin-top: 23vh;
       width: 180%;
       margin-left: -40%; } }
-/* line 51, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
+/* line 56, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
 header .subtitle {
   z-index: 4;
   width: 35%;
@@ -90,7 +97,7 @@ header .subtitle {
       -ms-transform: translateY(-2.75rem);
       -o-transform: translateY(-2.75rem);
       transform: translateY(-2.75rem); } }
-/* line 80, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
+/* line 85, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
 header .character-foreground {
   position: absolute;
   z-index: 12;
@@ -116,7 +123,7 @@ header .character-foreground {
       width: 124%;
       left: -12%;
       bottom: 0; } }
-/* line 103, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
+/* line 108, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
 header .character-background {
   position: absolute;
   z-index: 11;
@@ -143,7 +150,7 @@ header .character-background {
       width: 122%;
       left: -11%;
       bottom: 9vh; } }
-/* line 127, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
+/* line 132, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-header.scss */
 header .header-explosions {
   position: absolute;
   z-index: 10;
