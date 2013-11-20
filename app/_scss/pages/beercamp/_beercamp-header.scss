@@ -34,7 +34,7 @@ header {
     @include transform(translate3d(0,0,0));
 
     @include opacity(0);
-    @include transition(opacity 0.25s);
+    @include transition(opacity 0.15s);
 
     &.skrollable-before,
     &.skrollable-between,
