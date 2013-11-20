@@ -6,6 +6,9 @@ var scrollSpeed = 65;
 var imgPath = '/img/pages/beercamp/frames/frames_';
 var imgType = 'jpg';
 var frameArray = [];
+if (windowWidth > 768 && windowWidth < 1100) {
+    scrollSpeed = 45;
+}
 
 jQuery(document).ready(function() {
 
@@ -110,9 +113,6 @@ jQuery(document).ready(function() {
 imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
 
     // IMAGE PRELOADING FOR ANIMATION
-    if (windowWidth > 768 && windowWidth < 1100) {
-        scrollSpeed = 45;
-    }
 
     function padNumbers(number) {
         if (number<=99) {
