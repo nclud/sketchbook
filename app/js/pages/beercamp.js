@@ -135,21 +135,10 @@ jQuery(document).ready(function() {
 
 
     // SCROLL TO TOP
-    if (!navigator.userAgent.match(/mobile/i)) {
-        $('#scroll-to-top').click(function(){
-            window.scrollTo(0,0);
-            return false;
-        });
-    }
-    //else if (navigator.userAgent.match(/mobile/i)) {
-    //    skrollr.menu.init(s, {
-    //        animate: false,
-    //        //easing: 'linear',
-    //        duration: function(currentTop, targetTop) {
-    //            return 0;
-    //        }
-    //    });
-    //}
+    $('#scroll-to-top').click(function(){
+        s.setScrollTop(0);
+        return false;
+    });
 
 
     // SOCIAL SHARING & FOOTER FIX
