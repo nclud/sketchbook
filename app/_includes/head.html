@@ -12,11 +12,31 @@
     <title>{% if page.title %}{{ page.title }} &nbsp;&times;&nbsp; {% endif %} nclud Sketchbook</title>
     <meta name="viewport" content="width=device-width">
 
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/img/apple-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/img/apple-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/img/apple-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/img/apple-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/img/apple-72.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/img/android-152.png">
+
+    <link rel="icon" href="{{ site.url }}/img/fav16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="{{ site.url }}/img/fav32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ site.url }}/img/fav48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="{{ site.url }}/img/fav64.png" sizes="64x64" type="image/png">
+    <link rel="icon" href="{{ site.url }}/img/fav128.png" sizes="128x128" type="image/png">
+    <link rel="icon" href="{{ site.url }}/img/fav195.png" sizes="195x195" type="image/png">
+
+    <link rel="icon" href="{{ site.url }}/img/fav32.png">
+    <!--[if IE]><link rel="shortcut icon" href="{{ site.url }}/img/favicon.ico"><![endif]-->
+
+    <meta name="msapplication-TileColor" content="#0F2733">
+    <meta name="msapplication-TileImage" content="{{ site.url }}/img/fav144.png">
+
     {% include social.html %}
 
     <meta itemprop="name" content="nclud Sketchbook" />
     <meta itemprop="description" content="Stories, thoughts, and behind the scenes from nclud's studio." />
-    <meta itemprop="image" content="social.png" />
+    <meta itemprop="image" content="{{ site.url }}/img/social.png" />
 
     <!-- build:css({app,.tmp}) /css/front.css -->
     <!-- Custom CSS -->
