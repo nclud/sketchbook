@@ -45,6 +45,7 @@ jQuery(document).ready(function() {
     // FRAMES ON SCROLL
     if (windowWidth > 640) {
         $('#scroll-animation').reel({
+            preload: 'linear',
             cursor: 'default',
             draggable: false,
             loops: false,
