@@ -434,9 +434,8 @@ header .header-explosions {
   .skrollr-desktop #right-diagram.skrollable-between {
     position: fixed;
     z-index: 50;
-    top: 0;
-    padding-bottom: 0; }
-  /* line 51, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    top: 0; }
+  /* line 50, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
   #right-diagram.skrollable-after {
     position: absolute;
     bottom: 0;
@@ -471,11 +470,11 @@ header .header-explosions {
       margin-top: 0;
       padding-bottom: 0; } }
 
-/* line 86, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+/* line 85, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
 #dev-layers {
   position: relative;
   width: 100%; }
-  /* line 90, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+  /* line 89, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
   #dev-layers li {
     margin-top: -60%;
     position: relative;
@@ -489,29 +488,29 @@ header .header-explosions {
     transition: 0.2s;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
-    /* line 97, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    /* line 96, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
     #dev-layers li:first-child {
       margin-top: -12.5%;
       z-index: 4; }
-      /* line 101, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+      /* line 100, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
       #dev-layers li:first-child:hover {
         margin-top: -12.5%; }
-      /* line 104, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+      /* line 103, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
       #dev-layers li:first-child.active {
         margin-top: -12.5%; }
-    /* line 108, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    /* line 107, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
     #dev-layers li:nth-child(2) {
       z-index: 3; }
-    /* line 111, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    /* line 110, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
     #dev-layers li:nth-child(3) {
       z-index: 2; }
-    /* line 114, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    /* line 113, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
     #dev-layers li:nth-child(4) {
       z-index: 1; }
-      /* line 117, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+      /* line 116, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
       #dev-layers li:nth-child(4) img {
         opacity: 0.8; }
-    /* line 122, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    /* line 121, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
     #dev-layers li img {
       -webkit-transform: skewX(20deg);
       -moz-transform: skewX(20deg);
@@ -524,25 +523,25 @@ header .header-explosions {
       -moz-transition: 0.15s;
       transition: 0.15s;
       background: rgba(0, 0, 0, 0.35); }
-      /* line 129, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+      /* line 128, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
       #dev-layers li img:hover {
         opacity: 0.9;
         background: rgba(0, 0, 0, 0.65); }
-    /* line 135, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    /* line 134, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
     #dev-layers li:hover {
       margin-top: -40%; }
-    /* line 143, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    /* line 142, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
     #dev-layers li.active {
       margin-top: -33%; }
-      /* line 150, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+      /* line 149, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
       #dev-layers li.active img {
         opacity: 1;
         background: rgba(0, 0, 0, 0.65); }
-    /* line 157, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+    /* line 156, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
     #dev-layers li.background img {
       opacity: 0.5; }
 
-/* line 164, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+/* line 163, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
 .layer-description {
   position: relative;
   z-index: 99;
@@ -552,11 +551,11 @@ header .header-explosions {
   border: 1px solid rgba(0, 0, 0, 0.02);
   padding: 1rem;
   padding:  1rem; }
-  /* line 176, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+  /* line 175, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
   .layer-description p {
     width: 100%;
     float: none; }
-  /* line 181, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
+  /* line 180, /Users/jaredlaser/work/sketchbook/app/_scss/pages/beercamp/_beercamp-dev.scss */
   .layer-description:after {
     display: block;
     position: absolute;

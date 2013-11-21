@@ -1,50 +1,59 @@
-// GLOBAL VARIABLES
-var windowWidth = $(window).width();
-var windowHeight = $(window).height();
-var frameCount = 50;
-var imgPath = '/img/pages/beercamp/frames/frames_';
-var imgType = 'jpg';
-var frameArray = [];
-windowWidth > 768 && windowWidth < 1100 ? scrollSpeed = 45 : scrollSpeed = 65;
+window.bc = window.bc || {};
+bc.windowWidth = $(window).width();
+bc.windowHeight = $(window).height();
+bc.frameCount = 50;
+bc.imgPath = '/img/pages/beercamp/frames/frames_';
+bc.imgType = 'jpg';
+bc.frameArray = [];
+bc.isMobile = navigator.userAgent.match(/mobile/i);
+bc.windowWidth > 768 && bc.windowWidth < 1100 ? bc.scrollSpeed = 45 : bc.scrollSpeed = 65;
+bc.windowIsBiggerThan640 = bc.windowWidth > 640;
 
 jQuery(document).ready(function() {
 
     // REMOVE UNNECESSARY / NONWORKING ELEMENTS ON MOBILE/TOUCH DEVICES
-    if (navigator.userAgent.match(/mobile/i)) {
+    if ( bc.isMobile ) {
         $('.no-touch').remove();
     }
-    if (navigator.userAgent.match(/mobile/i) && windowWidth <= 640) {
+    if ( bc.isMobile && bc.windowWidth <= 640) {
         $('.no-mobile').remove();
 
         $('.character-foreground, .character-background').removeAttr('data-top-top').removeAttr('data--100p-top');
         $('#design-text').removeAttr('data--200-top').removeAttr('data--350-top');
 
         $('#mario').removeAttr('data-160-top').removeAttr('data-161-top');
-        $('#mario').attr('data-96p-bottom','');
-        $('#mario').attr('data-97p-bottom','');
+        $('#mario').attr({
+          'data-97p-bottom': '',
+          'data-96p-bottom': ''
+        });
     }
 
     // SET HEIGHT / FIXED POSITIONING WITHOUT ACTUALLY FIXING POSITIONING
-    var designContainer = (windowHeight + 625 + (frameCount * scrollSpeed) + 200);
-    var designFinal = designContainer - windowHeight;
+    var designContainer = ( bc.windowHeight + 625 + (bc.frameCount * bc.scrollSpeed) + 200 );
+    var designFinal = designContainer - bc.windowHeight;
 
-    if (windowWidth > 640) {
+    if ( bc.windowIsBiggerThan640 ) {
         $('#design-container').css('height',designContainer);
-        $('#design').css('height',windowHeight);
+        $('#design').css('height',bc.windowHeight);
     }
 
-    if (!navigator.userAgent.match(/mobile/i)) {
-        $('#design').attr('data-0-top','');
-        $('#design').attr('data-bottom-bottom','');
+    if ( !bc.isMobile ) {
+        $('#design').attr({
+          'data-0-top': '',
+          'data-bottom-bottom': ''
+        });
 
-        $('#right-diagram').attr('data-0-top','');
-        $('#right-diagram').attr('data--200-bottom','');
+        $('#right-diagram').attr({
+          'data-0-top': '',
+          'data--200-bottom': ''
+        });
     }
-    if (navigator.userAgent.match(/mobile/i) && windowWidth > 640) {
+
+    if ( bc.isMobile && bc.windowIsBiggerThan640 ) {
         $('#design').attr('data-0-top','top: 0px;');
         $('#design').attr('data--' + designFinal + '-top','top: ' + designFinal + 'px;');
     }
-    if (navigator.userAgent.match(/mobile/i) && windowWidth > 768) {
+    if ( bc.isMobile && bc.windowWidth > 768) {
         var devFinal = $('#develop').height() - ($('#right-diagram').outerHeight()/2);
         $('#right-diagram').attr('data-0-top','top: 0px;');
         $('#right-diagram').attr('data--' + devFinal + '-top','top: ' + devFinal + 'px;');
@@ -70,7 +79,7 @@ jQuery(document).ready(function() {
     });
 
     // SOCIAL SHARING & FOOTER FIX
-    if (navigator.userAgent.match(/mobile/i)) {
+    if ( bc.isMobile ) {
         $('footer').css('padding-bottom','150px');
     }
 
@@ -106,27 +115,27 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
     // IMAGE PRELOADING FOR ANIMATION
 
     function padNumbers(number) {
-        if (number<=99) {
-            number = ("0"+number).slice(-2);
+        if ( number <= 99 ) {
+            number = ( "0" + number ).slice(-2);
         }
         return number;
     }
-    if (windowWidth > 640) {
-        for (var i=0; i<frameCount; i++) {
-            frameArray[i]=imgPath+padNumbers(i+1)+'.'+imgType;
+    if ( bc.windowIsBiggerThan640 ) {
+        for ( var i = 0; i < bc.frameCount; i++ ) {
+            bc.frameArray[i] = bc.imgPath + padNumbers( i+1 ) + '.' + bc.imgType;
         }
     }
 
     // FRAMES ON SCROLL
-    if (windowWidth > 640) {
+    if ( bc.windowIsBiggerThan640 ) {
         $('#scroll-animation').reel({
             preload: 'linear',
             cursor: 'default',
             draggable: false,
             loops: false,
             preload: 'linear',
-            frames: frameCount,
-            images: frameArray
+            frames: bc.frameCount,
+            images: bc.frameArray
         });
 
         $('#scroll-animation-reel img').each(function(){
@@ -144,20 +153,20 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
         mobileDeceleration: 1,
         render: function(data) {
             if ( document.getElementById('design') ) {
-              if (navigator.userAgent.match(/mobile/i) && windowWidth > 640) {
+              if ( bc.isMobile && bc.windowWidth > 640) {
                   var designFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
                   var animationStart = (designFrames - 625);
-                  $('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
+                  $('#scroll-animation').reel('frame', (animationStart / bc.scrollSpeed));
               }
-              else if (!navigator.userAgent.match(/mobile/i)) {
+              else if (! bc.isMobile ) {
                   var designFrames = $('#design').offset();
                   var designTop = $('#design-container').offset();
                   var animationStart = ((designFrames.top-625)-designTop.top)
-                  $('#scroll-animation').reel('frame', (animationStart / scrollSpeed));
+                  $('#scroll-animation').reel('frame', (animationStart / bc.scrollSpeed));
               }
 
               var videoTop = $('#video-screen').offset().top;
-              if (heightToggle && ((data.curTop + windowHeight) >= (videoTop - 75)) && !navigator.userAgent.match(/mobile/i)) {
+              if (heightToggle && ((data.curTop + bc.windowHeight) >= (videoTop - 75)) && !navigator.userAgent.match(/mobile/i)) {
                   $('#video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
                   heightToggle = false;
               }
