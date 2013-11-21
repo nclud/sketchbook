@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
         $('#design').attr('data-bottom-bottom','');
 
         $('#right-diagram').attr('data-0-top','');
-        $('#right-diagram').attr('data-bottom-bottom','');
+        $('#right-diagram').attr('data--200-bottom','');
     }
     if (navigator.userAgent.match(/mobile/i) && windowWidth > 640) {
         $('#design').attr('data-0-top','top: 0px;');
