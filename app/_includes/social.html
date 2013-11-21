@@ -3,16 +3,24 @@
 {% endif %}
 <meta name="twitter:site" content="@nclud">
 <meta name="twitter:creator" content="@sketchbook">
-<meta name="twitter:title" content="nclud Sketchbook">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} &nbsp;&times;&nbsp; {% endif %} nclud Sketchbook">
 <meta name="twitter:description" content="Stories, thoughts, and behind the scenes from nclud's studio.">
 {% if page.social_img %}
-<meta name="twitter:image:src" content="{{ page.social_img }}">
+<meta name="twitter:image:src" content="{{ site.url }}{{ page.social_img }}">
 {% endif %}
 
-<meta property="og:title" content="nclud Sketchbook"/>
+<meta property="og:title" content="{% if page.title %}{{ page.title }} &nbsp;&times;&nbsp; {% endif %} nclud Sketchbook"/>
 <meta property="og:url" content="{{site.url}}{{ page.url | replace: 'index.html', '' }}"/>
+{% if page.social_desc %}
+<meta property="og:description" content="{{ page.social_desc }}"/>
+{% else %}
 <meta property="og:description" content="Stories, thoughts, and behind the scenes from nclud's studio."/>
+{% endif %}
 <meta property="og:site_name" content="nclud Sketchbook"/>
 <meta property="og:type" content="blog"/>
+{% if page.social_img %}
+<meta property="og:image" content="{{ site.url }}{{ page.social_img }}"/>
+{% else %}
 <meta property="og:image" content="social.png"/>
+{% endif %}
 <meta property="og:language" content="en" />
