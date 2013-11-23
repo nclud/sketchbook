@@ -44,10 +44,10 @@ FastClick.attach(document.body);
 
 
 //TOP NAV FUNCTIONALITY
-$('.menu-btn').on('click', function(e){
-    e.preventDefault();
-    $('#scroll-nav').toggleClass('active');
-});
+//$('.menu-btn').on('click', function(e){
+    //$('#scroll-nav').toggleClass('active');
+    //e.preventDefault();
+//});
 
 // FRAMES ARRAY
 function padNumbers(number) {
