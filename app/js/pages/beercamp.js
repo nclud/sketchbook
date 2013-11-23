@@ -21,10 +21,10 @@ bc.devFinal = $('#develop').height() - ($('#right-diagram').outerHeight()/2);
 
 jQuery(document).ready(function() {
 // REMOVE UNNECESSARY / NONWORKING ELEMENTS ON MOBILE/TOUCH DEVICES
-if (isMobile) {
-    $('.no-touch').remove();
-    $('footer').css('padding-bottom','150px');
-}
+//if (isMobile) {
+//    $('.no-touch').remove();
+//    $('footer').css('padding-bottom','150px');
+//}
 if (isMobile && isPhone) {
     $('.no-mobile').remove();
 
@@ -40,7 +40,7 @@ if (isMobile && isPhone) {
 
 
 // INITIALIZE FASTCLICK
-FastClick.attach(document.body);
+//FastClick.attach(document.body);
 
 
 //TOP NAV FUNCTIONALITY

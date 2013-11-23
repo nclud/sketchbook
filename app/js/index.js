@@ -7,6 +7,7 @@ jQuery(document).ready(function() {
     // REMOVE UNNECESSARY / NONWORKING ELEMENTS ON MOBILE/TOUCH DEVICES
     if (navigator.userAgent.match(/mobile/i)) {
         $('.no-touch').remove();
+        $('footer').css('padding-bottom','150px');
     }
 
     // INITIALIZE SKROLLR
@@ -24,9 +25,5 @@ jQuery(document).ready(function() {
             $('#scroll-nav').removeClass('active');
         }
     });
-
-    if (navigator.userAgent.match(/mobile/i)) {
-        $('footer').css('padding-bottom','150px');
-    }
 
 });
