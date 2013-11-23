@@ -111,7 +111,7 @@
       @include animation-fill-mode(forwards, none, none);
 
       @include breakpoint(landscape) {
-        @include animation-delay(0, 0, 7.5s);
+        @include animation-delay(0, 0, 7.15s);
       }
       @include breakpoint(portrait) {
         @include animation-delay(0, 0, 7.15s);
