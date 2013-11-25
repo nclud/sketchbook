@@ -173,7 +173,7 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
 
                 var videoTop = $('#video-screen').offset().top;
                 if (heightToggle && ((data.curTop + windowHeight) >= (videoTop - 75))) {
-                    $('#video-screen video').append('<source src="IMG/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="IMG/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
+                    $('#video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
                     heightToggle = false;
                 }
             }
