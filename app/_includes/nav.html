@@ -15,7 +15,9 @@
                 <span class="menu-header">Stories</span>
                 {% for page in site.pages %}
                 {% if page.url != "/index.html" %}
+                    {% if page.title != "Sketchbook" %}
                 <a class="menu-link" href="{{ page.url | replace: 'index.html', '' }}">{{page.title}}</a>
+                    {% endif %}
                 {% endif %}
                 {% endfor %}
             </div>
