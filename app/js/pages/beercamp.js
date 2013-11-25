@@ -1,12 +1,3 @@
-/*window.bc = window.bc || {};
-windowWidth = $(window).width();
-windowHeight = $(window).height();
-isMobile = navigator.userAgent.match(/mobile/i);
-isPhone = windowWidth <= 640;
-biggerThanPhone = windowWidth > 640;
-biggerThanPortrait = windowWidth > 768;
-biggerThanLandscape = windowWidth > 1024;*/
-
 bc.frameCount = 50;
 bc.imgPath = '/img/pages/beercamp/frames/frames_';
 bc.imgType = 'jpg';
@@ -19,11 +10,6 @@ bc.devFinal = $('#develop').height() - ($('#right-diagram').outerHeight()/2);
 
 
 jQuery(document).ready(function() {
-    // REMOVE UNNECESSARY / NONWORKING ELEMENTS ON MOBILE/TOUCH DEVICES
-    //if (isMobile) {
-    //    $('.no-touch').remove();
-    //    $('footer').css('padding-bottom','150px');
-    //}
     if (isMobile && isPhone) {
         $('.no-mobile').remove();
 
@@ -36,17 +22,6 @@ jQuery(document).ready(function() {
           'data-96p-bottom': ''
         });
     }
-
-
-    // INITIALIZE FASTCLICK
-    //FastClick.attach(document.body);
-
-
-    //TOP NAV FUNCTIONALITY
-    //$('.menu-btn').on('click', function(e){
-        //$('#scroll-nav').toggleClass('active');
-        //e.preventDefault();
-    //});
 
     // FRAMES ARRAY
     function padNumbers(number) {
@@ -173,14 +148,13 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
 
                 var videoTop = $('#video-screen').offset().top;
                 if (heightToggle && ((data.curTop + windowHeight) >= (videoTop - 75))) {
-                    $('#video-screen video').append('<source src="IMG/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="IMG/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
+                    $('#video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
                     heightToggle = false;
                 }
             }
         }
     });
     s.refresh($('#skrollr-body'));
-    //s.refresh($('footer'));
 
     // SCROLL TO TOP
     $('#scroll-to-top').on('click', function(e){
