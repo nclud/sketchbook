@@ -21,3 +21,6 @@ $experimental-support-for-khtml: false;
 // site sections
 @import "_front.scss";
 @import "_post.scss";
+
+// namespaced imports
+@import "pages/practical-pseudo-elements-classes.scss";

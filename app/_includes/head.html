@@ -29,7 +29,7 @@
 
     {% include social.html %}
 
-    <!-- build:css({app,.tmp}) /css/front.css -->
+    <!-- build:css({app,.tmp}) /css/screen.css -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/screen.css">
     <link rel="stylesheet" href="/css/pages/beercamp/beercamp.css">
@@ -59,4 +59,4 @@
       ga('send', 'pageview');
     </script>
 </head>
-<body>
+<body{% if page.title %} class="{{ page.title | downcase }}"{% endif %}>

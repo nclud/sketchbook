@@ -1,0 +1,320 @@
+$lightGreen: #B4D88B;
+$darkGreen: #8DC63F;
+
+.ps-hover{
+  @include transition(all 1s ease);
+  display:block;
+  font-family: 'Avenir-Black';
+  position:relative;
+  padding:.5em;
+  width:100px;
+  height:100px;
+  @include transform-origin(50% 50%);
+  text-align:center;
+
+  span{
+    padding:2em;
+    height:0;
+    margin-left:1em;
+    position:absolute;
+    font-family:Georgia;
+    width:100%;
+    top:0;
+    line-height:1.5;
+    font-size:0;
+    text-align:left;
+    left:100%;
+    border-radius:3px;
+
+    &:before{
+      content:' ';
+      display:block;
+      position:absolute;
+      height:1em;
+      width:1em;
+      left:0;
+      background:#fbfbfb;
+      border-color:#A7AFB3 transparent transparent #A7AFB3;
+      border-width:1px;
+      border-radius:3px 0 0 0;
+      border-style:solid;
+      @include transform(rotate(-45deg));
+      @include transform-origin(0 100%);
+  }
+  }
+  &:hover{
+    background:$lightGreen;
+    color:$lightGreen;
+    height:250px;
+    line-height:150px;
+    text-decoration:none;
+    width:250px;
+    border-radius:100%;
+    @include transform(rotate(360deg));
+    span{
+      -webkit-animation: show 1.5s ease forwards;
+      -moz-animation: show 1.5s ease forwards;
+      -ms-animation: show 1.5s ease forwards;
+      -o-animation: show 1.5s ease forwards;
+      animation: show 1.5s ease forwards;
+      font-size:.9em;
+      height:auto;
+      color:#000;
+      border:1px solid #A7AFB3;
+     
+    }
+  }
+}
+
+@keyframes "show" {
+ 0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   	filter: alpha(opacity=0);
+   	opacity: 0;
+ }
+ 90% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   	filter: alpha(opacity=0);
+   	opacity: 0;
+   	margin-left: 0;
+ }
+ 100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   	filter: alpha(opacity=100);
+   	opacity: 1;
+   	margin-left: 1em;
+ }
+
+}
+
+@-moz-keyframes show {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 90% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   margin-left: 0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   margin-left: 1em;
+ }
+
+}
+
+@-webkit-keyframes "show" {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 90% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   margin-left: 0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   margin-left: 1em;
+ }
+
+}
+
+@-ms-keyframes "show" {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 90% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   margin-left: 0;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   margin-left: 1em;
+ }
+
+}
+
+@-o-keyframes "show" {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 90% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   margin-left: 0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   margin-left: 1em;
+ }
+}
+
+.ps-active{
+  transition:all .2s ease;
+  border:none;
+  background:$lightGreen;
+  color:#fff;
+  display:block;
+  padding:1em 2em;
+  width:100%;
+  max-width:10em;
+  font-size:1.5em;
+  font-family: 'Avenir-Black';
+  margin:auto;
+  box-shadow:0 10px 0 #8DC63F;
+  position:relative;
+  &:focus{
+    outline:none;
+  }
+  &:active{
+    outline:none; 
+    transition:0s ease;
+    @include transform(translateY(9px));
+    box-shadow:0 1px 0 #8DC63F;
+  }
+}
+
+.ps-checked{
+  input{
+    visibility:hidden;
+  }
+  div{
+    background:$lightGreen;
+    box-shadow:8px 8px #8DC63F;
+    display:block;
+    font-family: 'Avenir-Black';
+    float:left;
+    margin:1em;
+    height:100px;
+    width:100px;
+    line-height:100px;
+    text-align:center;
+    position:relative;
+    @include transition(all .2s ease);
+  }
+  & :checked + div {
+    background:$lightGreen;
+    @include transform(translate(7px, 7px));
+    color:#fff;
+    box-shadow:1px 1px 0px #8DC63F;
+  }
+}
+
+.ps-focus{
+  border:1px solid red;
+  label{
+    display:block;
+    position:relative;
+    @include transform(translateY(1em));
+    color:#fff;
+    &:focus{
+     border:10px solid red;
+   }
+  }
+  input{
+    border:1px solid #ddd;
+    padding:2em;
+    border-radius:3px;
+  }
+}
+
+.ps-nth-child{
+  border:1px solid #ddd;
+  border-radius:3px;
+  padding:0 !important;// because ids
+  margin:0;
+  list-style-type:none !important;// because ids;
+   li{ 
+    list-style-type:none !important;// because ids;
+   }
+  li:nth-child(2n){
+    background:$darkGreen;
+    color:#fff !important;//because ids;
+    margin:0;
+  }
+}
+
+.ps-github{
+  position:relative;
+  text-indent:-999em;
+  width:1em;
+  font-size:1.5em;
+  clear:both;
+  display:block;
+  &:before{
+    position:absolute;
+    left:0;
+    text-indent:0;
+    color:#000;
+  }
+}
+
+:target{
+  -webkit-animation:target 2s ease;
+  -moz-animation:target 2s ease;
+  -ms-animation:target 2s ease;
+  -o-animation:target 2s ease;
+  animation:target 2s ease;
+}
+
+@-webkit-keyframes target{
+  0%{
+    background:$lightGreen;
+  }
+  100%{
+    background:#fff;;
+  }
+}
+
+/* The CSS being applied to 
+   this example is on Codepen so as not to inherit
+   cascading styles. Check it out there!
+   http://codepen.io/jshawl/pen/qzhfI */
+
+.ps-widget{
+  padding:1em;
+  width:200px;
+  margin:50px;
+  border-radius:5px;
+  font-weight:300;
+  font-size:.8em;
+  border:1px solid #eee;
+  & :first-child{
+    margin-top:0       
+  }
+  & :last-child{
+    margin-bottom:0
+  }
+}
+
+.ps-first-letter:first-letter{
+  font-size: 5em;
+  height: .75em;
+  display: block;
+  float: left;
+  padding-right:.125em;
+  line-height: 1;
+  font-weight:bold;
+  color:$lightGreen;
+  text-shadow:4px 4px 0 $darkGreen;
+}
+
+#this-link{
+  padding-top:5em;
+}
+
+[id*=__]{
+  padding-top:3em;
+}

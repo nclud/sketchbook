@@ -38,7 +38,7 @@ dist
 node_modules
 .tmp
 
-# Ignore Compiled Files
+# Ignore compiled files
 _site
 css
 

@@ -264,7 +264,8 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build', [
-    'clean:dist'
+    'clean:dist',
+    'sass',
     // Jekyll cleans files from the target directory, so must run first
     , 'jekyll:dist'
     , 'copy:dist'
