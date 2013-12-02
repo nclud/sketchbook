@@ -61,7 +61,7 @@
         "iframe[src^='//movies.yahoo.com']",
         "iframe[src^='//www.dailymotion.com']",
         "iframe[src^='//s.mcstatic.com']",
-        "iframe[src^='//instagram.com']",
+        //"iframe[src^='//instagram.com']",
         "iframe[src^='//vine.co']",
         "object",
         "embed"
