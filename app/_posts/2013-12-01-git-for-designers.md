@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Git for Designers"
+---
+
 Git for Designers
 
 Does the soft glow of the command-line scare you? Fear not!

@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Give Thanks (and Pie)"
+---
+
 Give Thanks (and Pie)
 
 We celebrated Thanksgiving with some goose chili, halfsmokes, and hommemade pie. And here's thanks to you, our community, colleagues, and friends.

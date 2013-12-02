@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Holiday Happy Hour"
+---
+
 Holiday Happy Hour
 
 We're hosting the RefreshDC Holiday Happy Hour this month! Join us at our studio with your friends & colleagues.
