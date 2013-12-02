@@ -4,8 +4,6 @@ title: "Always Be Sketching"
 featured-image: featured/always-be-sketching.jpg
 ---
 
-Always Be Sketching
-
 Welcome to the new *nclud Sketchbook* – a place for us to share our work, thoughts, & studio goings-on with you.
 
 Check out our first in-depth look at one of our favorite projects: <a href='http://sketchbook.nclud.com/beercamp/'>The Story Behind Beercamp 2013</a>.
