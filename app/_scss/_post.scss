@@ -16,6 +16,15 @@
 	z-index: 10;
 }
 
+.instagram {
+	margin-bottom: 1em;
+	text-align: center;
+
+	iframe {
+		display: inline-block;
+	}
+}
+
 #post-footer {
 	padding-left: 18%;
 	border-top: 1px solid rgba($dark-blue,0.35);
