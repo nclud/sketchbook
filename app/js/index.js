@@ -20,6 +20,9 @@ jQuery(document).ready(function() {
         $('footer').css('padding-bottom','150px');
     }
 
+    // RESPONSIVE VIDEO EMBEDS
+    $('article, header').fitVids();
+
     // INITIALIZE SKROLLR
     // var a = skrollr.init({ smoothScrolling: false });
 
