@@ -8,14 +8,6 @@
 	}
 }
 
-#date-time-block {
-	position: absolute;
-	left: -13%;
-	@include rem(width,3rem);
-	top: 0;
-	z-index: 10;
-}
-
 .instagram {
 	margin-bottom: 1em;
 	text-align: center;
