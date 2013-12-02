@@ -2,11 +2,9 @@
 
         <footer class="padded-horizontal-medium">
 
-            {% if page.type == "case_study" %}
+            {% if page.comments != false %}
             <div class="clearfix">
-                {% if page.social_desc %}
                 <div id="share" data-url="{{site.url}}{{ page.url | replace: 'index.html', '' }}" data-text="{{ page.title }} - {{ page.social_desc }}"></div>
-                {% endif %}
                 <a id="scroll-to-top" href="#beercamp-header">Back to top <span>&#9650;</span></a>
             </div>
             {% endif %}
