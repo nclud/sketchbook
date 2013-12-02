@@ -133,6 +133,7 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
         smoothScrolling: false,
         mobileDeceleration: 1,
         render: function(data) {
+	  if($('header').hasClass('beercamp')){
             if (isMobile && biggerThanPhone) {
                 var tabletDesignFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
                 var tabletAnimationStart = (tabletDesignFrames - 625);
@@ -152,6 +153,7 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
                     heightToggle = false;
                 }
             }
+	  }
         }
     });
     s.refresh($('#skrollr-body'));
