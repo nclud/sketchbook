@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Always Be Sketching"
+featured-image: featured/welcome.jpg
 ---
 
 Always Be Sketching

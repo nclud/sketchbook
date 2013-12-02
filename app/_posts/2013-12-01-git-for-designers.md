@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Git for Designers"
+featured-image:featured/git-for-designers.jpg
 ---
 
 Git for Designers

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Holiday Happy Hour"
+featured-image: featured/refresh-hh.gif
 ---
 
 Holiday Happy Hour
