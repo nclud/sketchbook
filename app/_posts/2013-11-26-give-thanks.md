@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Give Thanks (and Pie)"
-featured-image:featured/thanksgiving.jpg
+featured-image: featured/thanksgiving.jpg
 ---
 
 Give Thanks (and Pie)
