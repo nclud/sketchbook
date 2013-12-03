@@ -1,7 +1,7 @@
 /* TEXT */
 h1 {
 	font-family: 'Avenir-Black';
-	text-transform: capitalize;
+	//text-transform: capitalize;
 
 	nav & {
 		font-size: 18px;
@@ -38,7 +38,7 @@ h2 {
 	.article-listing-single & {
 		margin-bottom: 0;
 		@include rem(font-size,1.875rem);
-		text-transform: capitalize;
+		//text-transform: capitalize;
 
 		a {
 			text-decoration: none;
