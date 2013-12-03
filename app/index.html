@@ -19,7 +19,7 @@ comments: false
     {% for post in site.posts %}
     <article class="article-listing-single">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <span class="date-time">{{ post.date | date_to_string }}</span>
+        <span class="date-time">{{ post.date | date: "%d %B %Y" }}</span>
         {% if post.summary %}
         <p>{{ post.summary }}</p>
         {% endif %}
