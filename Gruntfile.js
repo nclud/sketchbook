@@ -116,34 +116,6 @@ module.exports = function (grunt) {
         }
       }
     },
-    // compass: {
-    //   options: {
-    //     // If you're using global Sass gems, require them here.
-    //     // require: ['singularity', 'jacket'],
-    //     bundleExec: true,
-    //     sassDir: '<%= yeoman.app %>/_scss',
-    //     cssDir: '.tmp/css',
-    //     fontsDir: '/fonts',
-    //     imagesDir: '<%= yeoman.app %>/img',
-    //     javascriptsDir: '<%= yeoman.app %>/js',
-    //     relativeAssets: false,
-    //     httpImagesPath: '/img',
-    //     httpGeneratedImagesPath: '/img/generated',
-    //     outputStyle: 'expanded',
-    //     raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
-    //   },
-    //   dist: {
-    //     options: {
-    //       generatedImagesDir: '<%= yeoman.dist %>/img/generated'
-    //     }
-    //   },
-    //   server: {
-    //     options: {
-    //       debugInfo: true,
-    //       generatedImagesDir: '.tmp/img/generated'
-    //     }
-    //   }
-    // },
     jekyll: {
       options: {
         bundleExec: true,
@@ -174,7 +146,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= yeoman.dist %>'
       },
-      html: '<%= yeoman.dist %>/index.bak'
+      html: '<%= yeoman.dist %>/index.html'
     },
     usemin: {
       options: {
