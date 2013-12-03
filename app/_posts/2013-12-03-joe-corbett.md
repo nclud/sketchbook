@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Joe Corbett to Join Nclud as COO"
+title: "Joe Corbett to Join nclud as COO"
 featured-image: /featured/ncludwii.jpg
 ---
 
