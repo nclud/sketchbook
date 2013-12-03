@@ -2,6 +2,7 @@
 layout: post
 title: "Git for Designers"
 featured-image: featured/git-for-designers.jpg
+summary: "Does the soft glow of the command-line scare you? Fear not! We're hosting a workshop on GitHub for designers."
 ---
 
 Does the soft glow of the command-line scare you? Fear not!

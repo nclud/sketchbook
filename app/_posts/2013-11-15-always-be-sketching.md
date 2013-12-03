@@ -2,6 +2,7 @@
 layout: post
 title: "Always Be Sketching"
 featured-image: featured/always-be-sketching.jpg
+summary: "Welcome to the new nclud Sketchbook – a place for us to share our work, thoughts, & studio goings-on with you."
 ---
 
 Welcome to the new *nclud Sketchbook* – a place for us to share our work, thoughts, & studio goings-on with you.
