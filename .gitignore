@@ -40,3 +40,6 @@ node_modules
 
 # Ignore Jekyll built _site
 _site
+
+# Ignore Deploy files
+Rakefile
