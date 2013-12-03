@@ -24,3 +24,15 @@
 <meta property="og:image" content="{{ site.url }}/img/social.png"/>
 {% endif %}
 <meta property="og:language" content="en" />
+
+<meta property="name" content="{% if page.title %}{{ page.title }} &nbsp;&times;&nbsp; {% endif %} nclud Sketchbook"/>
+{% if page.social_desc %}
+<meta itemprop="description" content="{{ page.social_desc }}" />
+{% else %}
+<meta itemprop="description" content="Stories, thoughts, and behind the scenes from nclud's studio." />
+{% endif %}
+{% if page.social_img %}
+<meta itemprop="image" content="{{ site.url }}{{ page.social_img }}" />
+{% else %}
+<meta itemprop="image" content="{{ site.url }}/img/social.png" />
+{% endif %}
