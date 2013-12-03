@@ -7,8 +7,6 @@
     $ bundle install
     $ grunt serve
 
-The `jekyll serve` command must be run from within /path/to/sketchbook/app/.
-
 ## Adding Posts
 
 1. Visit http://prose.io
