@@ -1551,23 +1551,14 @@ footer {
     margin-bottom: 1.2em; }
 
 /* line 11, /Users/jshawl/Sites/sketchbook/app/_scss/_post.scss */
-#date-time-block {
-  position: absolute;
-  left: -13%;
-  width: 3rem;
-  width:  3rem;
-  top: 0;
-  z-index: 10; }
-
-/* line 19, /Users/jshawl/Sites/sketchbook/app/_scss/_post.scss */
 .instagram {
   margin-bottom: 1em;
   text-align: center; }
-  /* line 22, /Users/jshawl/Sites/sketchbook/app/_scss/_post.scss */
+  /* line 14, /Users/jshawl/Sites/sketchbook/app/_scss/_post.scss */
   .instagram iframe {
     display: inline-block; }
 
-/* line 27, /Users/jshawl/Sites/sketchbook/app/_scss/_post.scss */
+/* line 19, /Users/jshawl/Sites/sketchbook/app/_scss/_post.scss */
 #post-footer {
   padding-left: 18%;
   border-top: 1px solid rgba(15, 39, 51, 0.35);
@@ -1575,7 +1566,7 @@ footer {
   margin-top:  4rem;
   padding-top: 2rem;
   padding-top:  2rem; }
-  /* line 33, /Users/jshawl/Sites/sketchbook/app/_scss/_post.scss */
+  /* line 25, /Users/jshawl/Sites/sketchbook/app/_scss/_post.scss */
   #post-footer .post-author-photo {
     position: absolute;
     top: 1.5rem;
