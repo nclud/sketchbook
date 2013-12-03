@@ -571,8 +571,7 @@ img {
 /* TEXT */
 /* line 2, /Users/jshawl/Sites/sketchbook/app/_scss/base/_text.scss */
 h1 {
-  font-family: 'Avenir-Black';
-  text-transform: capitalize; }
+  font-family: 'Avenir-Black'; }
   /* line 6, /Users/jshawl/Sites/sketchbook/app/_scss/base/_text.scss */
   nav h1 {
     font-size: 18px;
@@ -607,8 +606,7 @@ h2 {
   .article-listing-single h2 {
     margin-bottom: 0;
     font-size: 1.875rem;
-    font-size:  1.875rem;
-    text-transform: capitalize; }
+    font-size:  1.875rem; }
     /* line 43, /Users/jshawl/Sites/sketchbook/app/_scss/base/_text.scss */
     .article-listing-single h2 a {
       text-decoration: none;
