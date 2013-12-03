@@ -11,3 +11,5 @@ Joe comes to nclud with a wealth of digital agency experience and will be instru
 ![Olive](/img/olive.jpg "Olive")
 
 2013 has been a great year for nclud, and 2014 promises to be even more exciting.
+
+Read more about Joe [here](http://randomnerds.com/2013/12/03/the-legend-of-nclud-a-link-to-the-past).
