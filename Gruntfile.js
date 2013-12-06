@@ -251,6 +251,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'sass',
       'jekyll:server',
       'connect:livereload',
       'watch'
