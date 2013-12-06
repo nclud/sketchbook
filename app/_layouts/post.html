@@ -16,9 +16,14 @@ layout: default
     {{ content }}
 
     <section id="post-footer">
-        <img src="/img/nclud-logo.png" class="post-author-photo">
+    {% if site.authors contains page.author %}
+      {% assign author = site.authors[page.author] %}
+    {% else %}
+      {% assign author = site.authors.default %}
+    {% endif %}
+    <img src="{{author.image}}" class="post-author-photo">
 
-        <a href="https://twitter.com/nclud" target="_blank" class="post-author">nclud</a>
-        <span class="post-author-bio">A creative design agency focused on unique, stylish and usable experiences across a multitude of verticals, mediums and devices. We work with early stage start-ups, to the Fortune 100, and everyone in between.</span>
+    <a href="https://twitter.com/{{author.twitter}}" target="_blank" class="post-author">{{author.name}}</a>
+    <span class="post-author-bio">{{author.bio}}</span>
     </section>
 </article>
