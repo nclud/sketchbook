@@ -15,6 +15,11 @@ authors:
     image: /img/nclud-logo.png
     twitter: nclud
     bio: "A creative design agency focused on unique, stylish and usable experiences across a multitude of verticals, mediums and devices. We work with early stage start-ups, to the Fortune 100, and everyone in between."
+  kerry:
+    name: "Kerry Gunther"
+    image: /img/authors/kerry.jpg
+    twitter: kerrygunther
+    bio: "Kerry is the CEO of nclud. In addition to the web, Kerry enjoys all things LEGO."
   jesse:
     name: "Jesse Shawl"
     image: https://0.gravatar.com/avatar/495991dab64918eb18680073115163aa?d=https%3A%2F%2Fidenticons.github.com%2F0837445cdfc525ca7dcf22cc5b2f8747.png&r=x&s=440
