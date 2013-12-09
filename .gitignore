@@ -38,8 +38,9 @@ dist
 node_modules
 .tmp
 
-# Ignore Jekyll built _site
+# Ignore Compiled Files
 _site
+css
 
 # Ignore Deploy files
 Rakefile
