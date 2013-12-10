@@ -6,11 +6,7 @@ header {
     background-size: auto 110%;
     background-position: center 100%;
     opacity: 0.6;
-
     @include transform(translate3d(0,0,0));
-    //@include backface-visibility(hidden);
-    //@include perspective(1000);
-
     @include breakpoint(large) {
       background: url('/img/pages/beercamp/city-large.jpg') no-repeat;
       background-size: auto 110%;
@@ -28,7 +24,7 @@ header {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    @include rem(margin-top,8.75rem);
+    margin-top: 8.75rem;
     margin-top: 17vh;
     @include transform-origin(50% 50%);
     @include transform(translate3d(0,0,0));
@@ -59,10 +55,6 @@ header {
       translate3d(0,0,0)
       translateY(-5.75rem)
     );
-
-    //@include backface-visibility(hidden);
-    //@include perspective(1000);
-
     @include breakpoint(widescreen) {
       @include transform(translateY(-7rem));
     }

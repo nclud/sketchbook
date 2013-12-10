@@ -29,38 +29,38 @@ section {
 }
 
 .padded-vertical {
-  @include rem(padding-top, 4.65rem);
-  @include rem(padding-bottom, 5rem);
+  padding-top: 4.65rem;
+  padding-bottom: 5rem;
 
   @include breakpoint(landscape) {
-    @include rem(padding-top,4rem);
-    @include rem(padding-bottom,4.5rem);
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
   }
   @include breakpoint(portrait) {
-    @include rem(padding-top,4rem);
-    @include rem(padding-bottom,4.5rem);
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
   }
   @include breakpoint(mobile) {
-    @include rem(padding-top,4rem);
-    @include rem(padding-bottom,4rem);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 .padded-vertical-top {
-  @include rem(padding-top, 6.5rem);
-  @include rem(padding-bottom, 5rem);
+  padding-top: 6.5rem;
+  padding-bottom: 5rem;
 }
 
 .padded-horizontal {
-  @include rem(padding-left,5rem);
-  @include rem(padding-right,5rem);
+  padding-left: 5rem;
+  padding-right: 5rem;
 
   @include breakpoint(landscape) {
-    @include rem(padding-left,3rem);
-    @include rem(padding-right,3rem);
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   @include breakpoint(portrait) {
-    @include rem(padding-left,3rem);
-    @include rem(padding-right,3rem);
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   @include breakpoint(mobile) {
     padding-left: 8%;

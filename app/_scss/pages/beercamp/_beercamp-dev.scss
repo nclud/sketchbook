@@ -1,204 +1,200 @@
 /* BEERCAMP DEVELOPMENT SECTION */
 
 #develop {
-	overflow: visible;
-	z-index: 99;
-	//margin-bottom: -1px;
+  overflow: visible;
+  z-index: 99;
+  //margin-bottom: -1px;
 
-	h2,
-	p {
-		float: left;
-		width: 52%;
+  h2,
+  p {
+    float: left;
+    width: 52%;
 
-		@include breakpoint(portrait) {
-			float: none;
-			width: 100%;
-		}
-		@include breakpoint(mobile) {
-			float: none;
-			width: 100%;
-		}
-	}
+    @include breakpoint(portrait) {
+      float: none;
+      width: 100%;
+    }
+    @include breakpoint(mobile) {
+      float: none;
+      width: 100%;
+    }
+  }
 
-	@include breakpoint(mobile) {
-		@include rem(padding-top,5rem);
-	}
+  @include breakpoint(mobile) {
+    padding-top: 5rem;
+  }
 }
 
 #right-diagram {
-	position: absolute;
-	top: 0;
-	@include rem(padding-top,3rem);
-	@include rem(padding-bottom,7rem);
-	@include rem(right,5rem);
-	width: 38%;
-	@include calc(width, "38% - 4rem");
-	overflow: visible;
-	z-index: 99;
+  position: absolute;
+  top: 0;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  right: 5rem;
+  width: 38%;
+  @include calc(width, "38% - 4rem");
+  overflow: visible;
+  z-index: 99;
 
-	h2,
-	p {
-		width: 100%;
-		float: none;
-	}
+  h2,
+  p {
+    width: 100%;
+    float: none;
+  }
 
-	.skrollr-desktop &.skrollable-between {
-		position: fixed;
-		z-index: 50;
-		top: 0;
-	}
-	&.skrollable-after {
-		position: absolute;
-		bottom: 0;
-		@include rem(right,5rem);
-		top: auto;
+  .skrollr-desktop &.skrollable-between {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+  }
+  &.skrollable-after {
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+    top: auto;
 
-		@include breakpoint(widescreen) {
-			@include rem(right,8rem);
-		}
-	}
+    @include breakpoint(widescreen) {
+      right: 8rem;
+    }
+  }
 
-	@include breakpoint(widescreen) {
-		width: 28%;
-		@include rem(right,8rem);
-	}
-	@include breakpoint(portrait) {
-		position: relative;
-		top: auto;
-		right: auto;
-		width: 76%;
-		margin-left: 12%;
-		margin-top: 3%;
-		padding-bottom: 12%;
-	}
-	@include breakpoint(mobile) {
-		position: relative;
-		top: auto;
-		right: auto;
-		width: 80%;
-		margin-left: 10%;
-		margin-top: 0;
-		padding-bottom: 0;
-	}
+  @include breakpoint(widescreen) {
+    width: 28%;
+    right: 8rem;
+  }
+  @include breakpoint(portrait) {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 76%;
+    margin-left: 12%;
+    margin-top: 3%;
+    padding-bottom: 12%;
+  }
+  @include breakpoint(mobile) {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 #dev-layers {
-	position: relative;
-	width: 100%;
+  position: relative;
+  width: 100%;
 
-	li {
-		margin-top: -60%;
-		position: relative;
-		@include transform(scaleY(0.5));
-		@include transition(0.2s);
-		@include backface-visibility(hidden);
+  li {
+    margin-top: -60%;
+    position: relative;
+    @include transform(scaleY(0.5));
+    @include transition(0.2s);
+    @include backface-visibility(hidden);
 
-		&:first-child {
-			margin-top: -12.5%;
-			z-index: 4;
+    &:first-child {
+      margin-top: -12.5%;
+      z-index: 4;
 
-			&:hover {
-				margin-top: -12.5%;
-			}
-			&.active {
-				margin-top: -12.5%;
-			}
-		}
-		&:nth-child(2) {
-			z-index: 3;
-		}
-		&:nth-child(3) {
-			z-index: 2;
-		}
-		&:nth-child(4) {
-			z-index: 1;
+      &:hover {
+        margin-top: -12.5%;
+      }
+      &.active {
+        margin-top: -12.5%;
+      }
+    }
+    &:nth-child(2) {
+      z-index: 3;
+    }
+    &:nth-child(3) {
+      z-index: 2;
+    }
+    &:nth-child(4) {
+      z-index: 1;
 
-			img {
-				opacity: 0.8;
-			}
-		}
+      img {
+        opacity: 0.8;
+      }
+    }
 
-		img {
-			@include transform(skewX(20deg));
-			cursor: pointer;
-			opacity: 0.75;
-			@include transition(0.15s);
-			background: rgba(black,0.35);
+    img {
+      @include transform(skewX(20deg));
+      cursor: pointer;
+      opacity: 0.75;
+      @include transition(0.15s);
+      background: rgba(black,0.35);
 
-			&:hover {
-				opacity: 0.9;
-				background: rgba(black,0.65);
-			}
-		}
+      &:hover {
+        opacity: 0.9;
+        background: rgba(black,0.65);
+      }
+    }
 
-		&:hover {
-			margin-top: -40%;
+    &:hover {
+      margin-top: -40%;
 
-			&:first-child {
-			//	margin-top: -12.5%;
-			}
-		}
+      &:first-child {
+      //  margin-top: -12.5%;
+      }
+    }
 
-		&.active {
-			margin-top: -33%;
+    &.active {
+      margin-top: -33%;
 
-			&:first-child {
-			//	margin-top: -12.5%;
-			}
+      &:first-child {
+      //  margin-top: -12.5%;
+      }
 
-			img {
-				opacity: 1;
-				background: rgba(black,0.65);
-			}
-		}
+      img {
+        opacity: 1;
+        background: rgba(black,0.65);
+      }
+    }
 
-		&.background {
-			img {
-				opacity: 0.5;
-			}
-		}
-	}
+    &.background {
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
 }
 
 .layer-description {
-	position: relative;
-	z-index: 99;
-	width: 100%;
-	margin-top: -12%;
-	background: darken(white,20%);
-	border: 1px solid rgba(black,0.02);
-	@include rem(padding,1rem);
-	//@include backface-visibility(hidden);
-	//@include perspective(1000);
-	//@include transform(translate3d(0, 0, 0));
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  margin-top: -12%;
+  background: darken(white,20%);
+  border: 1px solid rgba(black,0.02);
+  padding: 1rem;
+  p {
+    width: 100%;
+    float: none;
+  }
 
-	p {
-		width: 100%;
-		float: none;
-	}
+  &:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin-top: -9px;
+    margin-left: -8px;
+    background: darken(white,20%);
+    border-right: 1px solid rgba(black,0.03);
+    border-bottom: 1px solid rgba(black,0.03);
+    @include transform(rotate(45deg));
+    content: "";
+  }
 
-	&:after {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		width: 16px;
-		height: 16px;
-		margin-top: -9px;
-		margin-left: -8px;
-		background: darken(white,20%);
-		border-right: 1px solid rgba(black,0.03);
-		border-bottom: 1px solid rgba(black,0.03);
-		@include transform(rotate(45deg));
-		content: "";
-	}
-
-	@include breakpoint(portrait) {
-		position: absolute;
-		top: 90%;
-	}
-	@include breakpoint(mobile) {
-		width: 120%;
-		margin-left: -10%;
-	}
+  @include breakpoint(portrait) {
+    position: absolute;
+    top: 90%;
+  }
+  @include breakpoint(mobile) {
+    width: 120%;
+    margin-left: -10%;
+  }
 }

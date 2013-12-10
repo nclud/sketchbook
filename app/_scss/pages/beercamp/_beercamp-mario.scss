@@ -6,8 +6,8 @@
   background-repeat: repeat-x;
   background-size: 8.4% auto;
   background-position: top left;
-  @include rem(padding-top,5.5rem);
-  @include rem(padding-bottom,12rem);
+  padding-top: 5.5rem;
+  padding-bottom: 12rem;
   z-index: 10;
   overflow-x: hidden;
   margin-top: -1px;
@@ -46,18 +46,18 @@
     }
   }
   .level {
-    //@include translateZ(0);
-    //@include backface-visibility(hidden);
-    //@include perspective(1000);
-
     z-index: 1;
     position: absolute;
     bottom: 0;
     left: 0;
-    //width: 1800px;
     width: 140%;
     height: 690px;
-    background-image: url('/img/pages/beercamp/mario/mario-block.png'), url('/img/pages/beercamp/mario/hill.png'), url('/img/pages/beercamp/mario/bush.png'), url('/img/pages/beercamp/mario/pipe.png'), url('/img/pages/beercamp/mario/bush-lrg.png');
+    background-image:
+      url('/img/pages/beercamp/mario/mario-block.png'),
+      url('/img/pages/beercamp/mario/hill.png'),
+      url('/img/pages/beercamp/mario/bush.png'),
+      url('/img/pages/beercamp/mario/pipe.png'),
+      url('/img/pages/beercamp/mario/bush-lrg.png');
     background-repeat: repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: auto 35px, auto 75px, auto 62px, auto 110px, auto 62px, auto 90px, auto 90px, auto 90px;
     background-position: left bottom, 175px 96%, 850px 96%, 1175px 96%, 1500px 96%, 90px 45%, 1100px 14%, 1575px 60%;
