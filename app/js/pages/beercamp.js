@@ -6,18 +6,18 @@ windowWidth > 768 && windowWidth < 1100 ? bc.scrollSpeed = 45 : bc.scrollSpeed =
 
 bc.designContainer = (windowHeight + 625 + (bc.frameCount * bc.scrollSpeed) + 200);
 bc.designFinal = bc.designContainer - windowHeight;
-bc.devFinal = $('#develop').height() - ($('#right-diagram').outerHeight()/2);
+bc.devFinal = $('#beercamp_develop').height() - ($('#beercamp_right-diagram').outerHeight()/2);
 
 
 jQuery(document).ready(function() {
     if (isMobile && isPhone) {
         $('.no-mobile').remove();
 
-        $('.character-foreground, .character-background').removeAttr('data-top-top data--100p-top');
-        $('#design-text').removeAttr('data--200-top data--350-top');
+        $('#beercamp_header .character-foreground, #beercamp_header .character-background').removeAttr('data-top-top data--100p-top');
+        $('#beercamp_design-text').removeAttr('data--200-top data--350-top');
 
-        $('#mario').removeAttr('data-160-top data-161-top');
-        $('#mario').attr({
+        $('#beercamp_mario').removeAttr('data-160-top data-161-top');
+        $('#beercamp_mario').attr({
           'data-97p-bottom': '',
           'data-96p-bottom': ''
         });
@@ -36,34 +36,34 @@ jQuery(document).ready(function() {
 
     // SET HEIGHT / FIXED POSITIONING WITHOUT ACTUALLY FIXING POSITIONING
     if (biggerThanPhone) {
-        $('#design-container').css('height',bc.designContainer);
-        $('#design').css('height',windowHeight);
+        $('#beercamp_design-container').css('height',bc.designContainer);
+        $('#beercamp_design').css('height',windowHeight);
     }
 
     if (!isMobile) {
-        $('#design').attr({
+        $('#beercamp_design').attr({
             'data-0-top': '',
             'data-bottom-bottom': ''
         });
 
-        $('#right-diagram').attr({
+        $('#beercamp_right-diagram').attr({
             'data-0-top': '',
             'data--200-bottom': ''
         });
     }
     if (isMobile && biggerThanPhone) {
-        $('#design').attr('data-0-top','top: 0px;');
-        $('#design').attr('data--' + bc.designFinal + '-top','top: ' + bc.designFinal + 'px;');
+        $('#beercamp_design').attr('data-0-top','top: 0px;');
+        $('#beercamp_design').attr('data--' + bc.designFinal + '-top','top: ' + bc.designFinal + 'px;');
     }
     if (isMobile && biggerThanPortrait) {
-        $('#right-diagram').attr('data-0-top','top: 0px;');
-        $('#right-diagram').attr('data--' + bc.devFinal + '-top','top: ' + bc.devFinal + 'px;');
+        $('#beercamp_right-diagram').attr('data-0-top','top: 0px;');
+        $('#beercamp_right-diagram').attr('data--' + bc.devFinal + '-top','top: ' + bc.devFinal + 'px;');
     }
 
 
     // LAYERS OF DEV WITH INFO
-    $('.layer-description').css('display','none');
-    $('#dev-layers li img').on('click', function(e){
+    $('#beercamp_right-diagram .layer-description').css('display','none');
+    $('#beercamp_dev-layers li img').on('click', function(e){
         var layer_info = $(this).attr('title');
 
         if ($(this).parent('li').hasClass('active')) {
@@ -73,7 +73,7 @@ jQuery(document).ready(function() {
         }
         else {
             $(this).parent('li').siblings().removeClass('active').addClass('background');
-            $('.layer-description').css('display','none');
+            $('#beercamp_right-diagram .layer-description').css('display','none');
             $(this).parent('li').addClass('active').removeClass('background');
             $('#'+layer_info).css('display','block');
         }
@@ -111,7 +111,7 @@ jQuery(document).ready(function() {
 imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
     // FRAMES ON SCROLL
     if (biggerThanPhone) {
-        $('#scroll-animation').reel({
+        $('#beercamp_scroll-animation').reel({
             preload: 'linear',
             cursor: 'default',
             draggable: false,
@@ -120,7 +120,7 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
             images: bc.frameArray
         });
 
-        $('#scroll-animation-reel img').each(function(){
+        $('#beercamp_scroll-animation-reel img').each(function(){
             $(this).removeAttr('width');
             $(this).removeAttr('height');
         });
@@ -135,21 +135,21 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
         render: function(data) {
 	  if($('header').hasClass('beercamp')){
             if (isMobile && biggerThanPhone) {
-                var tabletDesignFrames = $('#design').css('top').replace(/[^-\d\.]/g, '');
+                var tabletDesignFrames = $('#beercamp_design').css('top').replace(/[^-\d\.]/g, '');
                 var tabletAnimationStart = (tabletDesignFrames - 625);
                 var tabletFrames = (tabletAnimationStart / bc.scrollSpeed);
-                $('#scroll-animation').reel('frame', tabletFrames);
+                $('#beercamp_scroll-animation').reel('frame', tabletFrames);
             }
             if (!isMobile) {
-                var designFrames = $('#design').offset();
-                var designTop = $('#design-container').offset();
+                var designFrames = $('#beercamp_design').offset();
+                var designTop = $('#beercamp_design-container').offset();
                 var animationStart = ((designFrames.top-625)-designTop.top);
                 var desktopFrames = (animationStart / bc.scrollSpeed);
-                $('#scroll-animation').reel('frame', desktopFrames);
+                $('#beercamp_scroll-animation').reel('frame', desktopFrames);
 
-                var videoTop = $('#video-screen').offset().top;
+                var videoTop = $('#beercamp_video-screen').offset().top;
                 if (heightToggle && ((data.curTop + windowHeight) >= (videoTop - 75))) {
-                    $('#video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
+                    $('#beercamp_video-screen video').append('<source src="/img/pages/beercamp/video/beercamp.mp4" type="video/mp4"/><source src="/img/pages/beercamp/video/beercamp.webm" type="video/webm"/>');
                     heightToggle = false;
                 }
             }

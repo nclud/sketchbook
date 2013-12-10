@@ -1,134 +1,133 @@
 /* BEERCAMP HEADER */
+#beercamp_header {
+    .background {
+        background: url('/img/pages/beercamp/city.jpg') no-repeat;
+        background-size: auto 110%;
+        background-position: center 100%;
+        opacity: 0.6;
+        @include transform(translate3d(0,0,0));
+        @include breakpoint(large) {
+            background: url('/img/pages/beercamp/city-large.jpg') no-repeat;
+            background-size: auto 110%;
+            background-position: center 0%;
+        }
+        @include breakpoint(mobile) {
+            background: url('/img/pages/beercamp/city-mobile.jpg') no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
 
-header {
-  .background {
-    background: url('/img/pages/beercamp/city.jpg') no-repeat;
-    background-size: auto 110%;
-    background-position: center 100%;
-    opacity: 0.6;
-    @include transform(translate3d(0,0,0));
-    @include breakpoint(large) {
-      background: url('/img/pages/beercamp/city-large.jpg') no-repeat;
-      background-size: auto 110%;
-      background-position: center 0%;
+    #main-logo {
+        z-index: 5;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 8.75rem;
+        margin-top: 17vh;
+        @include transform-origin(50% 50%);
+        @include transform(translate3d(0,0,0));
+        opacity: 0;
+        @include transition(opacity 0.15s);
+        &.skrollable-before,
+        &.skrollable-between,
+        &.skrollable-after {
+            opacity: 1;
+        }
+        @include breakpoint(portrait) {
+            width: 120%;
+            margin-left: -10%;
+        }
+        @include breakpoint(mobile) {
+            margin-top: 23vh;
+            width: 180%;
+            margin-left: -40%;
+        }
     }
-    @include breakpoint(mobile) {
-      background: url('/img/pages/beercamp/city-mobile.jpg') no-repeat;
-      background-size: cover;
-      background-position: center center;
-    }
-  }
 
-  #main-logo {
-    z-index: 5;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 8.75rem;
-    margin-top: 17vh;
-    @include transform-origin(50% 50%);
-    @include transform(translate3d(0,0,0));
-    opacity: 0;
-    @include transition(opacity 0.15s);
-    &.skrollable-before,
-    &.skrollable-between,
-    &.skrollable-after {
-      opacity: 1;
+    .subtitle {
+        z-index: 4;
+        width: 35%;
+        margin: 0 auto;
+        opacity: 0.7;
+        @include transform(
+            translate3d(0,0,0)
+            translateY(-5.75rem)
+        );
+        @include breakpoint(widescreen) {
+            @include transform(translateY(-7rem));
+        }
+        @include breakpoint(landscape) {
+            @include transform(translateY(-4.75rem));
+        }
+        @include breakpoint(portrait) {
+            width: 40%;
+            @include transform(translateY(-4.5rem));
+        }
+        @include breakpoint(mobile) {
+            width: 70%;
+            @include transform(translateY(-2.75rem));
+        }
     }
-    @include breakpoint(portrait) {
-      width: 120%;
-      margin-left: -10%;
-    }
-    @include breakpoint(mobile) {
-      margin-top: 23vh;
-      width: 180%;
-      margin-left: -40%;
-    }
-  }
 
-  .subtitle {
-    z-index: 4;
-    width: 35%;
-    margin: 0 auto;
-    opacity: 0.7;
-    @include transform(
-      translate3d(0,0,0)
-      translateY(-5.75rem)
-    );
-    @include breakpoint(widescreen) {
-      @include transform(translateY(-7rem));
-    }
-    @include breakpoint(landscape) {
-      @include transform(translateY(-4.75rem));
-    }
-    @include breakpoint(portrait) {
-      width: 40%;
-      @include transform(translateY(-4.5rem));
-    }
-    @include breakpoint(mobile) {
-      width: 70%;
-      @include transform(translateY(-2.75rem));
-    }
-  }
+    .character-foreground {
+        position: absolute;
+        z-index: 12;
+        bottom: -3.5%;
+        left: -5%;
+        width: 110%;
+        @include transform-origin(50% 100%);
+        // @include scale(1);
 
-  .character-foreground {
-    position: absolute;
-    z-index: 12;
-    bottom: -3.5%;
-    left: -5%;
-    width: 110%;
-    @include transform-origin(50% 100%);
-    // @include scale(1);
+        @include transform(translate3d(0,0,0));
+        //@include backface-visibility(hidden);
+        //@include perspective(1000);
 
-    @include transform(translate3d(0,0,0));
-    //@include backface-visibility(hidden);
-    //@include perspective(1000);
+        @include breakpoint(portrait) {
+            width: 116%;
+            left: -8%;
+        }
+        @include breakpoint(mobile) {
+            width: 124%;
+            left: -12%;
+            bottom: 0;
+        }
+    }
+    .character-background {
+        position: absolute;
+        z-index: 11;
+        left: -10%;
+        bottom: 0%;
+        width: 120%;
+        @include transform-origin(50% 100%);
+        // @include scale(1);
 
-    @include breakpoint(portrait) {
-      width: 116%;
-      left: -8%;
-    }
-    @include breakpoint(mobile) {
-      width: 124%;
-      left: -12%;
-      bottom: 0;
-    }
-  }
-  .character-background {
-    position: absolute;
-    z-index: 11;
-    left: -10%;
-    bottom: 0%;
-    width: 120%;
-    @include transform-origin(50% 100%);
-    // @include scale(1);
+        @include transform(translate3d(0,0,0));
+        //@include backface-visibility(hidden);
+        //@include perspective(1000);
 
-    @include transform(translate3d(0,0,0));
-    //@include backface-visibility(hidden);
-    //@include perspective(1000);
+        @include breakpoint(portrait) {
+            margin-bottom: 11%;
+            width: 124%;
+            left: -12%;
+        }
+        @include breakpoint(mobile) {
+            width: 122%;
+            left: -11%;
+            bottom: 9vh;
+        }
+    }
+    .header-explosions {
+        position: absolute;
+        z-index: 10;
+        bottom: -5%;
+        left: -9%;
+        width: 118%;
 
-    @include breakpoint(portrait) {
-      margin-bottom: 11%;
-      width: 124%;
-      left: -12%;
+        @include breakpoint(portrait) {
+            bottom: 0;
+            width: 124%;
+            left: -12%;
+        }
     }
-    @include breakpoint(mobile) {
-      width: 122%;
-      left: -11%;
-      bottom: 9vh;
-    }
-  }
-  .header-explosions {
-    position: absolute;
-    z-index: 10;
-    bottom: -5%;
-    left: -9%;
-    width: 118%;
-
-    @include breakpoint(portrait) {
-      bottom: 0;
-      width: 124%;
-      left: -12%;
-    }
-  }
 }

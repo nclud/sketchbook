@@ -1,25 +1,25 @@
 /* BEERCAMP FOOTER */
 
 .study-footer {
-  #video-screen {
-    background: url('/img/pages/beercamp/footer-screen.jpg') no-repeat;
-    background-size: cover;
+    #beercamp_video-screen {
+        background: url('/img/pages/beercamp/footer-screen.jpg') no-repeat;
+        background-size: cover;
 
-    video {
-      width: 100%;
-      height: 100%;
+        video {
+            width: 100%;
+            height: 100%;
+        }
     }
-  }
 
-  .background {
-    background: url('/img/pages/beercamp/city.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
+    .beercamp_background {
+        background: url('/img/pages/beercamp/city.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
 
-    @include breakpoint(large) {
-      background: url('/img/pages/beercamp/city-large.jpg') no-repeat;
-      background-size: cover;
-      background-position: center center;
+        @include breakpoint(large) {
+            background: url('/img/pages/beercamp/city-large.jpg') no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
     }
-  }
 }
