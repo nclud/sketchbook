@@ -21,14 +21,14 @@ h1 {
 
 	.single-post & {
 		color: $dark-blue;
-		@include rem(font-size,2.25rem);
+		font-size: 2.25rem;
 	}
 }
 h2 {
 	//@include rem(margin-bottom,1.5rem);
 	margin-bottom: 0.5em;
 	font-family: 'Avenir-Black';
-	@include rem(font-size,2.25rem);
+	font-size: 2.25rem;
 	color: lighten(black,10%);
 
 	.centered & {
@@ -37,7 +37,7 @@ h2 {
 
 	.article-listing-single & {
 		margin-bottom: 0;
-		@include rem(font-size,1.875rem);
+		font-size: 1.875rem;
 		//text-transform: capitalize;
 
 		a {
@@ -51,27 +51,32 @@ h2 {
 			}
 		}
 	}
+
+	#post-content & {
+		font-size: 1.4rem;
+		margin-bottom: 0.15rem;
+	}
 }
 h3 {
 	font-family: 'Avenir-Black';
-	@include rem(margin-bottom,0.15rem);
-	@include rem(font-size,1.25rem);
+	margin-bottom: 0.15rem;
+	font-size: 1.25rem;
 	color: lighten(black,10%);
 
 	#post-content & {
-		@include rem(font-size,1.4rem);
+		font-size: 1.4rem;
 	}
 }
 
 p {
 	font-family: georgia;
 	color: lighten(black,10%);
-	@include rem(font-size,1.2rem);
+	font-size: 1.2rem;
 	line-height: 1.5;
 	margin-bottom: 1.2em;
 
 	&.subtitle {
-		@include rem(font-size,1.15rem);
+		font-size: 1.15rem;
 		opacity: 0.7;
 		font-family: 'Avenir-Black';
 		line-height: 1.25;
@@ -89,11 +94,11 @@ p {
 			line-height: 1.4;
 		}
 		@include breakpoint(mobile) {
-			@include rem(font-size,0.9rem);
+			font-size: 0.9rem;
 		}
 	}
 	&.subtext {
-		@include rem(font-size,0.9rem);
+		font-size: 0.9rem;
 	}
 
 	section:not(#post-content) & {
@@ -112,10 +117,10 @@ p {
 	}
 
 	@include breakpoint(landscape) {
-		@include rem(font-size,1.05rem);
+		font-size: 1.05rem;
 	}
 	@include breakpoint(portrait) {
-		@include rem(font-size,1.15rem);
+		font-size: 1.15rem;
 	}
 }
 em {
@@ -137,9 +142,9 @@ a {
 		color: $light-green;
 		//-webkit-font-smoothing: antialiased;
 		text-decoration: none;
-		@include rem(font-size,1rem);
+		font-size: 1rem;
 		letter-spacing: 0.35em;
-		@include rem(padding,1.5em 1.65em 1.25em 2em);
+		padding: 1.5em 1.65em 1.25em 2em;
 		@include transition(0.125s);
 		border-radius:10px;
 
@@ -169,12 +174,21 @@ ol {
 			padding-left: 1em;
 			font-family: georgia;
 			color: lighten(black,10%);
-			@include rem(font-size,1.2rem);
+			font-size: 1.2rem;
 			line-height: 1.5;
 			margin-bottom: 0.15em;
 
 			&:last-child {
 				margin-bottom: 0;
+			}
+
+			a {
+				color: $light-blue;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
@@ -202,13 +216,13 @@ blockquote {
 	p {
 		color: $light-green;
 		font-family: 'Avenir-Light';
-		@include rem(font-size,2rem);
+		font-size: 2rem;
 		line-height: 1.3;
 
 		.source {
 			display: block;
 			font-family: 'Avenir-Black';
-			@include rem(font-size,0.9rem);
+			font-size: 0.9rem;
 			color: darken($light-green,5%);
 			text-align: right;
 			letter-spacing: 1px;
@@ -249,11 +263,11 @@ code {
 	display: block;
 	background: darken(white,4%);
 	margin-top: -0.5em;
-	@include rem(padding,0.75rem);
-	@include rem(padding-top,0.6rem);
+	padding: 0.75rem;
+	padding-top: 0.6rem;
 	border: 1px solid rgba(black,0.1);
 	margin-bottom: 1.2em;
-	@include rem(font-size,1rem);
+	font-size: 1rem;
 
 	p & {
 		margin-bottom: 0;
@@ -283,10 +297,10 @@ hr {
 	-webkit-font-smoothing: antialiased;
 	text-decoration: none;
 	text-transform: uppercase;
-	@include rem(font-size,1.25rem);
+	font-size: 1.25rem;
 
 	&:after {
-		@include rem(line-height,1.75rem);
+		line-height: 1.75rem;
 		content: "\2630";
 	}
 
@@ -334,7 +348,7 @@ hr {
 	font-family: 'Avenir-Black';
 	text-transform: uppercase;
 	text-decoration: none;
-	@include rem(font-size,0.75rem);
+	font-size: 0.75rem;
 	display: block;
 	border-top: 3px solid $dark-blue;
 	color: $dark-blue;
@@ -358,21 +372,21 @@ hr {
 .date-time {
 	font-family: 'Avenir-Black';
 	text-transform: uppercase;
-	@include rem(font-size,0.875rem);
+	font-size: 0.875rem;
 	color: $dark-blue;
 	opacity: 0.65;
-	@include rem(padding-top,0.5rem);
+	padding-top: 0.5rem;
 	display: inline-block;
 
 	.article-listing-single & {
-		@include rem(padding-bottom,0.6rem);
+		padding-bottom: 0.6rem;
 	}
 }
 
 .post-author {
 	font-family: 'Avenir-Black';
 	text-transform: uppercase;
-	@include rem(font-size,1rem);
+	font-size: 1rem;
 	text-decoration: none;
 	color: $dark-blue;
 
@@ -385,7 +399,7 @@ hr {
 	display: block;
 	font-family: georgia;
 	color: lighten(black,30%);
-	@include rem(font-size,0.875rem);
+	font-size: 0.875rem;
 	line-height: 1.4;
 }
 
