@@ -1,45 +1,45 @@
 /* POST SPECIFIC */
 #post-content {
-  padding-top: 1.5rem;
+    padding-top: 1.5rem;
 
-  img,
-  .fluid-width-video-wrapper {
-    margin-bottom: 1.2em;
-  }
+    img,
+    .fluid-width-video-wrapper {
+        margin-bottom: 1.2em;
+    }
 }
 
 .instagram {
-  margin-bottom: 1em;
-  text-align: center;
-  iframe {
-    display: inline-block;
-  }
+    margin-bottom: 1em;
+    text-align: center;
+    iframe {
+        display: inline-block;
+    }
 }
 
 #post-footer {
-  padding-left: 18%;
-  border-top: 1px solid rgba($dark-blue,0.35);
-  margin: 4rem 0 2rem;
-  padding-top: 2rem;
+    padding-left: 18%;
+    border-top: 1px solid rgba($dark-blue,0.35);
+    margin: 4rem 0 2rem;
+    padding-top: 2rem;
 
-  .post-author-photo {
-    position: absolute;
-    top: 1.5rem;
-    left: 0;
-    width: 14%;
-    border-radius: 2px;
+    .post-author-photo {
+        position: absolute;
+        top: 1.5rem;
+        left: 0;
+        width: 14%;
+        border-radius: 2px;
 
-    @include breakpoint(large) {
-      top: 1.2rem;
+        @include breakpoint(large) {
+            top: 1.2rem;
+        }
+        @include breakpoint(widescreen) {
+            top: 1.2rem;
+        }
+        @include breakpoint(portrait) {
+            top: 2rem;
+        }
+        @include breakpoint(mobile) {
+            top: 2rem;
+        }
     }
-    @include breakpoint(widescreen) {
-      top: 1.2rem;
-    }
-    @include breakpoint(portrait) {
-      top: 2rem;
-    }
-    @include breakpoint(mobile) {
-      top: 2rem;
-    }
-  }
 }

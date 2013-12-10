@@ -1,231 +1,231 @@
 /* TOP BAR & NAV */
 #top-nav {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	z-index: 99;
-	height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    height: 4rem;
 
-	.nav-wrapper {
-		width: 100%;
-		height: 100%;
-		padding-top: 1.25rem;
-		padding-bottom: 1rem;
-		border-bottom: 1px solid rgba(white,0.35);
-	}
+    .nav-wrapper {
+        width: 100%;
+        height: 100%;
+        padding-top: 1.25rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(white,0.35);
+    }
 
-	img {
-		height: 60%;
-		width: auto;
-		display: inline-block;
-	}
+    img {
+        height: 60%;
+        width: auto;
+        display: inline-block;
+    }
 
-	a {
-		opacity: 0.75;
-		@include transition(0.15s);
+    a {
+        opacity: 0.75;
+        @include transition(0.15s);
 
-		&:hover {
-			opacity: 1;
-		}
-	}
+        &:hover {
+            opacity: 1;
+        }
+    }
 
-	&.dark {
-		.nav-wrapper {
-			border-bottom: 1px solid rgba($dark-blue,0.35);
-		}
-	}
+    &.dark {
+        .nav-wrapper {
+            border-bottom: 1px solid rgba($dark-blue,0.35);
+        }
+    }
 }
 
 #scroll-nav {
-	.logo-nav {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 50px;
-		padding: 13px 3% 13px 0;
-		z-index: 998;
-		@include transform( translate3d(0,-50px,0) );
-		@include transition(0.2s);
-	}
+    .logo-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        padding: 13px 3% 13px 0;
+        z-index: 998;
+        @include transform( translate3d(0,-50px,0) );
+        @include transition(0.2s);
+    }
 
-	.bkg-nav {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 100px;
-		background: darken($dark-blue,3%);
-		border-bottom: 1px solid darken($dark-blue,12%);
-		z-index: 990;
-		@include transform( translate3d(0,-100px,0) );
-		@include transition(0.2s);
+    .bkg-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background: darken($dark-blue,3%);
+        border-bottom: 1px solid darken($dark-blue,12%);
+        z-index: 990;
+        @include transform( translate3d(0,-100px,0) );
+        @include transition(0.2s);
 
-		@include breakpoint(mobile) {
-			height: 150px;
-			@include transform( translate3d(0,-150px,0) );
-		}
-	}
+        @include breakpoint(mobile) {
+            height: 150px;
+            @include transform( translate3d(0,-150px,0) );
+        }
+    }
 
-	&.skrollable-after {
-		.logo-nav {
-			@include transform( translate3d(0,0,0) );
-			@include transition(0.25s);
-		}
+    &.skrollable-after {
+        .logo-nav {
+            @include transform( translate3d(0,0,0) );
+            @include transition(0.25s);
+        }
 
-		.bkg-nav {
-			@include transform( translate3d(0,-50px,0) );
-			@include transition(0.25s);
+        .bkg-nav {
+            @include transform( translate3d(0,-50px,0) );
+            @include transition(0.25s);
 
-			@include breakpoint(mobile) {
-				@include transform( translate3d(0,-100px,0) );
-			}
-		}
-	}
+            @include breakpoint(mobile) {
+                @include transform( translate3d(0,-100px,0) );
+            }
+        }
+    }
 
-	&.active {
-		.logo-nav {
-			@include transform( translate3d(0,0,0) );
-			@include transition(0.25s);
-			pointer-events:none;
+    &.active {
+        .logo-nav {
+            @include transform( translate3d(0,0,0) );
+            @include transition(0.25s);
+            pointer-events:none;
 
-			a {
-				pointer-events: auto;
-			}
-		}
+            a {
+                pointer-events: auto;
+            }
+        }
 
-		.bkg-nav {
-			@include transform( translate3d(0,0,0) );
-			@include transition(0.25s);
-		}
+        .bkg-nav {
+            @include transform( translate3d(0,0,0) );
+            @include transition(0.25s);
+        }
 
-		.menu-btn {
-			&:after {
-				line-height: 23px;
-				font-size: 1.5rem;
-				content: "\00D7";
-			}
-		}
-	}
+        .menu-btn {
+            &:after {
+                line-height: 23px;
+                font-size: 1.5rem;
+                content: "\00D7";
+            }
+        }
+    }
 
-	.logo-wrapper {
-		height: 25px;
-		display: block;
-		float: left;
-		border-right: 1px solid rgba(white,0.35);
-		padding: 2px 3% 3px;
-		margin-right: 3%;
+    .logo-wrapper {
+        height: 25px;
+        display: block;
+        float: left;
+        border-right: 1px solid rgba(white,0.35);
+        padding: 2px 3% 3px;
+        margin-right: 3%;
 
-		img {
-			height: 100%;
-			width: auto;
-			opacity: 0.85;
-			@include transition(0.15s);
+        img {
+            height: 100%;
+            width: auto;
+            opacity: 0.85;
+            @include transition(0.15s);
 
-			&:hover {
-				opacity: 1;
-			}
-		}
+            &:hover {
+                opacity: 1;
+            }
+        }
 
-		@include breakpoint(portrait) {
-			border-right: 0;
-		}
-		@include breakpoint(mobile) {
-			border-right: 0;
-		}
-	}
+        @include breakpoint(portrait) {
+            border-right: 0;
+        }
+        @include breakpoint(mobile) {
+            border-right: 0;
+        }
+    }
 
-	.menu-btn {
-		&:after{
-			line-height: 25px;
-		}
+    .menu-btn {
+        &:after{
+            line-height: 25px;
+        }
 
-		@include breakpoint(mobile) {
-			top: 0;
-			right: 0;
-			padding-right: 13px;
-			padding-top: 13px;
-			position: absolute;
-			padding-left: 20px;
-			padding-bottom: 20px;
-		}
-	}
+        @include breakpoint(mobile) {
+            top: 0;
+            right: 0;
+            padding-right: 13px;
+            padding-top: 13px;
+            position: absolute;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+    }
 
-	a {
-		opacity: 0.75;
-		@include transition(0.15s);
+    a {
+        opacity: 0.75;
+        @include transition(0.15s);
 
-		&:hover {
-			opacity: 1;
-		}
-	}
+        &:hover {
+            opacity: 1;
+        }
+    }
 
-	&.front-page {
-		.logo-wrapper {
-			border-right: 0;
-		}
-	}
+    &.front-page {
+        .logo-wrapper {
+            border-right: 0;
+        }
+    }
 
-	@include breakpoint(mobile) {
-		padding-right: 0;
-	}
+    @include breakpoint(mobile) {
+        padding-right: 0;
+    }
 }
 
 #menu-pages {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 5%;
-  width: 35%;
-  height: 100%;
-  padding: 13px 0;
-  opacity: 0;
-  @include transition(opacity 0.125s);
-  pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5%;
+    width: 35%;
+    height: 100%;
+    padding: 13px 0;
+    opacity: 0;
+    @include transition(opacity 0.125s);
+    pointer-events: none;
 
-  .half {
-    float: left;
-    width: 50%;
-    padding-right: 7%;
-    z-index: 999;
+    .half {
+        float: left;
+        width: 50%;
+        padding-right: 7%;
+        z-index: 999;
 
-    @include breakpoint(mobile) {
-      width: 45%;
-      margin-right: 10%;
-      padding-right: 0;
+        @include breakpoint(mobile) {
+            width: 45%;
+            margin-right: 10%;
+            padding-right: 0;
 
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
     }
-  }
 
-  .skrollable-before & {
-    @include transition(opacity 0.1s);
-  }
+    .skrollable-before & {
+        @include transition(opacity 0.1s);
+    }
 
-  .active & {
-    @include transition-delay(0.15s);
-    opacity: 1;
-    pointer-events: auto;
-  }
+    .active & {
+        @include transition-delay(0.15s);
+        opacity: 1;
+        pointer-events: auto;
+    }
 
 
-  @include breakpoint(portrait) {
-    width: 45%;
-  }
-  @include breakpoint(mobile) {
-    position: relative;
-    width: 100%;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    clear: both;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 60px;
-  }
+    @include breakpoint(portrait) {
+        width: 45%;
+    }
+    @include breakpoint(mobile) {
+        position: relative;
+        width: 100%;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        height: auto;
+        clear: both;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 60px;
+    }
 }

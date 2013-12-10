@@ -1,29 +1,29 @@
 /* FOOTER */
 footer {
-  background: darken($dark-blue,7%);
-  border-top: 1px solid darken($dark-blue,15%);
-  z-index: 5;
-  padding-top: 1.5rem;
-  padding-bottom: 2.5rem;
+    background: darken($dark-blue,7%);
+    border-top: 1px solid darken($dark-blue,15%);
+    z-index: 5;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
 
-  a {
-    opacity: 0.75;
-    @include transition(0.15s);
+    a {
+        opacity: 0.75;
+        @include transition(0.15s);
 
-    &:hover {
-      opacity: 1;
+        &:hover {
+            opacity: 1;
+        }
     }
-  }
 }
 
 #share {
-  float: left;
-  width: 17%;
+    float: left;
+    width: 17%;
 
-  @include breakpoint(mobile) {
-    float: none;
-    width: 40%;
-    text-align: center;
-    margin: 0 auto;
-  }
+    @include breakpoint(mobile) {
+        float: none;
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
