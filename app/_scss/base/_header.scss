@@ -2,13 +2,13 @@
 header {
 	&.single-post {
 		background: darken(white,1.5%);
-		@include rem(padding-top,5.5rem);
+		padding-top: 5.5rem;
 
 		img,
 		.fluid-width-video-wrapper {
 			width: 120%;
 			margin-left: -10%;
-			@include rem(margin-bottom,1.75rem);
+			margin-bottom: 1.75rem;
 
 			@include breakpoint(mobile) {
 				width: 100%;
@@ -18,7 +18,7 @@ header {
 	}
 
 	&.case-study {
-		@include rem(height,40rem);
+		height: 40rem;
 		height: 95vh;
 		overflow: hidden;
 		background: lighten(black,15%);
@@ -44,7 +44,7 @@ header {
 		}
 
 		@include breakpoint(landscape) {
-			@include rem(height,35rem);
+			height: 35rem;
 			height: 86vh;
 		}
 		@include breakpoint(portrait) {

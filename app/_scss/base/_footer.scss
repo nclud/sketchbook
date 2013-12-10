@@ -4,8 +4,8 @@ footer {
 	//@include rem(height,15rem);
 	border-top: 1px solid darken($dark-blue,15%);
 	z-index: 5;
-	@include rem(padding-top,1.5rem);
-	@include rem(padding-bottom,2.5rem);
+	padding-top: 1.5rem;
+	padding-bottom: 2.5rem;
 
 	a {
 		opacity: 0.75;
@@ -13,18 +13,6 @@ footer {
 
 		&:hover {
 			opacity: 1;
-		}
-	}
-
-	&.post-footer {
-		@include breakpoint(landscape) {
-		//	@include rem(padding-bottom,11rem);
-		}
-		@include breakpoint(portrait) {
-		//	@include rem(padding-bottom,8rem);
-		}
-		@include breakpoint(mobile) {
-		//	@include rem(padding-bottom,6rem);
 		}
 	}
 }

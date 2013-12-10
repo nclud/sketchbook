@@ -1,9 +1,9 @@
 /* SECTION SPECIFIC */
 .intro {
-	@include rem(padding-bottom,12rem);
+	padding-bottom: 12rem;
 
 	@include breakpoint(mobile) {
-		@include rem(padding-bottom,8rem);
+		padding-bottom: 8rem;
 	}
 }
 
@@ -13,8 +13,8 @@
 	.concept-laptop-air {
 		width: 76%;
 		margin: 0 auto;
-		@include rem(margin-top,-13.5rem);
-		@include rem(margin-bottom,2rem);
+		margin-top: -13.5rem;
+		margin-bottom: 2rem;
 
 		.screen {
 			position: absolute;
@@ -29,15 +29,15 @@
 
 		@include breakpoint(landscape) {
 			width: 80%;
-			@include rem(margin-top,-12rem);
+			margin-top: -12rem;
 		}
 		@include breakpoint(portrait) {
 			width: 84%;
-			@include rem(margin-top,-12rem);
+			margin-top: -12rem;
 		}
 		@include breakpoint(mobile) {
 			width: 96%;
-			@include rem(margin-top,-8rem);
+			margin-top: -8rem;
 		}
 	}
 
@@ -60,7 +60,7 @@
 	border-top: 1px solid rgba(black,0.75);
 
 	.button-row {
-		@include rem(padding, 2.5rem 0 0);
+		padding: 2.5rem 0 0;
 		text-align: center;
 	}
 }
