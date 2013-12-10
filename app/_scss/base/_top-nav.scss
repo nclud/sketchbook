@@ -1,5 +1,4 @@
 /* TOP BAR & NAV */
-
 #top-nav {
 	position: absolute;
 	top: 0;
@@ -111,9 +110,6 @@
 		}
 	}
 
-
-
-
 	.logo-wrapper {
 		height: 25px;
 		display: block;
@@ -178,58 +174,58 @@
 }
 
 #menu-pages {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 5%;
-	width: 35%;
-	height: 100%;
-	padding: 13px 0;
-	opacity: 0;
-	@include transition(opacity 0.125s);
-	pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5%;
+  width: 35%;
+  height: 100%;
+  padding: 13px 0;
+  opacity: 0;
+  @include transition(opacity 0.125s);
+  pointer-events: none;
 
-	.half {
-		float: left;
-		width: 50%;
-		padding-right: 7%;
-		z-index: 999;
+  .half {
+    float: left;
+    width: 50%;
+    padding-right: 7%;
+    z-index: 999;
 
-		@include breakpoint(mobile) {
-			width: 45%;
-			margin-right: 10%;
-			padding-right: 0;
+    @include breakpoint(mobile) {
+      width: 45%;
+      margin-right: 10%;
+      padding-right: 0;
 
-			&:nth-child(2n) {
-				margin-right: 0;
-			}
-		}
-	}
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
 
-	.skrollable-before & {
-		@include transition(opacity 0.1s);
-	}
+  .skrollable-before & {
+    @include transition(opacity 0.1s);
+  }
 
-	.active & {
-		@include transition-delay(0.15s);
-		opacity: 1;
-		pointer-events: auto;
-	}
+  .active & {
+    @include transition-delay(0.15s);
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 
-	@include breakpoint(portrait) {
-		width: 45%;
-	}
-	@include breakpoint(mobile) {
-		position: relative;
-		width: 100%;
-		right: auto;
-		top: auto;
-		bottom: auto;
-		height: auto;
-		clear: both;
-		padding-left: 3%;
-		padding-right: 3%;
-		padding-top: 60px;
-	}
+  @include breakpoint(portrait) {
+    width: 45%;
+  }
+  @include breakpoint(mobile) {
+    position: relative;
+    width: 100%;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    height: auto;
+    clear: both;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 60px;
+  }
 }

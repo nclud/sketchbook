@@ -1,101 +1,101 @@
 /* FRONT PAGE SPECIFIC */
 #featured-story {
-	@include rem(padding-top,13rem);
-	@include rem(padding-bottom,12rem);
-	background: lighten(black,20%);
-	text-align: center;
+  padding-top: 13rem;
+  padding-bottom: 12rem;
+  background: lighten(black,20%);
+  text-align: center;
 
   a {
     color: #fff;
   }
 
-	.featured-logo {
-		position: relative;
-		display: block;
-		width: 55%;
-		margin: 0 auto;
-		z-index: 5;
+  .featured-logo {
+    position: relative;
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    z-index: 5;
 
-		@include breakpoint(landscape) {
-			width: 60%;
-		}
-		@include breakpoint(portrait) {
-			width: 60%;
-		}
-		@include breakpoint(mobile) {
-			width: 80%;
-		}
-	}
-	.subtitle {
-		width: 50%;
-		@include rem(margin, 1.75rem auto 0);
+    @include breakpoint(landscape) {
+      width: 60%;
+    }
+    @include breakpoint(portrait) {
+      width: 60%;
+    }
+    @include breakpoint(mobile) {
+      width: 80%;
+    }
+  }
+  .subtitle {
+    width: 50%;
+    margin: 1.75rem auto 0;
 
-		@include breakpoint(landscape) {
-			width: 60%;
-		}
-		@include breakpoint(portrait) {
-			width: 60%;
-		}
-		@include breakpoint(mobile) {
-			width: 80%;
-		}
-	}
+    @include breakpoint(landscape) {
+      width: 60%;
+    }
+    @include breakpoint(portrait) {
+      width: 60%;
+    }
+    @include breakpoint(mobile) {
+      width: 80%;
+    }
+  }
 
-	.featured-link {
-		position: absolute;
-		display: block;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;
-		opacity: 0.85;
-		@include transition(opacity 0.2s);
-		@include backface-visibility(hidden);
+  .featured-link {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    opacity: 0.85;
+    @include transition(opacity 0.2s);
+    @include backface-visibility(hidden);
 
-		&:after {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			height: 1px;
-			background: rgba(black,0.15);
-			content: "";
-		}
-	}
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(black,0.15);
+      content: "";
+    }
+  }
 
-	&:hover {
-		.featured-link {
-			opacity: 1;
-		}
-	}
+  &:hover {
+    .featured-link {
+      opacity: 1;
+    }
+  }
 
-	@include breakpoint(portrait) {
-		@include rem(padding-top,11rem);
-		@include rem(padding-bottom,10rem);
-	}
-	@include breakpoint(mobile) {
-		@include rem(padding-top,11rem);
-		@include rem(padding-bottom,10rem);
-	}
+  @include breakpoint(portrait) {
+    padding-top: 11rem;
+    padding-bottom: 10rem;
+  }
+  @include breakpoint(mobile) {
+    padding-top: 11rem;
+    padding-bottom: 10rem;
+  }
 }
 
 .article-listing-single {
-	@include rem(padding-bottom,2.5rem);
-	@include rem(margin-bottom,2.5rem);
-	border-bottom: 1px solid rgba($dark-blue,0.35);
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba($dark-blue,0.35);
 
-	&:last-child,
-	&:last-of-type {
-		border-bottom: 0;
-		padding-bottom: 0;
-		margin-bottom: 0;
-	}
+  &:last-child,
+  &:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 #pagination {
-	width: 100%;
-	@include rem(padding-top,3.5rem);
+  width: 100%;
+  padding-top: 3.5rem;
 }

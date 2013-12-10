@@ -10,12 +10,12 @@ header {
 			margin-left: -10%;
 			margin-bottom: 1.75rem;
 
-			@include breakpoint(mobile) {
-				width: 100%;
-				margin-left: 0;
-			}
-		}
-	}
+      @include breakpoint(mobile) {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
 
 	&.case-study {
 		height: 40rem;
@@ -23,25 +23,25 @@ header {
 		overflow: hidden;
 		background: lighten(black,15%);
 
-		.background {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: -1px;
-			z-index: 1;
-		}
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      z-index: 1;
+    }
 
-		&:after {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			height: 1px;
-			background: rgba(black,0.1);
-			z-index: 20;
-			content: "";
-		}
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(black,0.1);
+      z-index: 20;
+      content: "";
+    }
 
 		@include breakpoint(landscape) {
 			height: 35rem;
