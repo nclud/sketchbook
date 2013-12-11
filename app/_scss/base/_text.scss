@@ -196,6 +196,14 @@ ul {
     #post-content & {
         li {
             list-style-type: disc;
+
+            ul {
+                margin-bottom: 0.5em;
+
+                li {
+                    list-style-type: circle;
+                }
+            }
         }
     }
 }
@@ -203,6 +211,14 @@ ol {
     #post-content & {
         li {
             list-style-type: decimal;
+
+            ul {
+                margin-bottom: 0.5em;
+
+                li {
+                    list-style-type: upper-alpha;
+                }
+            }
         }
     }
 }
