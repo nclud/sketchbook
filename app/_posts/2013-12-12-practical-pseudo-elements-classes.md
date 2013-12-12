@@ -4,7 +4,6 @@ title:  "Practical Applications of Pseudo Elements and Classes"
 date:   2013-12-12
 summary: Understanding what pseudo classes and pseudo elements are used for can be a bit confusing at first. What are they used for? Why are they pseudo?!
 author: jesse
-github: https://github.com/nclud/sketchbook/blob/feature/new-blog-post/app/_scss/pages/practical-pseudo-elements-classes.scss
 ---
 
 
@@ -26,7 +25,7 @@ What are they? Why are they pseudo?! You're probably already familiar with a few
 <a href='#' class='ps-hover'>Hover Me <span> 
 At nclud, we totally dig open source. All of the examples in this post are on GitHub. Click the icon below to view the Sass used.</span> </a>
 
-<a href='https://github.com/nclud/sketchbook/tree/master/app/_scss/pages/practical-pseudo-elements#l1-38' class='fa fa-github ps-github'>Github</a>
+<a href='https://github.com/nclud/sketchbook/blob/74a801ff6be9532e0a2bdcc2ac07caa33b51b78b/app/_scss/pages/practical-pseudo-elements-classes.scss' class='fa fa-github ps-github'>Github</a>
 
 Here are some practical use cases for these pseudo web things:
 
