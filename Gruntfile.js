@@ -112,7 +112,8 @@ module.exports = function (grunt) {
         // ]
         files: {
           'app/css/screen.css': 'app/_scss/screen.scss',
-          'app/css/pages/beercamp/beercamp.css' :'app/_scss/pages/beercamp/beercamp.scss'
+          'app/css/pages/beercamp/beercamp.css' :'app/_scss/pages/beercamp/beercamp.scss',
+          'app/css/pages/rosetta/rosetta.css' :'app/_scss/pages/rosetta/rosetta.scss'
         }
       }
     },
