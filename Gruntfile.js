@@ -104,7 +104,7 @@ module.exports = function (grunt) {
     sass: {
       server: {
         options: {
-          sourceComments: 'normal'
+          //sourceComments: 'normal'
         },
         // files: [
         //   '.tmp/css/screen.css' :'app/_scss/screen.scss',
