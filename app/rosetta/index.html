@@ -1,0 +1,108 @@
+---
+layout: default
+title: Rosetta Stone
+page_dir: rosetta
+type: case_study
+social_desc: Can you black out in 3 minutes? This multiplayer platformer challenges you to do just that.
+social_img: /img/pages/beercamp/twitter-card-large.jpg
+---
+
+<header id="beercamp_header" class="case-study skroll-nav-toggle beercamp">
+    <img id="main-logo" src="/img/pages/beercamp/beercamp-logo.svg" alt="Beercamp 2013" data-anchor-target="#beercamp_header" data-top-top="transform: scale(0.375);" data--100p-top="transform: scale(1.55);">
+
+    <p id="subtitle" class="subtitle" data-anchor-target="#beercamp_header" data-top-top="opacity: 0.7;" data--9p-top="opacity: 0;">Can you black out in 3 minutes? This multiplayer platformer challenges you to do just that.</p>
+
+    <div id="city-bkg" class="background" data-anchor-target="#beercamp_header" data-top-top="opacity: 0.6;" data--70p-top="opacity: 0.2;"></div>
+</header>
+
+<section class="padded-horizontal padded-vertical centered intro">
+    <p>Since 2009, Beercamp has been an annual event hosted by nclud at Austin’s South By Southwest Interactive festival. The goal? Network, mingle, talk about design and technology, and have a few drinks with some new friends. As part of establishing Beercamp as the place to be, each year an event landing page is launched, showing off experimental, cutting-edge front-end design and development. It’s the place for nclud to flex their muscles with advanced CSS and HTML within the tech community, a way to plant the flag as early adopters and leaders in the field. This year’s site was no different: an ambitious multiplayer platform shooter reminiscent of the classic arcade game Joust, complete with illustrated characters and a full soundtrack.</p>
+</section>
+
+<section id="beercamp_concept" class="padded-horizontal padded-vertical centered concept">
+    <div class="concept-laptop-air">
+        <div class="screen">
+            <img src="/img/pages/beercamp/space-invaders.gif">
+        </div>
+
+        <img src="/img/concept-air.png">
+    </div>
+
+    <h2>Initial Concept</h2>
+
+    <p>The 2013 site began simply: one developer messing around in the office with a new JavaScript platform, seeing what he could do with it. He built a simple multiplayer game based on <em>Space Invaders</em> – and when the time came to discuss Beercamp, he showed the team what he had built. They were hooked, and the concepting started in earnest around building out a full multiplayer gaming experience online for visitors.</p>
+
+    <p>Various ideas were tossed around for the type of game that would work for the site – side-scroller? Top down shoot ‘em up? None of them seemed to fit the tone of the event or draw people in. It was only after going back to the days of growing up putting quarters in machines at the arcade did the perfect idea come to the team: a competitive platformer like <em>Joust</em>, where users would compete against the level as well as each other.</p>
+
+    <p>With this idea in mind, a plan was formed: players would join the game, run around the level networking by tossing business cards at each other until one was the most connected. Only problem? This simply wasn’t a fun idea. Who wants to play a game based around networking? Taking a step back, we swapped out “schmoozing” with “boozing” and “business cards” with “beer cans” – and boom, the perfect game idea was born.</p>
+
+    <p>Once the initial concept was in place, there was only a little over a month to build and deploy the final site to the world. With that in mind, design and development worked in conjunction alongside each other to get the game done.</p>
+</section>
+
+<section id="beercamp_design-container" class="design">
+    <div id="beercamp_design" class="padded-horizontal padded-vertical" data-anchor-target="#beercamp_design-container">
+        <div id="beercamp_design-text" data-anchor-target="#beercamp_design-container" data--200-top="opacity: 1;" data--350-top="opacity: 0;">
+            <h2>Design</h2>
+
+            <p>Seeing the abundance of retro-inspired pixel art all over the internet, the design team wanted to avoid the trend and go in the exact opposite direction: richly detailed and illustrated caricatures of the nclud team for players. Since the event was being held at the legendary Iron Cactus in downtown Austin, the bar itself was transformed into a multi-level adventure with its own visual style.</p>
+
+            <p>While we’re great at designing websites, we had to learn a whole new set of skills for a game experience like Beercamp. Animated characters, level design, health bars, and powerups were all uncharted territory for us. So we split up, giving each member of the design team a piece to the puzzle – painting the backgrounds, illustrating the characters and animations, even finding quiet places in the office to record sound effects like crushed beer cans hitting the walls. With the accelerated timeline for the project and the desire to turn out the highest quality product (and a fun game), personal attachments were put aside in order to compromise and create a cohesive visual style.</p>
+
+            <p>As the design progressed from sketches to actual characters and levels, there were constant adjustments to the overall game experience. Tweaking level layouts based on character sizes, cutting unnecessary features (such as different ammo types), adjusting jump and run speed, and even figuring out how minute player controls worked were all being worked on until the final launch. This let us iterate until everyone had fun playing.</p>
+        </div>
+    </div>
+</section>
+
+<section id="beercamp_develop" class="padded-horizontal padded-vertical development">
+    <h2>Development</h2>
+
+    <p>While the designers figured out who you would play as and where you would play, the development team worked on exactly what you would be playing. The initial <em>Space Invaders</em> game was built on Node.js, a terrific platform that lets you write Javascript on the server, as opposed to using PHP or Rails.</p>
+
+    <p>Node was selected primarily due to its event driven architecture, allowing high speed real time communication between the browser and the game server. It’s also lightweight and efficient, meaning minimal load on clients and the ability to reuse code between clients and servers. With the multiplayer aspect of Beercamp, we had multiple clients connecting at once, sending and receiving messages from the server asynchronously, something that we couldn’t find anywhere else that worked as quickly or as well. Node wasn't without its risks - being not quite v1.0 yet meant that features and APIs could change wildly between releases.</p>
+
+    <p>With this in mind, our first task was to build a minimum viable product, a playable game, then iterate to add additional features. Once we had the initial framework for the game built, it was time to do server load testing to see just how well the whole thing worked. During load testing, the one Node server was using as much bandwidth as several hundred of our other client web servers combined. With the server sending JSON updates to each client (updating the positions of characters, beer cans, and everything else), the initial test crashed everyone’s individual browsers and overloaded the office’s wireless bandwidth. While Node was diligently keeping up, the game itself wasn't playable.</p>
+
+    <p>It turned out to be a valuable test. After the crashes, we reevaluated the data being sent between server and clients, trying to cut down the information going back and forth. We tried compressing, we tried encoding, and in the end, we manually refined and shrunk down the messages, cutting them down to under 5% of the original weight. This made the game playable for a reasonable number of people.</p>
+
+    <p>Our other problem? Not knowing how many people would attempt to be playing the game at once. We didn’t have the time to implement multiple game "worlds," but wanted everyone to be able to play the game. We set up a player cap of 20 at one time (any more and the server started to stutter and the game was visually confusing), with any other players set up in a queue to get in. Our design solution for the queue was an illustrated bouncer, denying you access until it was your turn.</p>
+
+    <p>Along the way to launch, we adjusted other issues as well – because we were using Canvas.js for cross-browser animations, our initial plan to use vector SVGs for characters and levels caused gameplay to chug in browser, so we switched to high resolution PNG files. When we first had the game working, ammo beer cans never despawned and the game world inevitable filled up with crushed empties. A humorous problem with a simple solution of killing thrown cans after a second or two. Minor changes like this along the way meant that the final gameplay was much more refined, adding to the overall experience.</p>
+
+</section>
+
+<section id="beercamp_mario" class="padded-horizontal-medium padded-vertical" data-160-top="" data-161-top="">
+    <h2>The Mario Fix</h2>
+
+    <p>During final user testing, we received consistent complaints from players that jumping was broken or too hard. We kept trying to figure out why, eventually narrowing it down to the fact that users would jump, hit a platform edge, then fall to the ground. The technical reason for this was that we were using Box2D, a common physics engine for games. When players hit an edge, the engine would cause their horizontal velocity to go to zero, causing them to fall to the ground below.</p>
+
+    <p>Why did users think they should float up and onto the platform, even when they hit the edge? Because of <em>Super Mario Bros</em>. Yes, the original Nintendo Entertainment System game that everyone grew up playing had physics that trained the player to hold a directional arrow key down to continue up and onto a platform.</p>
+
+    <p>With that in mind, we used design to solve a technical complaint. Instead of reworking the entire physics engine, we approached it from a user’s point of view, simulating keystrokes to push players up and onto the ledge. We called this "The Mario Fix.”</p>
+</section>
+
+<section id="beercamp_conclusion" class="padded-horizontal padded-vertical centered conclusion">
+    <h2>Conclusion</h2>
+
+    <p>The 2013 Beercamp site launched in full multiplayer form at the actual event in Austin, immediately drawing rave reviews from attendees. With everything in place (including a full custom soundtrack courtesy of The Grey Area), the game had hundreds of repeat visits even after the event was over.</p>
+
+    <p>From a technical perspective, the game was a huge success. Using Node’s multi-threading and optimized information flow allowed users to play without worrying about crashing, and the improved “bouncer queue” kept the servers running flawlessly. Design-wise, users lauded the unique illustrated humorous style throughout the game, especially as you progressed through the levels.</p>
+
+    <p>Using an agile and iterative design and development environment allowed us to work towards a minimum viable product then refine, refine, refine until everything was perfect. During refinements, we were able to cut unnecessary features that took away from the overall user experience as well as tweak things to meet user expectations.</p>
+
+    <p>Every member of the company contributed to the project, showing a true representation of everything nclud is about and what we do. Now, why don’t you go enjoy a beer or two?</p>
+
+    <div class="button-row">
+        <a href="http://m.rosettastone.com/" target="_blank" class="big-button">Visit Rosetta Stone</a>
+    </div>
+</section>
+
+<section class="padded-horizontal study-footer">
+    <div class="monitor">
+        <div id="beercamp_video-screen" class="screen">
+            <video preload="auto" autoplay loop class="no-touch"></video>
+        </div>
+        <img src="/img/footer-monitor.jpg">
+    </div>
+
+    <div class="background beercamp_background"></div>
+</section>
