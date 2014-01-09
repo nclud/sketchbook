@@ -105,15 +105,44 @@ module.exports = function (grunt) {
       server: {
         options: {
           //sourceComments: 'normal'
+          outputStyle: 'compressed'
         },
         // files: [
         //   '.tmp/css/screen.css' :'app/_scss/screen.scss',
         //   '.tmp/css/pages/beercamp/beercamp.css' :'app/_scss/pages/beercamp/beercamp.scss'
         // ]
         files: {
-          'app/css/screen.css': 'app/_scss/screen.scss',
-          'app/css/pages/beercamp/beercamp.css' :'app/_scss/pages/beercamp/beercamp.scss',
-          'app/css/pages/rosetta/rosetta.css' :'app/_scss/pages/rosetta/rosetta.scss'
+          'app/css/screen.css': 'app/_scss/screen.scss'
+        }
+      }
+    },
+    concat: {
+      options: {
+        //separator: ';',
+      },
+      header: {
+        src: ['app/js/fastclick.js', 'app/js/skrollr.js', 'app/js/share.js', 'app/js/fitvids.js'],
+        dest: 'app/js/scripts.big.js',
+      },
+      libraries: {
+        src: ['app/js/imagesloaded.js', 'app/js/pages/beercamp/reel.js'],
+        dest: 'app/js/lib.big.js',
+      },
+      case_studies: {
+        src: ['app/js/index.js', 'app/js/pages/beercamp.js', 'app/js/onload.js'],
+        dest: 'app/js/footer.big.js',
+      },
+    },
+    uglify: {
+      options: {
+        mangle: false,
+        compress: true
+      },
+      my_target: {
+        files: {
+          'app/js/scripts.js': ['app/js/scripts.big.js'],
+          'app/js/lib.js': ['app/js/lib.big.js'],
+          'app/js/footer.js': ['app/js/footer.big.js']
         }
       }
     },
@@ -253,6 +282,8 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'sass',
+      'concat',
+      'uglify',
       'jekyll:server',
       'connect:livereload',
       'watch'

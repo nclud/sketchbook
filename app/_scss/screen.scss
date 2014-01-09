@@ -19,8 +19,14 @@ $experimental-support-for-khtml: false;
 @import 'base/_footer.scss';
 
 // site sections
-@import "_front.scss";
-@import "_post.scss";
+@import '_front.scss';
+@import '_post.scss';
 
 // namespaced imports
-@import "pages/practical-pseudo-elements-classes.scss";
+@import 'pages/practical-pseudo-elements-classes.scss';
+
+
+
+// CASE STUDIES
+@import 'pages/beercamp/beercamp.scss';
+@import 'pages/rosetta/rosetta.scss';
