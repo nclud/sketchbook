@@ -79,31 +79,4 @@ jQuery(document).ready(function() {
         }
         e.preventDefault();
     });
-
-
-    // SOCIAL SHARING & FOOTER FIX
-    $('#share').sharrre({
-        share: {
-            twitter: true,
-            facebook: true
-        },
-        template: '<span class="menu-header">Share</span><a class="menu-link twitter">Twitter</a><a class="menu-link facebook">Facebook</a><a class="menu-link pocket">Pocket</a>',
-        enableHover: false,
-        enableTracking: true,
-        render: function(api, options){
-            $(api.element).on('click', '.twitter', function() {
-                api.openPopup('twitter');
-            });
-            $(api.element).on('click', '.facebook', function() {
-                api.openPopup('facebook');
-            });
-            $(api.element).on('click', '.pocket', function() {
-                var url = "https://getpocket.com/edit?url=http://www.google.com/&title=Beercamp+2013";
-                var windowName = "pocketWindow";
-                var windowSize = "width=500,height=325";
-
-                window.open(url, windowName, windowSize);
-            });
-        }
-    });
 });
