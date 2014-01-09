@@ -7,19 +7,19 @@ social_desc: Can you black out in 3 minutes? This multiplayer platformer challen
 social_img: /img/pages/beercamp/twitter-card-large.jpg
 ---
 
-<header id="beercamp_header" class="case-study skroll-nav-toggle beercamp">
-    <img id="main-logo" src="/img/pages/beercamp/beercamp-logo.svg" alt="Beercamp 2013" data-anchor-target="#beercamp_header" data-top-top="transform: scale(0.375);" data--100p-top="transform: scale(1.55);">
+<header id="rosetta_header" class="case-study skroll-nav-toggle rosetta">
+    <img id="main-logo" src="/img/pages/beercamp/beercamp-logo.svg" alt="Rosetta Stone">
 
-    <p id="subtitle" class="subtitle" data-anchor-target="#beercamp_header" data-top-top="opacity: 0.7;" data--9p-top="opacity: 0;">Can you black out in 3 minutes? This multiplayer platformer challenges you to do just that.</p>
+    <p id="subtitle" class="subtitle">Can you black out in 3 minutes? This multiplayer platformer challenges you to do just that.</p>
 
-    <div id="city-bkg" class="background" data-anchor-target="#beercamp_header" data-top-top="opacity: 0.6;" data--70p-top="opacity: 0.2;"></div>
+    <div id="city-bkg" class="background"></div>
 </header>
 
 <section class="padded-horizontal padded-vertical centered intro">
     <p>Since 2009, Beercamp has been an annual event hosted by nclud at Austin’s South By Southwest Interactive festival. The goal? Network, mingle, talk about design and technology, and have a few drinks with some new friends. As part of establishing Beercamp as the place to be, each year an event landing page is launched, showing off experimental, cutting-edge front-end design and development. It’s the place for nclud to flex their muscles with advanced CSS and HTML within the tech community, a way to plant the flag as early adopters and leaders in the field. This year’s site was no different: an ambitious multiplayer platform shooter reminiscent of the classic arcade game Joust, complete with illustrated characters and a full soundtrack.</p>
 </section>
 
-<section id="beercamp_concept" class="padded-horizontal padded-vertical centered concept">
+<section id="rosetta_concept" class="padded-horizontal padded-vertical centered concept">
     <div class="concept-laptop-air">
         <div class="screen">
             <img src="/img/pages/beercamp/space-invaders.gif">
@@ -39,21 +39,17 @@ social_img: /img/pages/beercamp/twitter-card-large.jpg
     <p>Once the initial concept was in place, there was only a little over a month to build and deploy the final site to the world. With that in mind, design and development worked in conjunction alongside each other to get the game done.</p>
 </section>
 
-<section id="beercamp_design-container" class="design">
-    <div id="beercamp_design" class="padded-horizontal padded-vertical" data-anchor-target="#beercamp_design-container">
-        <div id="beercamp_design-text" data-anchor-target="#beercamp_design-container" data--200-top="opacity: 1;" data--350-top="opacity: 0;">
-            <h2>Design</h2>
+<section id="rosetta_design" class="padded-horizontal padded-vertical design">
+    <h2>Design</h2>
 
-            <p>Seeing the abundance of retro-inspired pixel art all over the internet, the design team wanted to avoid the trend and go in the exact opposite direction: richly detailed and illustrated caricatures of the nclud team for players. Since the event was being held at the legendary Iron Cactus in downtown Austin, the bar itself was transformed into a multi-level adventure with its own visual style.</p>
+    <p>Seeing the abundance of retro-inspired pixel art all over the internet, the design team wanted to avoid the trend and go in the exact opposite direction: richly detailed and illustrated caricatures of the nclud team for players. Since the event was being held at the legendary Iron Cactus in downtown Austin, the bar itself was transformed into a multi-level adventure with its own visual style.</p>
 
-            <p>While we’re great at designing websites, we had to learn a whole new set of skills for a game experience like Beercamp. Animated characters, level design, health bars, and powerups were all uncharted territory for us. So we split up, giving each member of the design team a piece to the puzzle – painting the backgrounds, illustrating the characters and animations, even finding quiet places in the office to record sound effects like crushed beer cans hitting the walls. With the accelerated timeline for the project and the desire to turn out the highest quality product (and a fun game), personal attachments were put aside in order to compromise and create a cohesive visual style.</p>
+    <p>While we’re great at designing websites, we had to learn a whole new set of skills for a game experience like Beercamp. Animated characters, level design, health bars, and powerups were all uncharted territory for us. So we split up, giving each member of the design team a piece to the puzzle – painting the backgrounds, illustrating the characters and animations, even finding quiet places in the office to record sound effects like crushed beer cans hitting the walls. With the accelerated timeline for the project and the desire to turn out the highest quality product (and a fun game), personal attachments were put aside in order to compromise and create a cohesive visual style.</p>
 
-            <p>As the design progressed from sketches to actual characters and levels, there were constant adjustments to the overall game experience. Tweaking level layouts based on character sizes, cutting unnecessary features (such as different ammo types), adjusting jump and run speed, and even figuring out how minute player controls worked were all being worked on until the final launch. This let us iterate until everyone had fun playing.</p>
-        </div>
-    </div>
+    <p>As the design progressed from sketches to actual characters and levels, there were constant adjustments to the overall game experience. Tweaking level layouts based on character sizes, cutting unnecessary features (such as different ammo types), adjusting jump and run speed, and even figuring out how minute player controls worked were all being worked on until the final launch. This let us iterate until everyone had fun playing.</p>
 </section>
 
-<section id="beercamp_develop" class="padded-horizontal padded-vertical development">
+<section id="rosetta_develop" class="padded-horizontal padded-vertical development">
     <h2>Development</h2>
 
     <p>While the designers figured out who you would play as and where you would play, the development team worked on exactly what you would be playing. The initial <em>Space Invaders</em> game was built on Node.js, a terrific platform that lets you write Javascript on the server, as opposed to using PHP or Rails.</p>
@@ -70,7 +66,7 @@ social_img: /img/pages/beercamp/twitter-card-large.jpg
 
 </section>
 
-<section id="beercamp_mario" class="padded-horizontal-medium padded-vertical" data-160-top="" data-161-top="">
+<section id="rosetta_cart" class="padded-horizontal-medium padded-vertical">
     <h2>The Mario Fix</h2>
 
     <p>During final user testing, we received consistent complaints from players that jumping was broken or too hard. We kept trying to figure out why, eventually narrowing it down to the fact that users would jump, hit a platform edge, then fall to the ground. The technical reason for this was that we were using Box2D, a common physics engine for games. When players hit an edge, the engine would cause their horizontal velocity to go to zero, causing them to fall to the ground below.</p>
@@ -80,7 +76,7 @@ social_img: /img/pages/beercamp/twitter-card-large.jpg
     <p>With that in mind, we used design to solve a technical complaint. Instead of reworking the entire physics engine, we approached it from a user’s point of view, simulating keystrokes to push players up and onto the ledge. We called this "The Mario Fix.”</p>
 </section>
 
-<section id="beercamp_conclusion" class="padded-horizontal padded-vertical centered conclusion">
+<section id="rosetta_conclusion" class="padded-horizontal padded-vertical centered conclusion">
     <h2>Conclusion</h2>
 
     <p>The 2013 Beercamp site launched in full multiplayer form at the actual event in Austin, immediately drawing rave reviews from attendees. With everything in place (including a full custom soundtrack courtesy of The Grey Area), the game had hundreds of repeat visits even after the event was over.</p>
@@ -98,11 +94,8 @@ social_img: /img/pages/beercamp/twitter-card-large.jpg
 
 <section class="padded-horizontal study-footer">
     <div class="monitor">
-        <div id="beercamp_video-screen" class="screen">
-            <video preload="auto" autoplay loop class="no-touch"></video>
-        </div>
         <img src="/img/footer-monitor.jpg">
     </div>
 
-    <div class="background beercamp_background"></div>
+    <div class="background rosetta_background"></div>
 </section>
