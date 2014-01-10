@@ -117,15 +117,15 @@ module.exports = function (grunt) {
       },
       header: {
         src: ['app/js/scripts/fastclick.js', 'app/js/scripts/skrollr.js', 'app/js/scripts/share.js', 'app/js/scripts/fitvids.js'],
-        dest: 'app/js/scripts.big.js',
+        dest: 'app/js/scripts/scripts.js',
       },
       libraries: {
         src: ['app/js/lib/imagesloaded.js', 'app/js/lib/reel.js'],
-        dest: 'app/js/lib.big.js',
+        dest: 'app/js/lib/lib.js',
       },
       case_studies: {
         src: ['app/js/footer/index.js', 'app/js/pages/beercamp.js', 'app/js/footer/onload.js'],
-        dest: 'app/js/footer.big.js',
+        dest: 'app/js/footer/footer.js',
       },
     },
     uglify: {
@@ -135,9 +135,9 @@ module.exports = function (grunt) {
       },
       my_target: {
         files: {
-          'app/js/scripts.js': ['app/js/scripts.big.js'],
-          'app/js/lib.js': ['app/js/lib.big.js'],
-          'app/js/footer.js': ['app/js/footer.big.js']
+          'app/js/scripts.js': ['app/js/scripts/scripts.js'],
+          'app/js/lib.js': ['app/js/lib/lib.js'],
+          'app/js/footer.js': ['app/js/footer/footer.js']
         }
       }
     },
@@ -176,7 +176,8 @@ module.exports = function (grunt) {
             // Copy moves asset files and directories
             'img/**/*',
             'fonts/**/*',
-            'js/**/*',
+            'js/*.js',
+            'js/ie/*.js',
             'css/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore
             '!**/_*{,/**}'
