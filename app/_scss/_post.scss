@@ -7,6 +7,10 @@
     iframe {
         margin-bottom: 1.2em;
     }
+
+    @include breakpoint(large) {
+        padding-bottom: 10rem;
+    }
 }
 
 .instagram {
