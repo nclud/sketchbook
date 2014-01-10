@@ -50,4 +50,3 @@ Rakefile
 app/rosetta/*.*
 app/_scss/pages/rosetta/*.*
 app/css/pages/*.*
-app/css/screen.css
