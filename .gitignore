@@ -44,3 +44,10 @@ css
 
 # Ignore Deploy files
 Rakefile
+
+
+# Ignore Rosetta until complete
+app/rosetta/*.*
+app/_scss/pages/rosetta/*.*
+app/css/pages/*.*
+app/css/screen.css
