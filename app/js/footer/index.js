@@ -9,7 +9,6 @@ biggerThanLandscape = windowWidth > 1024;
 
 
 jQuery(document).ready(function() {
-
       // INITIALIZE FASTCLICK
     FastClick.attach(document.body);
 
@@ -19,6 +18,10 @@ jQuery(document).ready(function() {
         $('.no-touch').remove();
         $('footer').css('padding-bottom','150px');
     }
+    if (isMobile && isPhone) {
+        $('.no-mobile').remove();
+    }
+
     // RESPONSIVE VIDEO EMBEDS
     $('article, header').fitVids();
 

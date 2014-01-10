@@ -9,7 +9,6 @@ biggerThanLandscape = windowWidth > 1024;
 
 
 jQuery(document).ready(function() {
-
       // INITIALIZE FASTCLICK
     FastClick.attach(document.body);
 
@@ -19,6 +18,10 @@ jQuery(document).ready(function() {
         $('.no-touch').remove();
         $('footer').css('padding-bottom','150px');
     }
+    if (isMobile && isPhone) {
+        $('.no-mobile').remove();
+    }
+
     // RESPONSIVE VIDEO EMBEDS
     $('article, header').fitVids();
 
@@ -52,8 +55,6 @@ bc.devFinal = $('#beercamp_develop').height() - ($('#beercamp_right-diagram').ou
 
 jQuery(document).ready(function() {
     if (isMobile && isPhone) {
-        $('.no-mobile').remove();
-
         $('#beercamp_header .character-foreground, #beercamp_header .character-background').removeAttr('data-top-top data--100p-top');
         $('#beercamp_design-text').removeAttr('data--200-top data--350-top');
 

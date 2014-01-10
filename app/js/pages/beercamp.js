@@ -10,8 +10,6 @@ bc.devFinal = $('#beercamp_develop').height() - ($('#beercamp_right-diagram').ou
 
 jQuery(document).ready(function() {
     if (isMobile && isPhone) {
-        $('.no-mobile').remove();
-
         $('#beercamp_header .character-foreground, #beercamp_header .character-background').removeAttr('data-top-top data--100p-top');
         $('#beercamp_design-text').removeAttr('data--200-top data--350-top');
 
