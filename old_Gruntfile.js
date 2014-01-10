@@ -104,8 +104,13 @@ module.exports = function (grunt) {
     sass: {
       server: {
         options: {
+          //sourceComments: 'normal'
           outputStyle: 'compressed'
         },
+        // files: [
+        //   '.tmp/css/screen.css' :'app/_scss/screen.scss',
+        //   '.tmp/css/pages/beercamp/beercamp.css' :'app/_scss/pages/beercamp/beercamp.scss'
+        // ]
         files: {
           'app/css/screen.css': 'app/_scss/screen.scss'
         }
@@ -116,15 +121,15 @@ module.exports = function (grunt) {
         //separator: ';',
       },
       header: {
-        src: ['app/js/scripts/fastclick.js', 'app/js/scripts/skrollr.js', 'app/js/scripts/share.js', 'app/js/scripts/fitvids.js'],
+        src: ['app/js/fastclick.js', 'app/js/skrollr.js', 'app/js/share.js', 'app/js/fitvids.js'],
         dest: 'app/js/scripts.big.js',
       },
       libraries: {
-        src: ['app/js/lib/imagesloaded.js', 'app/js/lib/reel.js'],
+        src: ['app/js/imagesloaded.js', 'app/js/pages/beercamp/reel.js'],
         dest: 'app/js/lib.big.js',
       },
       case_studies: {
-        src: ['app/js/footer/index.js', 'app/js/pages/beercamp.js', 'app/js/footer/onload.js'],
+        src: ['app/js/index.js', 'app/js/pages/beercamp.js', 'app/js/onload.js'],
         dest: 'app/js/footer.big.js',
       },
     },
@@ -163,6 +168,108 @@ module.exports = function (grunt) {
           doctor: true
         }
       }
+    },
+    // UseminPrepare will only scan a single page for usemin blocks. If you
+    // use usemin blocks that aren't in index.html, create a usemin manifest
+    // page (hackery!) and point this task there.
+    useminPrepare: {
+      options: {
+        dest: '<%= yeoman.dist %>'
+      },
+      html: '<%= yeoman.dist %>/index.html'
+    },
+    usemin: {
+      options: {
+        basedir: '<%= yeoman.dist %>',
+        dirs: ['<%= yeoman.dist %>/**/*']
+      },
+      html: ['<%= yeoman.dist %>/**/*.html'],
+      css: ['<%= yeoman.dist %>/css/**/*.css']
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true,
+          collapseBooleanAttributes: true,
+          removeAttributeQuotes: true,
+          removeRedundantAttributes: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.dist %>',
+          src: '**/*.html',
+          dest: '<%= yeoman.dist %>'
+        }]
+      }
+    },
+    // Usemin adds files to cssmin
+    cssmin: {
+      dist: {
+        options: {
+          check: 'gzip'
+        }
+      }
+    },
+    imagemin: {
+      dist: {
+        options: {
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.dist %>',
+          src: '**/*.{jpg,jpeg,png}',
+          dest: '<%= yeoman.dist %>'
+        }]
+      }
+    },
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.dist %>',
+          src: '**/*.svg',
+          dest: '<%= yeoman.dist %>'
+        }]
+      }
+    },
+    copy: {
+      dist: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>',
+          src: [
+            // Jekyll processes and moves HTML and text files
+            // Usemin moves CSS and javascript inside of Usemin blocks
+            // Copy moves asset files and directories
+            'img/**/*',
+            'fonts/**/*',
+            // Like Jekyll, exclude files & folders prefixed with an underscore
+            '!**/_*{,/**}'
+            // Explicitly add any files your site needs for distribution here
+            //'_bower_components/jquery/jquery.js',
+            //'favicon.ico',
+            //'apple-touch*.png'
+          ],
+          dest: '<%= yeoman.dist %>'
+        }]
+      }
+    },
+    rev: {
+      options: {
+        length: 4
+      },
+      dist: {
+        files: {
+          src: [
+            '<%= yeoman.dist %>/js/**/*.js',
+            '<%= yeoman.dist %>/css/**/*.css',
+            '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+          ]
+        }
+      }
     }
   });
 
@@ -194,8 +301,15 @@ module.exports = function (grunt) {
     // Jekyll cleans files from the target directory, so must run first
     , 'jekyll:dist'
     , 'copy:dist'
+    , 'useminPrepare'
     , 'concat'
+    , 'cssmin'
     , 'uglify'
+    // , 'imagemin'
+    // , 'svgmin'
+    // , 'rev'
+    , 'usemin'
+    // , 'htmlmin'
     ]);
 
   grunt.registerTask('default', [
