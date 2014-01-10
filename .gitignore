@@ -53,3 +53,6 @@ app/css/pages/*.*
 app/js/pages/rosetta.js
 app/img/pages/rosetta/*.*
 app/img/pages/rosetta/**/*.*
+app/_scss/pages/rosetta/rosetta.scss
+
+app/rosetta/index.html
