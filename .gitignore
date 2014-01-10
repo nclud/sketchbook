@@ -55,3 +55,9 @@ app/img/pages/rosetta/*.*
 app/img/pages/rosetta/**/*.*
 app/_scss/pages/rosetta/rosetta.scss
 app/rosetta/index.html
+
+app/js/footer/onload.js
+
+app/js/footer/onload.js
+
+app/js/footer.js
