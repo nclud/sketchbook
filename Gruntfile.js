@@ -163,6 +163,46 @@ module.exports = function (grunt) {
           doctor: true
         }
       }
+    },
+    copy: {
+      dist: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>',
+          src: [
+            // Jekyll processes and moves HTML and text files
+            // Usemin moves CSS and javascript inside of Usemin blocks
+            // Copy moves asset files and directories
+            'img/**/*',
+            'fonts/**/*',
+            'js/**/*',
+            'css/**/*',
+            // Like Jekyll, exclude files & folders prefixed with an underscore
+            '!**/_*{,/**}'
+            // Explicitly add any files your site needs for distribution here
+            //'_bower_components/jquery/jquery.js',
+            //'favicon.ico',
+            //'apple-touch*.png'
+          ],
+          dest: '<%= yeoman.dist %>'
+        }]
+      }
+    },
+    rev: {
+      options: {
+        length: 4
+      },
+      dist: {
+        files: {
+          src: [
+            '<%= yeoman.dist %>/js/**/*.js',
+            '<%= yeoman.dist %>/css/**/*.css',
+            '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+          ]
+        }
+      }
     }
   });
 
@@ -192,10 +232,10 @@ module.exports = function (grunt) {
     'clean:dist',
     'sass',
     // Jekyll cleans files from the target directory, so must run first
-    , 'jekyll:dist'
-    , 'copy:dist'
-    , 'concat'
-    , 'uglify'
+    'jekyll:dist',
+    'copy:dist',
+    'concat',
+    'uglify'
     ]);
 
   grunt.registerTask('default', [
