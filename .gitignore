@@ -50,3 +50,4 @@ Rakefile
 app/rosetta/*.*
 app/_scss/pages/rosetta/*.*
 app/css/pages/*.*
+app/img/pages/rosetta/*.*

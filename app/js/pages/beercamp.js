@@ -8,7 +8,6 @@ bc.designContainer = (windowHeight + 625 + (bc.frameCount * bc.scrollSpeed) + 20
 bc.designFinal = bc.designContainer - windowHeight;
 bc.devFinal = $('#beercamp_develop').height() - ($('#beercamp_right-diagram').outerHeight()/2);
 
-
 jQuery(document).ready(function() {
     if (isMobile && isPhone) {
         $('.no-mobile').remove();

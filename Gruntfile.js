@@ -33,6 +33,10 @@ module.exports = function (grunt) {
         ],
         tasks: ['jekyll:server']
       },
+      concat: {
+        files: ['<%= yeoman.app %>/js/footer/*.js', '<%= yeoman.app %>/js/lib/*.js', '<%= yeoman.app %>/js/scripts/*.js', '<%= yeoman.app %>/js/pages/*.js'],
+        tasks: ['concat']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -117,15 +121,15 @@ module.exports = function (grunt) {
       },
       header: {
         src: ['app/js/scripts/fastclick.js', 'app/js/scripts/skrollr.js', 'app/js/scripts/share.js', 'app/js/scripts/fitvids.js'],
-        dest: 'app/js/scripts/scripts.js',
+        dest: 'app/js/scripts.js',
       },
       libraries: {
         src: ['app/js/lib/imagesloaded.js', 'app/js/lib/reel.js'],
-        dest: 'app/js/lib/lib.js',
+        dest: 'app/js/lib.js',
       },
       case_studies: {
         src: ['app/js/footer/index.js', 'app/js/pages/beercamp.js', 'app/js/footer/onload.js'],
-        dest: 'app/js/footer/footer.js',
+        dest: 'app/js/footer.js',
       },
     },
     uglify: {
@@ -135,9 +139,9 @@ module.exports = function (grunt) {
       },
       my_target: {
         files: {
-          'app/js/scripts.js': ['app/js/scripts/scripts.js'],
-          'app/js/lib.js': ['app/js/lib/lib.js'],
-          'app/js/footer.js': ['app/js/footer/footer.js']
+          'app/js/scripts.js': ['app/js/scripts.js'],
+          'app/js/lib.js': ['app/js/lib.js'],
+          'app/js/footer.js': ['app/js/footer.js']
         }
       }
     },
@@ -217,7 +221,6 @@ module.exports = function (grunt) {
       'clean:server',
       'sass',
       'concat',
-      'uglify',
       'jekyll:server',
       'connect:livereload',
       'watch'
