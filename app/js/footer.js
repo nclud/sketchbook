@@ -123,6 +123,11 @@ jQuery(document).ready(function() {
     });
 });
 
+jQuery(document).ready(function() {
+
+
+});
+
 imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
     // FRAMES ON SCROLL
     if (biggerThanPhone) {

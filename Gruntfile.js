@@ -128,7 +128,7 @@ module.exports = function (grunt) {
         dest: 'app/js/lib.js',
       },
       case_studies: {
-        src: ['app/js/footer/index.js', 'app/js/pages/beercamp.js', 'app/js/footer/onload.js'],
+        src: ['app/js/footer/index.js', 'app/js/pages/beercamp.js', 'app/js/pages/rosetta.js', 'app/js/footer/onload.js'],
         dest: 'app/js/footer.js',
       },
     },
