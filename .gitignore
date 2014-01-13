@@ -49,10 +49,12 @@ Rakefile
 # Ignore Rosetta until complete
 app/rosetta/*.*
 app/_scss/pages/rosetta/*.*
+app/_scss/pages/rosetta/*.scss
 app/css/pages/*.*
 app/js/pages/rosetta.js
 app/img/pages/rosetta/*.*
 app/img/pages/rosetta/**/*.*
+app/_scss/pages/rosetta/**/*.*
 app/_scss/pages/rosetta/rosetta.scss
 app/rosetta/index.html
 app/js/footer/onload.js

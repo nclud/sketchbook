@@ -1,2 +1,123 @@
-/*! skrollr-ie 1.0.0 (2013-05-19) | Alexander Prinzhorn - https://github.com/Prinzhorn/skrollr-ie | Free to use under terms of MIT license */
-(function(e,t){"use strict";var r=/hsla?\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)%\s*,\s*(-?[\d.]+)%.*?\)/g,s=/rgba?\(\s*(-?[\d.]+%?)\s*,\s*(-?[\d.]+%?)\s*,\s*(-?[\d.]+%?).*?\)/g,o=/^#[^\s]+$/,l=t.setStyle;t.setStyle=function(e,t,o){l.apply(this,arguments);var a,i=e.style;if("opacity"===t)return i.zoom=1,o>=1&&i.removeAttribute?i.removeAttribute("filter"):i.filter="alpha(opacity="+100*o+")",void 0;if(o.indexOf("hsl")>-1&&(a=!1,o=o.replace(r,function(e,t,r,s){return a=!0,n.hsl(parseFloat(t),parseFloat(r),parseFloat(s))}),a))try{i[t]=o}catch(u){}else if(o.indexOf("rgb")>-1&&(a=!1,o=o.replace(s,function(e,t,r,s){return a=!0,t=parseFloat(t,10),r=parseFloat(r,10),s=parseFloat(s,10),e.indexOf("%")>-1&&(t=255*(t/100),r=255*(r/100),s=255*(s/100)),n.rgb(0|t,0|r,0|s)}),a))try{i[t]=o}catch(u){}else;};var n={hsl:function(e,t,r,s){return e%=360,e/=60,r/=100,t=[r+=t*=(.5>r?r:1-r)/100,r-2*e%1*t,r-=t*=2,r,r+e%1*t,r+t],s=[t[~~e%6],t[(16|e)%6],t[(8|e)%6]],n.rgb(parseInt(255*s[0],10),parseInt(255*s[1],10),parseInt(255*s[2],10))},rgb:function(e,t,r){return"#"+((256+e<<8|t)<<8|r).toString(16).slice(1)}};e.querySelector=e.querySelector||function(t){if(!o.test(t))throw'Unsupported selector "'+t+'". The querySelector polyfill only works for IDs.';return e.getElementById(t.substr(1))}})(document,window.skrollr);
+/*!
+ * Plugin for skrollr.
+ * This plugin brings opacity and hsl colors to IE < 9.
+ *
+ * Alexander Prinzhorn - https://github.com/Prinzhorn/skrollr
+ *
+ * Free to use under terms of MIT license
+ */
+(function(document, skrollr) {
+	'use strict';
+
+	var rxHSLAColor = /hsla?\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)%\s*,\s*(-?[\d.]+)%.*?\)/g;
+	var rxRGBAColor = /rgba?\(\s*(-?[\d.]+%?)\s*,\s*(-?[\d.]+%?)\s*,\s*(-?[\d.]+%?).*?\)/g;
+	var rxID = /^#[^\s]+$/;
+
+	var _setStyle = skrollr.setStyle;
+
+	//Monkeypatch the setStyle function.
+	skrollr.setStyle = function(el, prop, val) {
+		//Original function call.
+		_setStyle.apply(this, arguments);
+
+		var style = el.style;
+		var matched;
+
+		//IE opacity
+		if(prop === 'opacity') {
+			style.zoom = 1;
+
+			//Remove filter attribute in IE.
+			if(val === 1 && style.removeAttribute) {
+				style.removeAttribute('filter');
+			} else {
+				style.filter = 'alpha(opacity=' + val * 100 + ')';
+			}
+
+			return;
+		}
+
+		//Fast pre check
+		if(val.indexOf('hsl') > -1) {
+			matched = false;
+
+			//Replace hsl(a) with hex if needed (ignoring alpha).
+			val = val.replace(rxHSLAColor, function(x, h, s, l) {
+				matched = true;
+
+				return toHex.hsl(parseFloat(h), parseFloat(s), parseFloat(l));
+			});
+
+			if(matched) {
+				try {
+					style[prop] = val;
+				} catch(ignore) {}
+
+				return;
+			}
+		}
+
+		//Fast pre check
+		if(val.indexOf('rgb') > -1) {
+			matched = false;
+
+			//Replace rgba with hex if needed (ignoring alpha).
+			val = val.replace(rxRGBAColor, function(s, r, g, b) {
+				matched = true;
+
+				r = parseFloat(r, 10);
+				g = parseFloat(g, 10);
+				b = parseFloat(b, 10);
+
+				//rgba allows percentage notation.
+				if(s.indexOf('%') > -1) {
+					r = (r / 100) * 255;
+					g = (g / 100) * 255;
+					b = (b / 100) * 255;
+				}
+
+				return toHex.rgb(r | 0, g | 0, b | 0);
+			});
+
+			if(matched) {
+				try {
+					style[prop] = val;
+				} catch(ignore) {}
+
+				return;
+			}
+		}
+	};
+
+
+	/**
+	 * Converts rgb or hsl color to hex color.
+	 */
+	var toHex = {
+		//Credits to aemkei, jed and others
+		//Based on https://gist.github.com/1325937 and https://gist.github.com/983535
+		hsl: function(a,b,c,y){
+			a%=360;
+			a=a/60;c=c/100;b=[c+=b*=(c<0.5?c:1-c)/100,c-a%1*b*2,c-=b*=2,c,c+a%1*b,c+b];
+
+			y = [b[~~a%6],b[(a|16)%6],b[(a|8)%6]];
+
+			return toHex.rgb(parseInt(y[0] * 255, 10), parseInt(y[1] * 255, 10), parseInt(y[2] * 255, 10));
+		},
+		//https://gist.github.com/983535
+		rgb: function(a,b,c){
+			return'#' + ((256+a<<8|b)<<8|c).toString(16).slice(1);
+		}
+	};
+
+	/*
+		A really bad polyfill. But the main use-case for data-anchor-target are IDs.
+	*/
+	document.querySelector = document.querySelector || function(selector) {
+		if(!rxID.test(selector)) {
+			throw 'Unsupported selector "' + selector + '". The querySelector polyfill only works for IDs.';
+		}
+
+		return document.getElementById(selector.substr(1));
+	};
+}(document, window.skrollr));
