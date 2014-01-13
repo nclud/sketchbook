@@ -59,3 +59,5 @@ app/_scss/pages/rosetta/rosetta.scss
 app/rosetta/index.html
 app/js/footer/onload.js
 app/js/footer.js
+app/_scss/pages/rosetta/_rosetta-footer.scss
+app/_scss/pages/rosetta/_rosetta-concept.scss
