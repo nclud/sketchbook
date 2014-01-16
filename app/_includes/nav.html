@@ -38,8 +38,14 @@
             <a href="#" class="menu-btn right"></a>
         </div>
     </nav>
+    {% elsif page.nav_style contains 'dark' %}
+    <nav id="top-nav" class="padded-horizontal-large dark">
+        <div class="nav-wrapper">
+            <a href="/"><img src="/img/nclud-logo-dark.svg"></a>
+            <a href="#" class="menu-btn right"></a>
+        </div>
+    </nav>
     {% else %}
-
     <nav id="top-nav" class="padded-horizontal-large">
         <div class="nav-wrapper">
             <a href="/"><img src="/img/nclud-logo.svg"></a>

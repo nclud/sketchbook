@@ -44,20 +44,3 @@ css
 
 # Ignore Deploy files
 Rakefile
-
-
-# Ignore Rosetta until complete
-app/rosetta/*.*
-app/_scss/pages/rosetta/*.*
-app/_scss/pages/rosetta/*.scss
-app/_scss/pages/rosetta/_*.scss
-app/css/pages/*.*
-app/js/pages/rosetta.js
-app/img/pages/rosetta/*.*
-app/img/pages/rosetta/**/*.*
-app/_scss/pages/rosetta/**/*.*
-app/_scss/pages/rosetta/rosetta.scss
-app/rosetta/index.html
-app/js/footer/onload.js
-app/js/footer.js
-

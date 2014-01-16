@@ -95,3 +95,9 @@ body {
     @include box-sizing(border-box);
   }
 }
+
+
+
+#skrollr-body {
+  background: darken(white,1.5%);
+}

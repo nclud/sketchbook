@@ -124,7 +124,7 @@ module.exports = function (grunt) {
         dest: 'app/js/scripts.js',
       },
       libraries: {
-        src: ['app/js/lib/imagesloaded.js', 'app/js/lib/reel.js'],
+        src: ['app/js/lib/imagesloaded.js', 'app/js/lib/reel.js', 'app/js/lib/wallpaper.js'],
         dest: 'app/js/lib.js',
       },
       case_studies: {

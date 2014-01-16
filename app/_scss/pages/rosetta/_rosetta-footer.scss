@@ -1,0 +1,18 @@
+/* BEERCAMP FOOTER */
+.study-footer {
+    #beercamp_footer-screen {
+        background-color: $rosetta-darkgray;
+        background-image: url('/img/pages/rosetta/rosetta-footer-screen.jpg');
+        background-position: center top;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .rosetta_background {
+    	background-color: $rosetta-yellow;
+    	background-image: url('/img/pages/rosetta/rosetta-footer-pattern.png');
+    	background-position: center top;
+    	background-size: 10% auto;
+    	background-repeat: repeat;
+    }
+}

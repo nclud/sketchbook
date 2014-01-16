@@ -26,6 +26,11 @@
     border-top: 1px solid rgba($dark-blue,0.35);
     margin: 4rem 0 2rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include breakpoint(large) {
+        padding-bottom: 4rem;
+    }
 
     .post-author-photo {
         position: absolute;
@@ -46,5 +51,22 @@
         @include breakpoint(mobile) {
             top: 2rem;
         }
+    }
+}
+
+#comments {
+    padding-top: 2rem;
+
+    @include breakpoint(large) {
+        padding-top: 4rem;
+    }
+    @include breakpoint(landscape) {
+        padding-top: 0;
+    }
+    @include breakpoint(portrait) {
+        padding-top: 0;
+    }
+    @include breakpoint(mobile) {
+        padding-top: 0;
     }
 }

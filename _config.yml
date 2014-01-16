@@ -41,7 +41,7 @@ authors:
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico'
           # EXCLUDE IN PROGRESS FOR BUILD, COMMENT OUT WHEN WORKING LOCALLY
-          #,'rosetta'
+          ,'rosetta'
           ]
 
 # Force inclusion of directories and/or files in the conversion.
