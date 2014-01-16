@@ -19,10 +19,10 @@ or [Autoprefixer](https://github.com/ai/autoprefixer) to deal with vendor prefix
 you can always reference [Can I Use](http://caniuse.com/) to see which vendor prefixes, if any,
 are required.
 
-Understanding what pseudo classes and pseudo elements are used for can be a bit confusing at first. 
+Understanding what pseudo classes and pseudo elements are used for can be a bit confusing at first.
 What are they? Why are they pseudo?! You're probably already familiar with a few of them. In any introductory CSS class, the `:hover` state for anchor links is a popular example.
 
-<a href='#' class='ps-hover'>Hover Me <span> 
+<a href='#' class='ps-hover'>Hover Me <span>
 At nclud, we totally dig open source. All of the examples in this post are on GitHub. Click the icon below to view the Sass used.</span> </a>
 
 <a href='https://github.com/nclud/sketchbook/blob/74a801ff6be9532e0a2bdcc2ac07caa33b51b78b/app/_scss/pages/practical-pseudo-elements-classes.scss' class='fa fa-github ps-github'>Github</a>
@@ -136,9 +136,9 @@ label input:checked + div {
 If we hide the radio button input with `visibility:hidden`, we are free to style
 the contents of the `<label>` container as we please.
 
-This is an elegant solution for toggle states in web applications. Instead of 
-toggling a class, or worse, changing the CSS via JavaScript (jQuery included), 
-we can maintain styles that reflect state changes in the DOM all in one place. 
+This is an elegant solution for toggle states in web applications. Instead of
+toggling a class, or worse, changing the CSS via JavaScript (jQuery included),
+we can maintain styles that reflect state changes in the DOM all in one place.
 
 <h3 id='class__first-last-child'>:first-child and :last-child</h3>
 
@@ -147,14 +147,14 @@ A popular use case for the first and last children of a container is the widget.
 {% highlight html %}
 <div class='widget'>
   <h1>The Widget Title</h1>
-  <p>A brief summary of the what The Widget Title is all about. 
+  <p>A brief summary of the what The Widget Title is all about.
      Maybe it's even the opening paragraph.</p>
   <p>Often there will be more than one paragraph in a widget</p>
 </div>
 {% endhighlight %}
 
 In our widget, we want to have equal padding for the `widget` container, but ignore the margin-top of the `<h1>` and the margin-bottom of the `<p>`.
-This is a common design pattern, where the container has equal spacing all around the 
+This is a common design pattern, where the container has equal spacing all around the
 elements. If the `h1` or `p` were to retain its margin when directly next to
 the widget's container, it would look a bit funky.
 
@@ -166,7 +166,7 @@ the widget's container, it would look a bit funky.
   padding:1em;
 }
 .widget :first-child{
-  margin-top:0       
+  margin-top:0
 }
 .widget :last-child{
   margin-bottom:0
@@ -198,19 +198,19 @@ our front end code.
 
 <h3 id='class__target'>:target</h3>
 
-The `:target` pseudo class is useful for highlighting hash-linked sections 
+The `:target` pseudo class is useful for highlighting hash-linked sections
 on web pages. This is a great usability technique. Normally the page will jump
 to the anchor on click and position the element with the corresponding ID at the
 top of the page. If the linked-to element is towards the bottom of the page, and there
 isn't enough room at the bottom for the element to be all the way at the top of the
-page, the only way to identify what was linked to will be to use the `:target` 
+page, the only way to identify what was linked to will be to use the `:target`
 pseudo class to highlight the important info.
 
 <p id='this-link' class=''>
-  Clicking on <a href='#this-link'>this link</a> will make the window jump to the anchor, and will highlight the 
+  Clicking on <a href='#this-link'>this link</a> will make the window jump to the anchor, and will highlight the
 linked-to line.
 </p>
-                                 
+
 
 {% highlight css %}
 :target{
@@ -238,7 +238,7 @@ Here are some other examples of using the `:target` pseudo selector:
 When both use the `:` syntax to denote pseudo-ness, it's difficult to remember
 the difference between a class and an element. The CSS3 spec provides a syntax
 for distinguishing between pseudo classes and pseudo elements: `:class` and `::element`.
- 
+
 Pseudo classes are used to select elements which cannot be selected
 using a class or id. I like to think of pseudo elements
 as being able to add content to a node in the DOM without
