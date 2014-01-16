@@ -85,6 +85,12 @@ p {
         text-align: center;
         z-index: 5;
 
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
         #featured-story & {
             opacity: 0.85;
         }

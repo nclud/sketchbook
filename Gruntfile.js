@@ -139,9 +139,9 @@ module.exports = function (grunt) {
       },
       my_target: {
         files: {
-          'app/js/scripts.js': ['app/js/scripts.js'],
-          'app/js/lib.js': ['app/js/lib.js'],
-          'app/js/footer.js': ['app/js/footer.js']
+          '<%= yeoman.dist %>/js/scripts.js': ['<%= yeoman.dist %>/js/scripts.js'],
+          '<%= yeoman.dist %>/js/lib.js': ['<%= yeoman.dist %>/js/lib.js'],
+          '<%= yeoman.dist %>/js/footer.js': ['<%= yeoman.dist %>/js/footer.js']
         }
       }
     },
