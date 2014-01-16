@@ -9,32 +9,6 @@ name: sketchbook
 description: nclud's sketchbook
 url: http://sketchbook.nclud.com
 
-authors:
-  default:
-    name: "nclud"
-    image: /img/nclud-logo.png
-    twitter: nclud
-    bio: "A creative design agency focused on unique, stylish and usable experiences across a multitude of verticals, mediums and devices. We work with early stage start-ups, to the Fortune 100, and everyone in between."
-  kerry:
-    name: "Kerry Gunther"
-    image: /img/authors/kerry.jpg
-    twitter: kerrygunther
-    bio: "Kerry is the CEO of nclud. In addition to the web, Kerry enjoys all things LEGO."
-  jesse:
-    name: "Jesse Shawl"
-    image: https://0.gravatar.com/avatar/495991dab64918eb18680073115163aa?d=https%3A%2F%2Fidenticons.github.com%2F0837445cdfc525ca7dcf22cc5b2f8747.png&r=x&s=440
-    twitter: jshawl
-    bio: "Jesse Shawl is a Front End Developer at nclud - whose focus intersects web performance and cutting edge browser interactivity. He's an open source advocate who enjoys building tools for the web with third party API's and mesmerizing CSS animations."
-  jared:
-    name: "Jared Laser"
-    image: foo.jpg
-    twitter: imjared
-    bio: "This is Jared's Bio"
-  max:
-    name: "Maxim Leyzerovich"
-    image: bar.jpg
-    twitter: duqe
-    bio: "this is maxs bio"
 
 # Exclude directories and/or files from the conversion.
 # Grunt moves image files and asset directories.
@@ -43,6 +17,8 @@ exclude: ['img', 'css', 'js', 'fonts',
           # EXCLUDE IN PROGRESS FOR BUILD, COMMENT OUT WHEN WORKING LOCALLY
           ,'rosetta'
           ]
+
+
 
 # Force inclusion of directories and/or files in the conversion.
 # .htaccess is a good example since dotfiles are excluded by default.
@@ -68,3 +44,66 @@ markdown: maruku
 
 # Use Pygments to highlight code blocks
 pygments: true
+
+authors:
+  nclud:
+    name: "nclud"
+    image: /img/nclud-logo.png
+    twitter: nclud
+    bio: "A creative design agency focused on unique, stylish and usable experiences across a multitude of verticals, mediums and devices. We work with early stage start-ups, to the Fortune 100, and everyone in between."
+  kerry:
+    name: "Kerry Gunther"
+    image: /img/authors/kerry.jpg
+    twitter: kerrygunther
+    bio: "Kerry is the CEO of nclud. In addition to the web, Kerry enjoys all things LEGO."
+  jesse:
+    name: "Jesse Shawl"
+    image: https://0.gravatar.com/avatar/495991dab64918eb18680073115163aa?d=https%3A%2F%2Fidenticons.github.com%2F0837445cdfc525ca7dcf22cc5b2f8747.png&r=x&s=440
+    twitter: jshawl
+    bio: "Jesse Shawl is a Front End Developer at nclud - whose focus intersects web performance and cutting edge browser interactivity. He's an open source advocate who enjoys building tools for the web with third party API's and mesmerizing CSS animations."
+  max:
+    name: "Maxim Leyzerovich"
+    image: bar.jpg
+    twitter: duqe
+    bio: "this is maxs bio"
+
+prose:
+  rooturl: "app/_posts"
+  media: "app/uploads"
+  metadata: 
+    app/_posts:
+      - name: "title"
+        field:
+          element: "text"
+          value: "Title"
+      - name: "featured-image"
+        field:
+          element: "text"
+          label: "Featured Image"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: post
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Enable Comments"
+          value: true
+      - name: "summary"
+        field:
+          element: "textarea"
+          label: "Summary"
+      - name: "author"
+        field:
+          element: "select"
+          label: "Author"
+          options: 
+            - name : 'nclud'
+              value: 'nclud'
+              twitter: nclud
+            - name : 'Jesse Shawl'
+              value: 'jesse'
+            - name : 'Kerry Gunther'
+              value: 'kerrygunther'
+            - name : 'Joe Corbett'
+              value: 'joe-corbett'
