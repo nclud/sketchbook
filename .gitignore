@@ -44,3 +44,4 @@ css
 
 # Ignore Deploy files
 Rakefile
+git-pull.sh

@@ -92,7 +92,7 @@ module.exports = function (grunt) {
           dot: true,
           src: [
             '.tmp',
-            '<%= yeoman.dist %>/*',
+            '<%= yeoman.dist %>/**',
             // Running Jekyll also cleans the target directory.  Exclude any
             // non-standard `keep_files` here (e.g., the generated files
             // directory from Jekyll Picture Tag).
@@ -147,7 +147,6 @@ module.exports = function (grunt) {
     },
     jekyll: {
       options: {
-        bundleExec: true,
         config: '_config.yml,_config.build.yml',
         src: '<%= yeoman.app %>'
       },
