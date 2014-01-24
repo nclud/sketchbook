@@ -1,3 +1,3 @@
 <?php
-  exec('../git-pull.sh');
+  exec('touch ../temp/update.txt');
 ?>
