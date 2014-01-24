@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Jesse Shawl is awesome
 comments: true
 author: jesse
