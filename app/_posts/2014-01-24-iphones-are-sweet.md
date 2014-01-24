@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: iphones are sweet
 comments: true
 author: nclud
