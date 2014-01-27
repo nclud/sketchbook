@@ -1,10 +1,10 @@
 ---
 layout: post
-published: false
+published: true
 title: This was added through prose
 comments: true
 author: jesse
-summary: This is the summary of the test post
+summary: This is the summary
 ---
 
 ## A New Post
