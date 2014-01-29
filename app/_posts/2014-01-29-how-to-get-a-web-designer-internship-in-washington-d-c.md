@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: "How to get a Web Designer Internship in Washington, D.C"
 comments: true
 author: nclud
@@ -67,8 +67,3 @@ You can also look on online resources like [craigslist](http://www.craigslist.or
 ### Conclusion
 
 A year ago I had just purchased my first MacBook. I barely knew what a web developer was, and I had no desire to code or design. But fast-forward a year and I can say I truly found a unique space for me to create.  Interning at a digital design agency has been everything I wanted and more so I encourage anybody interested in the space to get active and, so go for it! I honestly know if I can do it, anybody can.
-
-
-
-
-
