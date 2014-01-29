@@ -66,6 +66,11 @@ authors:
     image: bar.jpg
     twitter: duqe
     bio: "this is maxs bio"
+  mannie: "William Mannie"
+    image: 
+    twitter: tripleOGstatus
+    bio: "Mannie is an intern at nclud - that loves all things digital"
+ 
 
 prose:
   rooturl: "app/_posts"
@@ -107,3 +112,5 @@ prose:
               value: 'kerrygunther'
             - name : 'Joe Corbett'
               value: 'joe-corbett'
+            - name : 'William Mannie'
+              value: 'Mannie'
