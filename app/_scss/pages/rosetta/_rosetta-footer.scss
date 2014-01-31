@@ -1,7 +1,10 @@
 /* BEERCAMP FOOTER */
 #rosetta_client {
     margin-top: 1.4rem;
-    //border-color: $rosetta-yellow;
+
+    @include breakpoint(large) {
+        margin-top: 1rem;
+    }
 }
 
 .study-footer {

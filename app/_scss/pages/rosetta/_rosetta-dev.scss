@@ -15,6 +15,12 @@
     left: 8%;
     @include backface-visibility(hidden);
 
+    @include breakpoint(large) {
+        top: 2rem;
+        left: 12%;
+        width: 22%;
+    }
+
     #rosetta_develop_phone {
         position: absolute;
         top: 0;

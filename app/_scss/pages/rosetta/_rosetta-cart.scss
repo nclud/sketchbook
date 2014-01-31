@@ -15,6 +15,12 @@
     top: 8rem;
     border: 5px solid $rosetta-lightgray;
 
+    @include breakpoint(large) {
+        top: 4.5rem;
+        right: 8%;
+        width: 22%;
+    }
+
     img {
         position: absolute;
         top: 0;
