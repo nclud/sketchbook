@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-    if (!isMobile) {
+    if (!isPhone) {
         // SET VIDEO BACKGROUND ON DESKTOP
         $('#rosetta_header').wallpaper({
             id: 'rosetta_video',
@@ -8,6 +8,9 @@ jQuery(document).ready(function() {
                 webm: '/img/pages/rosetta/video/rosetta-header.webm'
             }
         });
+    }
+    else if (isPhone) {
+        $('#rosetta_header').css('background-image','url("/img/pages/rosetta/rosetta-header-photo.jpg")');
     }
 
     // SCROLLBAR ON DESIGN SCREENS
