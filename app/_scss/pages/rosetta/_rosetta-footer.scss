@@ -8,6 +8,9 @@
     @include breakpoint(landscape) {
         margin-top: 2.3rem;
     }
+    @include breakpoint(portrait) {
+        margin-top: 2.45rem;
+    }
 }
 
 .study-footer {

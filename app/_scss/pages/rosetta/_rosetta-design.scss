@@ -46,6 +46,9 @@
     @include breakpoint(landscape) {
         width: 57%;
     }
+    @include breakpoint(portrait) {
+        width: 57%;
+    }
 }
 
 #rosetta_design_tooltips {
@@ -62,6 +65,11 @@
     @include breakpoint(landscape) {
         width: 35%;
         top: 10rem;
+    }
+    @include breakpoint(portrait) {
+        width: 40%;
+        top: 11rem;
+        right: 38%;
     }
 
     .rosetta_tooltip_single {
@@ -119,6 +127,10 @@
         }
         &#rosetta_design_screen-hero {
             top: 20%;
+
+            @include breakpoint(portrait) {
+                top: 15%;
+            }
         }
         &#rosetta_design_screen-promo {
             top: 47%;
@@ -126,15 +138,25 @@
             @include breakpoint(landscape) {
                 top: 42%;
             }
+            @include breakpoint(portrait) {
+                top: 35%;
+            }
         }
         &#rosetta_design_screen-process {
             top: 60%;
+
+            @include breakpoint(portrait) {
+                top: 44%;
+            }
         }
         &#rosetta_design_screen-footer {
             top: 65%;
 
             @include breakpoint(landscape) {
                 top: 55%;
+            }
+            @include breakpoint(portrait) {
+                top: 50%;
             }
         }
 
@@ -156,6 +178,11 @@
         top: 1rem;
     }
     @include breakpoint(landscape) {
+        top: 5rem;
+    }
+    @include breakpoint(portrait) {
+        right: -4%;
+        width: 43%;
         top: 5rem;
     }
 }
@@ -208,6 +235,12 @@
                 height: 2rem;
                 line-height: 2.25rem;
                 font-size: 1.75rem;
+            }
+            @include breakpoint(portrait) {
+                width: 2.25rem;
+                height: 2.25rem;
+                line-height: 2.5rem;
+                font-size: 1.85rem;
             }
         }
 
