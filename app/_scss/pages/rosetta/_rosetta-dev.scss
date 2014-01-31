@@ -6,6 +6,10 @@
     display: block;
     float: right;
     width: 60%;
+
+    @include breakpoint(landscape) {
+        width: 64%;
+    }
 }
 
 #rosetta_develop_layers {
@@ -20,6 +24,9 @@
         left: 12%;
         width: 22%;
         max-width: 315px;
+    }
+    @include breakpoint(landscape) {
+        top: 5rem;
     }
 
     #rosetta_develop_phone {
