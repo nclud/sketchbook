@@ -5,6 +5,10 @@
 #rosetta_cart_text {
     display: block;
     width: 60%;
+
+    @include breakpoint(portrait) {
+        width: 61%;
+    }
 }
 
 #rosetta_cart_slider {
@@ -20,6 +24,11 @@
         right: 9%;
         width: 22%;
         max-width: 300px;
+    }
+    @include breakpoint(portrait) {
+        right: 2%;
+        width: 34%;
+        top: 15rem;
     }
 
     img {

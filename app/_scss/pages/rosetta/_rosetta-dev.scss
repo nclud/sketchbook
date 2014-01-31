@@ -10,6 +10,9 @@
     @include breakpoint(landscape) {
         width: 64%;
     }
+    @include breakpoint(portrait) {
+        width: 65%;
+    }
 }
 
 #rosetta_develop_layers {
@@ -27,6 +30,11 @@
     }
     @include breakpoint(landscape) {
         top: 5rem;
+    }
+    @include breakpoint(portrait) {
+        width: 34%;
+        top: 10rem;
+        left: 0;
     }
 
     #rosetta_develop_phone {
