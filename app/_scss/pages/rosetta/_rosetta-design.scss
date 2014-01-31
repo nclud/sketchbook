@@ -52,6 +52,10 @@
     width: 30%;
     height: 70%;
 
+    @include breakpoint(large) {
+        top: 9rem;
+    }
+
     .rosetta_tooltip_single {
         display: block;
         position: absolute;
@@ -131,6 +135,10 @@
     right: 7%;
     width: 30%;
     z-index: 5;
+
+    @include breakpoint(large) {
+        top: 1rem;
+    }
 }
 #rosetta_design_screen {
     border-radius: 1px;

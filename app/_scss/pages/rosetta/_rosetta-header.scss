@@ -1,7 +1,11 @@
 /* ROSETTA HEADER */
 #rosetta_header {
-    background: $rosetta-yellow;
     overflow: hidden;
+    background-color: $rosetta-yellow;
+    background-image: url('/img/pages/rosetta/rosetta-header-photo.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
 
     .rosetta-overlay {
         position: absolute;
