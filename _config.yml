@@ -66,8 +66,9 @@ authors:
     image: bar.jpg
     twitter: duqe
     bio: "this is maxs bio"
-  mannie: "William Mannie"
-    image: 
+  mannie: 
+    name: "William Mannie"
+    image: /img/nclud-logo.png 
     twitter: tripleOGstatus
     bio: "Mannie is an intern at nclud - that loves all things digital"
  
