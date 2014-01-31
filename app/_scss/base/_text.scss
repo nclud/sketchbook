@@ -95,6 +95,10 @@ p {
             opacity: 0.85;
         }
 
+        &.dark {
+            color: $dark-blue;
+        }
+
         @include breakpoint(large) {
             line-height: 1.4;
         }

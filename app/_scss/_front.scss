@@ -7,6 +7,10 @@
 
     a {
         color: #fff;
+
+        &.dark {
+            color: black;
+        }
     }
 
     .featured-logo {
@@ -38,6 +42,20 @@
         }
         @include breakpoint(mobile) {
             width: 80%;
+        }
+
+        &.wider {
+            width: 60%;
+
+            @include breakpoint(large) {
+                width: 50%;
+            }
+            @include breakpoint(landscape) {
+                width: 75%;
+            }
+            @include breakpoint(portrait) {
+                width: 75%;
+            }
         }
     }
 
