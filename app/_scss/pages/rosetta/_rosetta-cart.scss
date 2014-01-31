@@ -17,8 +17,9 @@
 
     @include breakpoint(large) {
         top: 4.5rem;
-        right: 8%;
+        right: 9%;
         width: 22%;
+        max-width: 300px;
     }
 
     img {
