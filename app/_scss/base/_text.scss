@@ -269,6 +269,44 @@ blockquote {
         width: 100%;
         margin-left: 0;
     }
+
+    &.client-feedback {
+        display: block;
+        margin: 0;
+        background: $dark-blue;
+        padding: 1.2rem;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Avenir-Light';
+        font-size: 1rem;
+        line-height: 1.5;
+        position: relative;
+        float: right;
+        width: 81%;
+
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: block;
+            background: $dark-blue;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-top: -0.75rem;
+            margin-left: -0.75rem;
+            @include transform(rotate(45deg));
+            content: "";
+        }
+
+        cite {
+            display: block;
+            text-align: right;
+            font-family: 'Avenir-Black';
+            font-size: 0.75em;
+            padding-top: 0.75em;
+            text-transform: uppercase;
+        }
+    }
 }
 
 // pre,
@@ -308,8 +346,6 @@ hr {
     margin-top: 2em;
     margin-bottom: 2em;
 }
-
-
 
 // MENU STYLES
 .menu-btn {

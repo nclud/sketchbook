@@ -1,0 +1,192 @@
+/* ROSETTA DEVELOPMENT SECTION */
+#rosetta_develop {
+
+}
+#rosetta_develop_text {
+    display: block;
+    float: right;
+    width: 60%;
+}
+
+#rosetta_develop_layers {
+    position: absolute;
+    width: 25%;
+    top: 3.75rem;
+    left: 8%;
+    @include backface-visibility(hidden);
+
+    #rosetta_develop_phone {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        @include transition(1s);
+
+        .skrollable-after & {
+            opacity: 1;
+            @include transition(1.25s);
+            @include transition-delay(5.5s);
+        }
+    }
+
+    #rosetta_develop_bar {
+        display: block;
+        position: absolute;
+        top: 16.75%;
+        left: 12.25%;
+        right: 11.75%;
+        bottom: 81%;
+        z-index: 10;
+        border-radius: 1px 1px 0 0;
+        opacity: 0;
+        @include transition(0.75s);
+
+        .skrollable-after & {
+            opacity: 1;
+            @include backface-visibility(hidden);
+            @include transition(1.25s);
+            @include transition-delay(5.5s);
+        }
+
+        #rosetta_develop_bar-complete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 2;
+            opacity: 0;
+
+            .skrollable-after & {
+                opacity: 1;
+                @include backface-visibility(hidden);
+                @include transition(0s);
+                @include transition-delay(7.5s);
+            }
+        }
+    }
+
+    #rosetta_develop_screen {
+        display: block;
+        position: absolute;
+        left: 12.25%;
+        right: 11.75%;
+        top: 19%;
+        bottom: 16.25%;
+        z-index: 9;
+        border-radius: 0 0 1px 1px;
+        opacity: 0;
+        @include transition(1s);
+
+        .skrollable-after & {
+            @include transition(0.075s);
+            opacity: 1;
+        }
+
+        .rosetta_develop_screen-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            @include transition(0.5s);
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100% auto;
+            border-top: 1px solid white;
+            border-bottom: 1px solid rgba(black,0.35);
+
+            &#rosetta_develop_screen-sketch {
+                background-image: url('/img/pages/rosetta/rosetta-dev-sketch.jpg');
+                z-index: 2;
+
+                .skrollable-after & {
+                    @include transition-delay(0.25s);
+                    @include animation(rosetta-dev-screens-sketch 1.5s linear 1);
+                    @include animation-delay(0.25s);
+                    @include animation-fill-mode(forwards);
+                }
+            }
+            &#rosetta_develop_screen-wireframe {
+                background-image: url('/img/pages/rosetta/rosetta-dev-wireframe.jpg');
+                z-index: 3;
+
+                .skrollable-after & {
+                    @include transition-delay(2.5s);
+                    @include animation(rosetta-dev-screens-wireframe 2s linear 1);
+                    @include animation-delay(2.5s);
+                    @include animation-fill-mode(forwards);
+                }
+            }
+            &#rosetta_develop_screen-complete {
+                background-image: url('/img/pages/rosetta/rosetta-dev-complete.jpg');
+                z-index: 4;
+
+                .skrollable-after & {
+                    @include transition-delay(5.5s);
+                    @include animation(rosetta-dev-screens-complete 2s linear 1);
+                    @include animation-delay(5.5s);
+                    @include animation-fill-mode(forwards);
+                }
+            }
+        }
+    }
+}
+
+@include keyframes(rosetta-dev-screens-sketch) {
+    0% {
+        height: 1px;
+    }
+    45% {
+        height: 50%;
+    }
+    46% {
+        height: 58%;
+    }
+    90% {
+        height: 75%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@include keyframes(rosetta-dev-screens-wireframe) {
+    0% {
+        height: 1px;
+    }
+    40% {
+        height: 50%;
+    }
+    47% {
+        height: 52%;
+    }
+    80% {
+        height: 75%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@include keyframes(rosetta-dev-screens-complete) {
+    0% {
+        height: 1px;
+    }
+    50% {
+        height: 50%;
+    }
+    53% {
+        height: 52%;
+    }
+    62% {
+        height: 75%;
+    }
+    100% {
+        height: 100%;
+    }
+}

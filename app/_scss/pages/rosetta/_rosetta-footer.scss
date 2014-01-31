@@ -1,4 +1,9 @@
 /* BEERCAMP FOOTER */
+#rosetta_client {
+    margin-top: 1.4rem;
+    //border-color: $rosetta-yellow;
+}
+
 .study-footer {
     #beercamp_footer-screen {
         background-color: $rosetta-darkgray;
@@ -10,9 +15,9 @@
 
     .rosetta_background {
     	background-color: $rosetta-yellow;
-    	background-image: url('/img/pages/rosetta/rosetta-footer-pattern.png');
-    	background-position: center top;
-    	background-size: 10% auto;
-    	background-repeat: repeat;
+    	background-image: url('/img/pages/rosetta/rosetta-footer.jpg');
+    	background-position: center bottom;
+    	background-size: cover;
+    	background-repeat: no-repeat;
     }
 }

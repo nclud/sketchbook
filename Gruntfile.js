@@ -120,15 +120,33 @@ module.exports = function (grunt) {
         //separator: ';',
       },
       header: {
-        src: ['app/js/scripts/fastclick.js', 'app/js/scripts/skrollr.js', 'app/js/scripts/share.js', 'app/js/scripts/fitvids.js'],
+        src: [
+          'app/js/scripts/fastclick.js',
+          'app/js/scripts/skrollr.js',
+          'app/js/scripts/share.js',
+          'app/js/scripts/fitvids.js',
+          'app/js/scripts/mousewheel.js'
+        ],
         dest: 'app/js/scripts.js',
       },
       libraries: {
-        src: ['app/js/lib/imagesloaded.js', 'app/js/lib/reel.js', 'app/js/lib/wallpaper.js'],
+        src: [
+          'app/js/lib/imagesloaded.js',
+          'app/js/lib/reel.js',
+          'app/js/lib/wallpaper.js',
+          'app/js/lib/scrollbar.js',
+          'app/js/lib/cycle2.js',
+          'app/js/lib/cycle2.swipe.js'
+        ],
         dest: 'app/js/lib.js',
       },
       case_studies: {
-        src: ['app/js/footer/index.js', 'app/js/pages/beercamp.js', 'app/js/pages/rosetta.js', 'app/js/footer/onload.js'],
+        src: [
+          'app/js/footer/index.js',
+          'app/js/pages/beercamp.js',
+          'app/js/pages/rosetta.js',
+          'app/js/footer/onload.js'
+        ],
         dest: 'app/js/footer.js',
       },
     },
