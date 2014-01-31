@@ -5,6 +5,9 @@
     @include breakpoint(large) {
         margin-top: 1rem;
     }
+    @include breakpoint(landscape) {
+        margin-top: 2.3rem;
+    }
 }
 
 .study-footer {

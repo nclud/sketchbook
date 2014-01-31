@@ -42,6 +42,10 @@
     &.inactive {
         opacity: 0.1;
     }
+
+    @include breakpoint(landscape) {
+        width: 57%;
+    }
 }
 
 #rosetta_design_tooltips {
@@ -54,6 +58,10 @@
 
     @include breakpoint(large) {
         top: 9rem;
+    }
+    @include breakpoint(landscape) {
+        width: 35%;
+        top: 10rem;
     }
 
     .rosetta_tooltip_single {
@@ -114,12 +122,20 @@
         }
         &#rosetta_design_screen-promo {
             top: 47%;
+
+            @include breakpoint(landscape) {
+                top: 42%;
+            }
         }
         &#rosetta_design_screen-process {
             top: 60%;
         }
         &#rosetta_design_screen-footer {
             top: 65%;
+
+            @include breakpoint(landscape) {
+                top: 55%;
+            }
         }
 
         &.active {
@@ -138,6 +154,9 @@
 
     @include breakpoint(large) {
         top: 1rem;
+    }
+    @include breakpoint(landscape) {
+        top: 5rem;
     }
 }
 #rosetta_design_screen {
@@ -183,6 +202,13 @@
             box-shadow: 0 0 12px black;
             @include transition(0.15s);
             content: "+";
+
+            @include breakpoint(landscape) {
+                width: 2rem;
+                height: 2rem;
+                line-height: 2.25rem;
+                font-size: 1.75rem;
+            }
         }
 
         &:hover {
