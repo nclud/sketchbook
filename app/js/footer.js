@@ -131,9 +131,6 @@ jQuery(document).ready(function() {
             source: {
                 mp4: '/img/pages/rosetta/video/rosetta-header.mp4',
                 webm: '/img/pages/rosetta/video/rosetta-header.webm'
-            },
-            onLoad: function() {
-                $('#rosetta_video').attr('webkit-playsinline','');
             }
         });
     }
