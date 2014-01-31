@@ -7,3 +7,10 @@ img {
     padding: 0;
     border: 0;
 }
+
+.client-photo {
+	width: 18%;
+	float: left;
+	border-radius: 100%;
+	border: 6px solid $blue;
+}

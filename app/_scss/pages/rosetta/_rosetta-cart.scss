@@ -1,0 +1,112 @@
+/* ROSETTA CART SECTION */
+#rosetta_cart {
+
+}
+#rosetta_cart_text {
+    display: block;
+    width: 60%;
+
+    @include breakpoint(portrait) {
+        width: 61%;
+    }
+}
+
+#rosetta_cart_slider {
+    position: absolute;
+    right: 6%;
+    width: 24%;
+    display: block;
+    top: 8rem;
+    border: 5px solid $rosetta-lightgray;
+
+    @include breakpoint(large) {
+        top: 4.5rem;
+        right: 9%;
+        width: 22%;
+        max-width: 300px;
+    }
+    @include breakpoint(portrait) {
+        right: 2%;
+        width: 34%;
+        top: 15rem;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        display: block;
+        opacity: 0;
+
+        &:first-child {
+            position: static;
+            z-index: 100;
+            opacity: 1;
+        }
+    }
+}
+
+.rosetta_cart-caption {
+    position: relative;
+
+    &:after {
+        z-index: -1;
+        @include calc(width,"100% + 2rem");
+        @include calc(height,"100% + 1rem");
+        position: absolute;
+        top: -0.5rem;
+        left: -1rem;
+        background: rgba($rosetta-yellow,0.4);
+        display: block;
+        opacity: 0;
+        @include transition(0.25s);
+        content: "";
+    }
+
+    &.active {
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.cycle-pager {
+    text-align: center;
+    width: 100%;
+    z-index: 500;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    background: rgba($rosetta-lightgray,0.75);
+    opacity: 0;
+    @include transition(0.5s);
+
+    &.active {
+        opacity: 1;
+    }
+
+    span {
+        font-family: arial;
+        font-size: 2.25rem;
+        display: block;
+        width: 1.25rem;
+        height: 1rem;
+        display: inline-block;
+        color: $rosetta-darkgray;
+        cursor: pointer;
+
+        &:hover {
+            color: mix($rosetta-yellow, $rosetta-darkgray,40%);
+        }
+
+        &.cycle-pager-active {
+            color: $rosetta-yellow;
+
+            &:hover {
+                color: $rosetta-yellow;
+            }
+        }
+    }
+}

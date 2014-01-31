@@ -124,7 +124,7 @@ jQuery(document).ready(function() {
 });
 
 jQuery(document).ready(function() {
-    if (!isMobile) {
+    if (!isPhone) {
         // SET VIDEO BACKGROUND ON DESKTOP
         $('#rosetta_header').wallpaper({
             id: 'rosetta_video',
@@ -134,6 +134,73 @@ jQuery(document).ready(function() {
             }
         });
     }
+    else if (isPhone) {
+        $('#rosetta_header').css('background-image','url("/img/pages/rosetta/rosetta-header-photo.jpg")');
+    }
+
+    // SCROLLBAR ON DESIGN SCREENS
+    $('#rosetta_design_screen').perfectScrollbar({
+        useKeyboard: false,
+        suppressScrollX: true,
+        //wheelPropagation: true,
+        wheelSpeed: 9
+    });
+
+    // TOOLTIPS ON DESIGN SCREENS
+    $('.rosetta_design_screen_info').on('click',function(e){
+        var tooltip = $(this).attr('title');
+
+        if ($('#'+tooltip).hasClass('active')) {
+            $('.rosetta_design_screen_info').removeClass('active').removeClass('unfocus');
+            $('.rosetta_tooltip_single').removeClass('active');
+            $('#rosetta_design_text').removeClass('inactive');
+        }
+        else {
+            $('.rosetta_design_screen_info').removeClass('active').addClass('unfocus');
+            $(this).addClass('active').removeClass('unfocus');
+            $('.rosetta_tooltip_single').removeClass('active');
+            $('#'+tooltip).addClass('active');
+            $('#rosetta_design_text').addClass('inactive');
+        }
+        e.preventDefault();
+    });
+    $('.rosetta_close-tooltip').on('click',function(e){
+        $('.rosetta_design_screen_info').removeClass('active').removeClass('unfocus');
+        $('.rosetta_tooltip_single').removeClass('active');
+        $('#rosetta_design_text').removeClass('inactive');
+        e.preventDefault();
+    });
+    $('#rosetta_design_screen').scroll(function(e) {
+        $('.rosetta_design_screen_info').removeClass('active').removeClass('unfocus');
+        $('#rosetta_design_text').removeClass('inactive');
+        $('.rosetta_tooltip_single').removeClass('active');
+    });
+
+    // CAPTIONS HIGHLIGHT FOR CART SLIDESHOW
+    $('#rosetta_cart_slider').on('cycle-bootstrap', function(event, optionHash, API) {
+        $('#rosetta_caption1').addClass('active');
+        $('#rosetta_cart_slider .cycle-pager').addClass('active');
+    });
+    $('#rosetta_cart_slider').on('cycle-before', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
+        var newCaption = $(incomingSlideEl).attr('title');
+        var oldCaption = $(outgoingSlideEl).attr('title');
+
+        if (newCaption == oldCaption) {
+        }
+        else {
+            $('.rosetta_cart-caption').removeClass('active');
+        }
+    });
+    $('#rosetta_cart_slider').on('cycle-after', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
+        var newCaption = $(incomingSlideEl).attr('title');
+        var oldCaption = $(outgoingSlideEl).attr('title');
+
+        if (newCaption == oldCaption) {
+        }
+        else {
+            $('#' + newCaption).addClass('active');
+        }
+    });
 });
 
 imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
@@ -191,7 +258,16 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
                     }
                     else if (data.curTop < $('#rosetta_header').height() && $('body').hasClass('wallpaper-initialized')){
                         $('#rosetta_header').wallpaper('play');
-                    //    alert('yes');
+                    }
+
+                    var cartTop = $('#rosetta_cart').offset().top-100;
+                    var rosettaFirsttime = true;
+
+                    if (data.curTop >= cartTop) {
+                        if (rosettaFirsttime) {
+                            $('#rosetta_cart_slider').cycle();
+                            rosettaFirsttime = false;
+                        }
                     }
                 }
             }

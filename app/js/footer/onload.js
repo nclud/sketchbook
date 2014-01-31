@@ -53,7 +53,16 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
                     }
                     else if (data.curTop < $('#rosetta_header').height() && $('body').hasClass('wallpaper-initialized')){
                         $('#rosetta_header').wallpaper('play');
-                    //    alert('yes');
+                    }
+
+                    var cartTop = $('#rosetta_cart').offset().top-100;
+                    var rosettaFirsttime = true;
+
+                    if (data.curTop >= cartTop) {
+                        if (rosettaFirsttime) {
+                            $('#rosetta_cart_slider').cycle();
+                            rosettaFirsttime = false;
+                        }
                     }
                 }
             }
