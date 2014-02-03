@@ -1,4 +1,8 @@
 #rosetta_concept {
+	@include breakpoint(mobile) {
+		margin-top: -3rem;
+	}
+
     .concept-iphone {
         .screen {
             background-color: #d8e6f4;
