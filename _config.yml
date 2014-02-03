@@ -66,16 +66,17 @@ authors:
     image: bar.jpg
     twitter: duqe
     bio: "this is maxs bio"
-  mannie: "William Mannie"
-    image: 
+  mannie:
+    name: "William Mannie"
+    image:
     twitter: tripleOGstatus
     bio: "Mannie is an intern at nclud - that loves all things digital"
- 
+
 
 prose:
   rooturl: "app/_posts"
   media: "app/uploads"
-  metadata: 
+  metadata:
     app/_posts:
       - name: "title"
         field:
@@ -102,7 +103,7 @@ prose:
         field:
           element: "select"
           label: "Author"
-          options: 
+          options:
             - name : 'nclud'
               value: 'nclud'
               twitter: nclud
