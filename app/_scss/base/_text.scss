@@ -287,6 +287,7 @@ blockquote {
         position: relative;
         float: right;
         width: 81%;
+        z-index: 5;
 
         &:after {
             position: absolute;
@@ -300,6 +301,11 @@ blockquote {
             margin-left: -0.75rem;
             @include transform(rotate(45deg));
             content: "";
+
+            @include breakpoint(mobile) {
+                left: 50%;
+                top: 100%;
+            }
         }
 
         cite {
@@ -309,6 +315,12 @@ blockquote {
             font-size: 0.75em;
             padding-top: 0.75em;
             text-transform: uppercase;
+        }
+
+        @include breakpoint(mobile) {
+            width: 100%;
+            float: none;
+            margin-top: 2.5rem;
         }
     }
 }
