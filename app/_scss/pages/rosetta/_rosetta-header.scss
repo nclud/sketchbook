@@ -28,6 +28,11 @@
         margin-top: 14rem;
         margin-top: 28vh;
         margin-bottom: 1.5rem;
+
+        @include breakpoint(mobile) {
+            margin-top: 23vh;
+            width: 80%;
+        }
     }
 
     .subtitle {
@@ -36,6 +41,10 @@
         margin: 0 auto;
         opacity: 0.7;
         color: black;
+
+        @include breakpoint(mobile) {
+            width: 80%;
+        }
     }
 
     #rosetta-video {
