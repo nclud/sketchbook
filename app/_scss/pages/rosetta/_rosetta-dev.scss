@@ -13,6 +13,10 @@
     @include breakpoint(portrait) {
         width: 65%;
     }
+    @include breakpoint(mobile) {
+        width: 100%;
+        float: none;
+    }
 }
 
 #rosetta_develop_layers {
@@ -35,6 +39,14 @@
         width: 34%;
         top: 10rem;
         left: 0;
+    }
+    @include breakpoint(mobile) {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3rem;
     }
 
     #rosetta_develop_phone {

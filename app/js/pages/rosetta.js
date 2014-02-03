@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-    if (!isPhone) {
+    if (!isMobile) {
         // SET VIDEO BACKGROUND ON DESKTOP
         $('#rosetta_header').wallpaper({
             id: 'rosetta_video',
@@ -9,8 +9,17 @@ jQuery(document).ready(function() {
             }
         });
     }
-    else if (isPhone) {
+    else {
         $('#rosetta_header').css('background-image','url("/img/pages/rosetta/rosetta-header-photo.jpg")');
+    }
+
+    // FIRING DEV LAYERS ON PHONE
+    if (isPhone) {
+        $('#rosetta_develop').removeAttr('data-75-top data-76-top');
+        $('#rosetta_develop').attr({
+          'data-95p-bottom': '',
+          'data-94p-bottom': ''
+        });
     }
 
     // SCROLLBAR ON DESIGN SCREENS
@@ -53,27 +62,31 @@ jQuery(document).ready(function() {
 
     // CAPTIONS HIGHLIGHT FOR CART SLIDESHOW
     $('#rosetta_cart_slider').on('cycle-bootstrap', function(event, optionHash, API) {
-        $('#rosetta_caption1').addClass('active');
+        if (!isPhone) {
+            $('#rosetta_caption1').addClass('active');
+        }
         $('#rosetta_cart_slider .cycle-pager').addClass('active');
     });
-    $('#rosetta_cart_slider').on('cycle-before', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
-        var newCaption = $(incomingSlideEl).attr('title');
-        var oldCaption = $(outgoingSlideEl).attr('title');
+    if (!isPhone) {
+        $('#rosetta_cart_slider').on('cycle-before', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
+            var newCaption = $(incomingSlideEl).attr('title');
+            var oldCaption = $(outgoingSlideEl).attr('title');
 
-        if (newCaption == oldCaption) {
-        }
-        else {
-            $('.rosetta_cart-caption').removeClass('active');
-        }
-    });
-    $('#rosetta_cart_slider').on('cycle-after', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
-        var newCaption = $(incomingSlideEl).attr('title');
-        var oldCaption = $(outgoingSlideEl).attr('title');
+            if (newCaption == oldCaption) {
+            }
+            else {
+                $('.rosetta_cart-caption').removeClass('active');
+            }
+        });
+        $('#rosetta_cart_slider').on('cycle-after', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
+            var newCaption = $(incomingSlideEl).attr('title');
+            var oldCaption = $(outgoingSlideEl).attr('title');
 
-        if (newCaption == oldCaption) {
-        }
-        else {
-            $('#' + newCaption).addClass('active');
-        }
-    });
+            if (newCaption == oldCaption) {
+            }
+            else {
+                $('#' + newCaption).addClass('active');
+            }
+        });
+    }
 });

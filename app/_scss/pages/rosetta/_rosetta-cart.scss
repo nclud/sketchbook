@@ -9,6 +9,9 @@
     @include breakpoint(portrait) {
         width: 61%;
     }
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 #rosetta_cart_slider {
@@ -29,6 +32,14 @@
         right: 2%;
         width: 34%;
         top: 15rem;
+    }
+    @include breakpoint(mobile) {
+        position: relative;
+        width: 86%;
+        right: auto;
+        top: auto;
+        margin-left: 7%;
+        margin-top: 2.5rem;
     }
 
     img {

@@ -25,6 +25,12 @@
     &:after {
         bottom: 0;
     }
+
+    @include breakpoint(mobile) {
+        padding-bottom: 32rem;
+        background-image: url('/img/pages/rosetta/rosetta-designbkg-mobile.jpg');
+        background-position: right bottom;
+    }
 }
 
 #rosetta_design_text {
@@ -49,6 +55,9 @@
     @include breakpoint(portrait) {
         width: 57%;
     }
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 #rosetta_design_tooltips {
@@ -70,6 +79,13 @@
         width: 40%;
         top: 11rem;
         right: 38%;
+    }
+    @include breakpoint(mobile) {
+        width: 90%;
+        right: 5%;
+        top: auto;
+        bottom: 25.5rem;
+        height: 20%;
     }
 
     .rosetta_tooltip_single {
@@ -120,16 +136,30 @@
             @include transform(rotate(45deg));
             background: $rosetta-blue;
             content: "";
+
+            @include breakpoint(mobile) {
+                left: 50%;
+                top: 100%;
+            }
         }
 
         &#rosetta_design_screen-navbar {
             top: 0;
+
+            @include breakpoint(mobile) {
+                top: auto;
+                bottom: 0;
+            }
         }
         &#rosetta_design_screen-hero {
             top: 20%;
 
             @include breakpoint(portrait) {
                 top: 15%;
+            }
+            @include breakpoint(mobile) {
+                top: auto;
+                bottom: 0;
             }
         }
         &#rosetta_design_screen-promo {
@@ -141,12 +171,20 @@
             @include breakpoint(portrait) {
                 top: 35%;
             }
+            @include breakpoint(mobile) {
+                top: auto;
+                bottom: 0;
+            }
         }
         &#rosetta_design_screen-process {
             top: 60%;
 
             @include breakpoint(portrait) {
                 top: 44%;
+            }
+            @include breakpoint(mobile) {
+                top: auto;
+                bottom: 0;
             }
         }
         &#rosetta_design_screen-footer {
@@ -157,6 +195,10 @@
             }
             @include breakpoint(portrait) {
                 top: 50%;
+            }
+            @include breakpoint(mobile) {
+                top: auto;
+                bottom: 0;
             }
         }
 
@@ -184,6 +226,13 @@
         right: -4%;
         width: 43%;
         top: 5rem;
+    }
+    @include breakpoint(mobile) {
+        width: 80%;
+        left: 10%;
+        bottom: 0;
+        top: auto;
+        margin-bottom: -5rem;
     }
 }
 #rosetta_design_screen {
@@ -241,6 +290,12 @@
                 height: 2.25rem;
                 line-height: 2.5rem;
                 font-size: 1.85rem;
+            }
+            @include breakpoint(mobile) {
+                width: 1.75rem;
+                height: 1.75rem;
+                line-height: 2rem;
+                font-size: 1.25rem;
             }
         }
 
