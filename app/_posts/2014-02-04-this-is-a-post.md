@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: this is a post
 comments: false
 author: "joe-corbett"
