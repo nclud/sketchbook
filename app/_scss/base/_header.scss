@@ -19,6 +19,9 @@ header {
 
     &.case-study {
         height: 40rem;
+	@media all and (min-width:40rem){
+	  height: 95vh;
+        }
         overflow: hidden;
         background: lighten(black,15%);
 
