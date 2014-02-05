@@ -3,6 +3,7 @@ layout: post
 title: "Joe Corbett to Join nclud as COO"
 author: kerry
 summary: "I am pleased to announce that Joe Corbett will be joining the nclud team as our Chief Operating Officer on January 1, 2014."
+comments: true
 ---
 
 I am pleased to announce that Joe Corbett will be joining the nclud team as our Chief Operating Officer on January 1, 2014.
