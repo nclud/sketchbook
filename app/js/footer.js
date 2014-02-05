@@ -265,7 +265,7 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
             }
 
             if($('header').hasClass('rosetta')){
-                if (!isMobile ) {
+                if (!isMobile && !isPhone) {
                     if (data.curTop > $('#rosetta_header').height()){
                         $('#rosetta_header').wallpaper('stop');
                     }
@@ -274,6 +274,28 @@ imagesLoaded( document.querySelector('#skrollr-body'), function( instance ) {
                     }
 
                     var cartTop = $('#rosetta_cart').offset().top-100;
+                    var rosettaFirsttime = true;
+
+                    if (data.curTop >= cartTop) {
+                        if (rosettaFirsttime) {
+                            $('#rosetta_cart_slider').cycle();
+                            rosettaFirsttime = false;
+                        }
+                    }
+                }
+                else if (isMobile && !isPhone) {
+                    var cartTop = $('#rosetta_cart').offset().top-90;
+                    var rosettaFirsttime = true;
+
+                    if (data.curTop >= cartTop) {
+                        if (rosettaFirsttime) {
+                            $('#rosetta_cart_slider').cycle();
+                            rosettaFirsttime = false;
+                        }
+                    }
+                }
+                else {
+                    var cartTop = $('#rosetta_cart').offset().top+1000;
                     var rosettaFirsttime = true;
 
                     if (data.curTop >= cartTop) {
