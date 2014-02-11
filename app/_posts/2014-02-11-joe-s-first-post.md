@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: "Joe's first post!"
 comments: true
 author: nclud
