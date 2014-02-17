@@ -7,6 +7,9 @@ author: nclud
 summary: null
 ---
 
+
+![opsmeetup.gif](/app/uploads/opsmeetup.gif)
+
 Hello DC!
 
 It gives me great pleasure to announce the first ever DC Ops Meetup hosted at nclud and open to any and all people interested in learning from one another about how to operate a small to medium size business. Yes... "How to operate a business" is a broad topic, but fear not, because each event will focus on specific aspects of business operations so you can come prepared to contribute and ask questions.
@@ -36,16 +39,3 @@ Yup, come to the innagural DC Ops Meetup and you will get a sweet sticker of a H
 
 **Anything else?**
 Tell your friends.
-
-![opsmeetup.gif](/app/uploads/opsmeetup.gif)
-
-
-
-
-
-
-
-
-
-
-
