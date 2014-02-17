@@ -15,7 +15,7 @@ Hello DC!
 It gives me great pleasure to announce the first ever DC Ops Meetup hosted at nclud and open to any and all people interested in learning from one another about how to operate a small to medium size business. Yes... "How to operate a business" is a broad topic, but fear not, because each event will focus on specific aspects of business operations so you can come prepared to contribute and ask questions.
 
 <center>&rarr; Register for the innagural DC Ops Meetup&larr; </center>
-
+<p>
 **Who started the DC Ops Meetup?**
 Well, I started it, <a href="https://twittermintue.com/joecorbett" target="_blank" />@joecorbett</a>, a.k.a. <a href="http://sketchbook.nclud.com/joe-corbett/" target="_blank"/>the COO of nclud</a>, a.k.a. <a href="http://inthecapital.streetwise.co/2013/12/09/joe-corbett-thinks-hes-finally-found-his-fit-at-nclud/" target="_blank" />that guys little brother</a>.
 
