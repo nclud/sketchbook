@@ -17,7 +17,7 @@ It gives me great pleasure to announce the first ever DC Ops Meetup hosted at nc
 Well, I started it, <a href="https://twittermintue.com/joecorbett" target="_blank" />@joecorbett</a>, a.k.a. <a href="http://sketchbook.nclud.com/joe-corbett/" target="_blank"/>the COO of nclud</a>, a.k.a. <a href="http://inthecapital.streetwise.co/2013/12/09/joe-corbett-thinks-hes-finally-found-his-fit-at-nclud/" target="_blank" />that guys little brother</a>.
 
 **Why did you start the DC Ops Meetup?**
-The reason I started the DC Ops Meetup is rather simple. Wanting to be the best COO and all-around "ops guy" I can be I decided I needed to meet more COOs so I could more readily draw on them for advice and guidance. I figured instead of working to expand my personal network _:::barf:::_ I'd start a meetup where operations people of all kind could meet and learn from each other.
+The reason I started the DC Ops Meetup is rather simple. Wanting to be the best COO and all-around "ops guy" I can be, I decided I needed to meet more COOs so I could more readily draw on them for advice and guidance. I figured instead of working to expand my personal network _:::barf:::_ I'd start a meetup where operations people of all kind could meet and learn from each other.
 
 **Who should attend the DC Ops Meetup?**
 Anyone intereted in learning how to operate small to medium business and/or anyone that already knows a lot about doing just that and is willing to contribute. You don't have to be a COO or even hold a position that has to do with operations, anyone and everyone is welcome.
@@ -33,6 +33,9 @@ First of all, it's not a skunk it's a honey badger and its holding a recently fi
 
 **Stickers?**
 Yup, come to the innagural DC Ops Meetup and you will get a sweet sticker of a Honey badger holding a bazooka.
+
+**Anything else?**
+Tell your friends.
 
 
 
