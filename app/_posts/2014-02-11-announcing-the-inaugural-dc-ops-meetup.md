@@ -23,7 +23,23 @@ The reason I started DC Ops Meetup is rather simple. Wanting to be the best COO 
 Anyone intereted in learning how to operate small to medium business and/or anyone that already knows a lot about doing just that. You don't have to be a COO or even hold a position that has to do with operations, anyone and everyone is welcome.
 
 **Where do I go to become a member of DC Ops Meetup?**
-You'd head on over to the Meetup.com DC Ops group.
+You'd head on over to the Meetup.com and join the offical DC Ops Meetup.
 
 **Why is this a paid event?**
-Recently nclud announced an initiaivate to use our office space to raise money for ByteBack DC. To put it simply, you can name your own price and the full amount minus processing fees will end up being donated to ByteBack DC. You can read the full annoucement here.
+Recently nclud announced an initiative to use our office space to raise money for ByteBack DC. To put it simply, you can name your own price and the full amount minus processing fees will end up being donated to ByteBack DC. You can read the full annoucement here.
+
+**What's with the skunk holding a rocket launcher?**
+First of all, it's not a skunk it's a honey badger and its holding a boozka! I've always viewed operations as the fierce warriors willing to fight any battle to help make their teams lives better and as far as I'm concerned their isn nothing more fierce than a honey badger holding a bazooka.
+
+**Stickers?**
+Yup, come to the innagural DC Ops Meetup and you will get a sweet sticker of Honey badger holding a bazooka.
+
+
+
+
+
+
+
+
+
+
