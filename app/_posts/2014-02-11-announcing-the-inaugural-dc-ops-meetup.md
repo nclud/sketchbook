@@ -3,12 +3,10 @@ layout: post
 published: false
 title: Announcing the inaugural DC Ops Meetup
 comments: true
-author: nclud
+author: "joe-corbett"
 summary: null
+"featured-image": /app/uploads/opsmeetup.gif
 ---
-
-
-![opsmeetup.gif](/app/uploads/opsmeetup.gif)
 
 Hello DC!
 
@@ -38,4 +36,6 @@ First of all, it's not a skunk it's a honey badger and its holding a recently fi
 Yup, come to the innagural DC Ops Meetup and you will get a sweet sticker of a Honey badger holding a bazooka.
 
 **Anything else?**
-Tell your friends.
+Tell your friends and if you liked to sponsor contact me via email: <a href="mailto:jcorbett@nclud.com?subject=DC Ops Meetup Sponsorship" />jcorbett@nclud.com</a>
+
+
