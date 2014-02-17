@@ -37,6 +37,9 @@ Yup, come to the innagural DC Ops Meetup and you will get a sweet sticker of a H
 **Anything else?**
 Tell your friends.
 
+![opsmeetup.gif](/app/uploads/opsmeetup.gif)
+
+
 
 
 
