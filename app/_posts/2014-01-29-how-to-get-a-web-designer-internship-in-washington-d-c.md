@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: "How to get a Web Designer Internship in Washington, D.C"
+title: "How to get a Web Designer Internship in Washington, DC"
 comments: true
 author: Mannie
 summary: null
@@ -13,7 +13,7 @@ Interning for a top digital design agency in the District of Columbia can be an 
 
 Web development spans a wide range of subjects and if new to the space all these job titles and associated subjects have the potential to be extremely overwhelming.  As a first step to entering the world of web development, I would highly advise you to figure out what you really like to do, find your path, and stick to it. For those who have no clue what specific field they are interested in but know they’d like to get involved, I have provided a few subjects that may be of interest.
 
-- [Front-End or Back-End Devloping](http://en.wikipedia.org/wiki/Front_and_back_ends)
+- [Front-End or Back-End Developing](http://en.wikipedia.org/wiki/Front_and_back_ends)
 - [Growth Hacking](http://en.wikipedia.org/wiki/Growth_hacking)
 - [User Experience Design](http://en.wikipedia.org/wiki/User_experience_design)
 - [Graphic Design](http://en.wikipedia.org/wiki/Graphic_design)
@@ -64,3 +64,4 @@ You can also look on online resources like [craigslist](http://www.craigslist.or
 ### Conclusion
 
 A year ago I had just purchased my first MacBook. I barely knew what a web developer was, and I had no desire to code or design. But fast-forward a year and I can say I truly found a unique space for me to create.  Interning at a digital design agency has been everything I wanted and more so I encourage anybody interested in the space to get active, so go for it! I know if I can do it, anybody can.
+
