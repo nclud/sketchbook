@@ -13,7 +13,7 @@ Interning for a top digital design agency in the District of Columbia can be an 
 
 Web development spans a wide range of subjects and if new to the space all these job titles and associated subjects have the potential to be extremely overwhelming.  As a first step to entering the world of web development, I would highly advise you to figure out what you really like to do, find your path, and stick to it. For those who have no clue what specific field they are interested in but know they’d like to get involved, I have provided a few subjects that may be of interest.
 
-- [Front-End or Back-End Devloping](http://en.wikipedia.org/wiki/Front_and_back_ends)
+- [Front-End or Back-End Developing](http://en.wikipedia.org/wiki/Front_and_back_ends)
 - [Growth Hacking](http://en.wikipedia.org/wiki/Growth_hacking)
 - [User Experience Design](http://en.wikipedia.org/wiki/User_experience_design)
 - [Graphic Design](http://en.wikipedia.org/wiki/Graphic_design)
