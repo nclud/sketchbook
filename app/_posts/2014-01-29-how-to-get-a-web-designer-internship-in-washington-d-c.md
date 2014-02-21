@@ -45,7 +45,7 @@ Attending hackathons is great way to get involved and can help you out significa
 
 **Twitter**
 
-Following top leaders in the DC Tech Community on [twitter](https://twitter.com/) can be very useful for someone trying to get an internship with a digital design agency. I’ve come to learn that twitter can be an extremely useful resource for someone that it’s trying to consume information. Almost anybody that is somebody in the DC tech Community is actively sharing content on twitter. A lot of this information pertains to the latest tech news and trends that could be helpful to just about to anybody trying to break into the DC tech Community. Another reason why twitter is such a powerful tool is that it is fairly easy to contact just about anybody, no matter how big they are, in real time, and get a response. I’ve reached out to several people on twitter and more than likely I get a response.
+Following top leaders in the DC Tech Community on [twitter](https://twitter.com/search?q=%23dctech&src=typd) can be very useful for someone trying to get an internship with a digital design agency in DCTECH. Almost anybody that is somebody in the DCTech Community is actively sharing content on twitter. A lot of this information pertains to the latest tech news and trends that could be helpful to anybody trying to break into the DC tech Community. Another reason why twitter is such a powerful tool is that it is fairly easy to contact just about anybody, no matter how big they are, in real time, and get a response.
 
 ### 3. Learn To Code
 
