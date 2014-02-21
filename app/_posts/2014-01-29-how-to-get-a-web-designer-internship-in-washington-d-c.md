@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: "How to get a Web Designer Internship in Washington, D.C"
 comments: true
 author: Mannie
