@@ -71,6 +71,11 @@ authors:
     image: /img/nclud-logo.png 
     twitter: tripleOGstatus
     bio: "Mannie is an intern at nclud - that loves all things digital"
+  Joe:
+    name: "Joe Corbett"
+    image: https://pbs.twimg.com/profile_images/2135049216/joe_bigger.png
+    twitter: joecorbett
+    bio: "Joe is the COO at nclud, and focuses on providing the team with the best systems and tools in the business to ensure we consistantly deliver the leading creative solutions in our industry."
 
 
 prose:
@@ -112,6 +117,6 @@ prose:
             - name : 'Kerry Gunther'
               value: 'kerrygunther'
             - name : 'Joe Corbett'
-              value: 'joe-corbett'
+              value: 'joe'
             - name : 'William Mannie'
               value: 'Mannie'
