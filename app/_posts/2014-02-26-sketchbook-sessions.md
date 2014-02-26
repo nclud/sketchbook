@@ -4,6 +4,7 @@ title: "Sketchbook Sessions: A Creative Speaker Series"
 author: max
 summary: "We have a rich history of knowledge sharing at nclud – our company is built on the value of fostering community. Delivering great content & events has been such a rewarding part of our culture that we’re giving it a name and clearer purpose: Sketchbook Sessions."
 comments: true
+social_img: /uploads/sketchbook-sessions-og.jpg
 ---
 
 <link rel='stylesheet' type='text/css' href='/css/pages/sketchbook-sessions.css'/>
