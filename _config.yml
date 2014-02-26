@@ -63,9 +63,9 @@ authors:
     bio: "Jesse Shawl is a Front End Developer at nclud - whose focus intersects web performance and cutting edge browser interactivity. He's an open source advocate who enjoys building tools for the web with third party API's and mesmerizing CSS animations."
   max:
     name: "Maxim Leyzerovich"
-    image: bar.jpg
+    image: https://en.gravatar.com/userimage/2389570/877e069dddc3cf465159bd80dd180227.png?size=256
     twitter: duqe
-    bio: "this is maxs bio"
+    bio: "Maxim is the Senior Experience Designer at nclud, focused on the visual conception and interface development for interactive products &ndash; he is also the brand evangelist for the company our community, the industry, &amp; our clients."
   mannie:
     name: "William Mannie"
     image: /img/nclud-logo.png 
