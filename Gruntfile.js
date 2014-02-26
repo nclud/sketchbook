@@ -111,7 +111,8 @@ module.exports = function (grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'app/css/screen.css': 'app/_scss/screen.scss'
+          'app/css/screen.css': 'app/_scss/screen.scss',
+          'app/css/pages/sketchbook-sessions.css': 'app/_scss/pages/sketchbook-sessions.scss'
         }
       }
     },
