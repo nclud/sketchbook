@@ -6,12 +6,12 @@ comments: true
 author: 
   - mannie
   - nclud
-summary: null
+summary: Interning for a top digital design agency in the District of Columbia can be an awesome and rewarding experience for just about anybody interested in web development.
 ---
 
 Interning for a top digital design agency in the District of Columbia can be an awesome and rewarding experience for just about anybody interested in web development. Local agencies often times need help completing day-to-day tasks and an intern can rapidly pick up applicable skills, preparing them for the “real world,” while giving them hands-on experience in the field of their choice. In this article I will be explaining how to land an internship at a top digital design agency in DC.
 
-### 1. Do Your Research  
+### 1. Do Your Research       
   
 Web development spans a wide range of subjects and if new to the space all these job titles and associated subjects have the potential to be extremely overwhelming.  As a first step to entering the world of web development, I would highly advise you to figure out what you really like to do, find your path, and stick to it. For those who have no clue what specific field they are interested in but know they’d like to get involved, I have provided a few subjects that may be of interest.
 
