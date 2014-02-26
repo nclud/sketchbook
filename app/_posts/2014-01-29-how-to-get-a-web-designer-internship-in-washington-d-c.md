@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: "How to get a Web Designer Internship in Washington, DC"
+title: "How to get a Web Design Internship in Washington, DC"
 comments: true
 author: 
   - mannie
@@ -15,11 +15,11 @@ Interning for a top digital design agency in the District of Columbia can be an 
   
 Web development spans a wide range of subjects and if new to the space all these job titles and associated subjects have the potential to be extremely overwhelming.  As a first step to entering the world of web development, I would highly advise you to figure out what you really like to do, find your path, and stick to it. For those who have no clue what specific field they are interested in but know they’d like to get involved, I have provided a few subjects that may be of interest.
 
-- [Front-End or Back-End Developing](http://en.wikipedia.org/wiki/Front_and_back_ends)
+- [Front-End or Back-End Development](http://en.wikipedia.org/wiki/Front_and_back_ends)
 - [Growth Hacking](http://en.wikipedia.org/wiki/Growth_hacking)
 - [User Experience Design](http://en.wikipedia.org/wiki/User_experience_design)
 - [Graphic Design](http://en.wikipedia.org/wiki/Graphic_design)
-- [Cms Development](http://en.wikipedia.org/wiki/Content_management_system)
+- [CMS Development](http://en.wikipedia.org/wiki/Content_management_system)
 - [Information Architecture](http://en.wikipedia.org/wiki/Information_architecture)
 
 Another good idea would be to find out the top design agencies to work for in the DC area. By asking around and doing some searching yourself, you will be able to get a good feel for where you would like work and why. Some digital design agencies focus on strong marketing efforts and strategy, while others focus on interactive web applications or user experience.  To save you some time, I have provided some of my favorite DC digital design agencies below:
@@ -27,8 +27,8 @@ Another good idea would be to find out the top design agencies to work for in th
 - [nclud](http://nclud.com/)
 - [iStrategyLabs](http://istrategylabs.com/)
 - [Chief](http://www.mybigchief.com/)
-- [Interactive Stratigies](http://www.interactivestrategies.com/)
-- [Web Devlopment Groups](http://www.webdevelopmentgroup.com/)
+- [Interactive Strategies](http://www.interactivestrategies.com/)
+- [Web Development Group](http://www.webdevelopmentgroup.com/)
 - [Laundromat Design](http://laundromatdesign.com/)
 
 ### 2. Get Social
@@ -59,11 +59,11 @@ Learning to code can be extremely helpful when trying to get a digital design in
 
 ### 4. Build a Portfolio
 
-Building a portfolio is an easy way to gain attention and validate your skills. My biggest advice to someone who just started coding is to take on as many basic projects as you can to help build your portfolio. Once you have created a decent amount of work, you need to have it available in one central location. By displaying your projects online through a an attractive personal website, potential employers can evaluate your skill set and see if you are a good fit for their company.
+Building a portfolio is an easy way to gain attention and validate your skills. My biggest advice to someone who just started coding is to take on as many basic projects as you can to help build your portfolio. Once you have created a decent amount of work, you need to have it available in one central location. By displaying your projects online through an attractive personal website, potential employers can evaluate your skill set and see if you are a good fit for their company.
 
 ### 5. Fire Away
 
-Once you have done all the research you can, involved yourself within your community, and you have a presentable body of work, take the time to create a list of all the companies you aspire to work for.  Nothing is out of reach. Once you have your list, try and send out as many emails as you can to those potential employers. Be honest about your capabilities and express your desire to learn even more.
+Once you have done all the research you can, involved yourself within your community, and you have a presentable body of work, take the time to create a list of all the companies you aspire to work for.  Nothing is out of reach. Once you have your list, try to send out as many emails as you can to those potential employers. Be honest about your capabilities and express your desire to learn even more.
 
 You can also look on online resources like [craigslist](http://www.craigslist.org/) and [internships.com](http://www.internships.com/) for potential internships. However, sending a personal email inquiring about an open position was the best approach for me.  Digital design firms in DC respond relatively quickly and are usually thrilled to take on new interns. The worst they can say is no.
 
