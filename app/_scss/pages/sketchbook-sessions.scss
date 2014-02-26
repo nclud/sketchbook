@@ -1,0 +1,38 @@
+header.single-post,
+article{
+  background:none;
+}
+
+html,
+#post-footer,
+section{
+  background:#FBFBFB;
+  border-top:0;
+  background:#fff;
+}
+
+
+body,
+#skrollr-body{
+  background:url(/uploads/sketchbook-sessions-back.jpg);
+  background-repeat:no-repeat;
+  background-size:72%;
+  @media all and (max-width:40em){
+    background:#fff;
+  }
+}
+
+#post-header h1{
+  display:block;
+  background:url(/uploads/ss-logotype.svg);
+  background-repeat:no-repeat;
+  background-size:100%;
+  text-indent:-999em;
+  padding:1em;
+  @for $i from 1 through 8 {
+    @media all and (min-width:#{$i}0em){
+      padding: $i/10 + em;
+    }
+  }
+
+}
