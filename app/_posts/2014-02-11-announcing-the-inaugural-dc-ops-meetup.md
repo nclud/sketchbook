@@ -20,10 +20,10 @@ It gives me great pleasure to announce the first ever DC Ops Meetup hosted at nc
 Well, I started it, <a href="https://twittermintue.com/joecorbett" target="_blank" />@joecorbett </a>, a.k.a. <a href="http://sketchbook.nclud.com/joe-corbett/" target="_blank"/>the COO of nclud</a>, a.k.a. that <a href="http://randomnerds.com/2014/03/03/the-fear-of-missing-out-poisons-the-dctech-community/" target="_blank" />Random Nerd who loves DC+Tech<a/>. Additionally, our partners at fedscoop, Goldy Kamali and Greg Poersch, will leverage their expertise in programing professional development oriented events to make DC OPs Meetup that much better.
 
 **Why did you start the DC Ops Meetup?**
-The reason I started the DC Ops Meetup is rather simple. Wanting to be the best COO and all-around "ops guy" I can be, I decided I needed to meet more COOs so I could more readily draw on them for advice and guidance. So, I started a meetup where operations minded people of all kind could meet and learn from each other.
+The reason I started the DC Ops Meetup is rather simple. Wanting to be the best COO and all-around "ops guy" I can be, I decided I needed to meet more COOs so I could readily draw on them for advice and guidance. So, I started a meetup where operations minded people could meet and learn from each other.
 
 **Who should attend the DC Ops Meetup?**
-Anyone intereted in learning how to operate small to medium business and/or anyone that already knows a lot about doing just that and is willing to contribute should attend. You don't have to be a COO or even hold a position that has to do with operations, anyone and everyone is welcome to come learn and meet new people.
+Anyone intereted in learning how to operate a small to medium business and/or anyone that already knows a lot about doing just that and is willing to contribute should attend. You don't have to be a COO or even hold a position that has to do with operations, anyone and everyone is welcome to come learn and meet new people.
 
 **Why is this a paid event?**
 Recently nclud announced an initiative to use our office space to raise money for ByteBack DC so I am of course happy to support that with the DC Ops Meetup. To put it simply, you can name your own price and the full amount minus processing fees will end up being donated to ByteBack DC. <a href="http://sketchbook.nclud.com/byte-back/" target+"_blank" ?>You can read the full annoucement here<a/>.
