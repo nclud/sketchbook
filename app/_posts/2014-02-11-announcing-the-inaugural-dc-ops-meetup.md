@@ -6,7 +6,7 @@ comments: true
 author: 
   - "joe-corbett"
   - nclud
-summary: null
+summary: "It gives me great pleasure to announce the first-ever DC Ops Meetup, hosted at nclud in partnership with fedscoop and open to any and all people interested in learning from one another about how to operate a small- to medium-sized business."
 "featured-image": /app/uploads/opsmeetup.gif
 ---
 
@@ -14,7 +14,7 @@ Hello DC!
 
 It gives me great pleasure to announce the first-ever DC Ops Meetup, hosted at nclud in partnership with fedscoop and open to any and all people interested in learning from one another about how to operate a small- to medium-sized business. Yes... "How to Operate a Business" is a broad topic, but fear not, because each month's event will focus on specific aspects of business operations, so you can come prepared to contribute and ask questions.
 <p></p>
-<center>&rarr; Register for the inaugural DC Ops Meetup &larr;</center>
+<center>&rarr; <a href="https://www.eventbrite.com/e/dc-ops-meet-up-presents-michelle-hoffman-mo-money-mo-problems-tickets-9441364375" target="_blank" />Register for the inaugural DC Ops Meetup<a/> &larr;</center>
 <p></p>
 <center>Michelle Hoffman, CEO Hoffman CFO Consulting</center>
 <center>Presents</center>
