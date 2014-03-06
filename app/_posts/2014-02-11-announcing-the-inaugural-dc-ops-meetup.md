@@ -28,7 +28,7 @@ The reason I started the DC Ops Meetup is rather simple: Wanting to be the best 
 You should attend if you interested in learning how to operate a small- to medium-sized business and/or already know a lot about doing just that and are willing to contribute. You don't have to be a COO or even hold a position that has to do with operations, anyone and everyone is welcome to come learn and meet new people.
 
 **Why is this a paid event?**
-Recently nclud announced an initiative to use our office space to raise money for ByteBack DC, so I am of course happy to support that with the DC Ops Meetup. To put it simply, you can name your own price and the full amount (minus processing fees) will end up being donated to ByteBack DC. <a href="http://sketchbook.nclud.com/byte-back/" target+"_blank" ?>You can read the full announcement here<a/>.
+Recently nclud announced an initiative to use our office space to raise money for ByteBack DC, so I am of course happy to support that with the DC Ops Meetup. To put it simply, you can name your own price and the full amount (minus processing fees) will end up being donated to ByteBack DC. <a href="http://sketchbook.nclud.com/byte-back/" target="_blank" >You can read the full announcement here</a>.
 
 **What's with the skunk holding a rocket launcher?**
 First of all, it's not a skunk, it's a honey badger, and it's holding a bazooka! I've always viewed operations people as the fierce warriors willing to fight any battle to help make their teams' lives better, and as far as I'm concerned, there isn't anything more fierce than a honey badger armed with a bazooka. Special thanks to <a href="https://twitter.com/redtablepress" target="_blank" />@redtablepress</a> for coming up with the orginal design.
