@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Announcing the Inaugural DC Ops Meetup
 comments: true
 author: 
