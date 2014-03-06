@@ -3,9 +3,7 @@ layout: post
 published: true
 title: Announcing the Inaugural DC Ops Meetup
 comments: true
-author: 
-  - "joe-corbett"
-  - nclud
+author: joe
 summary: "It gives me great pleasure to announce the first-ever DC Ops Meetup, hosted at nclud in partnership with fedscoop and open to any and all people interested in learning from one another about how to operate a small- to medium-sized business."
 "featured-image": /app/uploads/opsmeetup.gif
 ---
