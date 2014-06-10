@@ -68,7 +68,7 @@ authors:
     bio: "Maxim is the Senior Experience Designer at nclud, focused on the visual conception and interface development for interactive products &ndash; he is also the brand evangelist for the company to our community, the industry, &amp; our clients."
   mannie:
     name: "William Mannie"
-    image: /img/nclud-logo.png 
+    image: /img/nclud-logo.png
     twitter: tripleOGstatus
     bio: "Mannie is an intern at nclud - that loves all things digital"
   joe:
@@ -76,7 +76,11 @@ authors:
     image: https://pbs.twimg.com/profile_images/2135049216/joe_bigger.png
     twitter: joecorbett
     bio: "Joe is the COO at nclud, and focuses on providing the team with the best systems and tools in the business to ensure we consistantly deliver the leading creative solutions in our industry."
-
+  lahaina:
+    name: "Lahaina Mae Mondoñedo"
+    image: /img/nclud-logo.png
+    twitter: lahainamae
+    bio: "Lahaina is the Senior Strategist at nclud as well as the brand ambassador and resident word smith. With her extensive experience as a multimedia journalist and digital marketer, her goal is to make sure you either are already one of our friends or really want to be."
 
 prose:
   rooturl: "app/_posts"
@@ -120,3 +124,5 @@ prose:
               value: 'joe'
             - name : 'William Mannie'
               value: 'Mannie'
+            - name : 'Lahaina Mae Mondoñedo'
+              value: 'Lahaina'
