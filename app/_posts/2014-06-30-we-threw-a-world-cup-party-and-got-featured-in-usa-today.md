@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: We Threw a World Cup Party and Got Featured in USA Today
 comments: true
 author: lahaina
