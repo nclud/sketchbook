@@ -5,6 +5,7 @@ title: We Threw a World Cup Party and Got Featured in USA Today
 comments: true
 author: lahaina
 summary: "Team USA may have lost their match to Germany last week, but they still advance to the next round of the World Cup. That's good news. Another cool thing in news was a video on USA Today that featured us and a little bit of our culture."
+"featured-image": featured/maxinterview.jpg
 ---
 
 Team USA may have lost their match to Germany last week, but they still advance to the next round of the World Cup. That's good news. Another cool thing in news was a video on USA Today that featured us and a little bit of our culture.
