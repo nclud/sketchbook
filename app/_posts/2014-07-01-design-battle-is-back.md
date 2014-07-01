@@ -5,7 +5,7 @@ title: "Design Battle Royale is Back!"
 comments: true
 author: lahaina
 summary: "On Friday, July 18, we are holding our second annual Design Battle Royale and we would like to invite you to join us at our studio for an awesome evening of competition (and a some partying too!)."
-"featured-image": /app/img/featured/designbattle.jpg
+"featured-image": app/img/featured/designbattle.jpg
 ---
 
 On Friday, July 18, we are holding our second annual [Design Battle Royale](http://design-battle.com/) and we would like to invite you to join us at [our studio](http://nclud.com/contact/) for an awesome evening of competition (and a some partying too!).
