@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: "Design Battle Royale is Back!"
 comments: true
 author: lahaina
