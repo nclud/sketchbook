@@ -1,10 +1,11 @@
 ---
 layout: post
 published: false
-title: "Design Battle is Back!"
+title: "Design Battle Royale is Back!"
 comments: true
 author: lahaina
 summary: null
+"featured-image": /app/uploads/db2014_blog.jpg
 ---
 
 On Friday, July 18, we are holding our second annual [Design Battle Royal](http://design-battle.com/) and we would like to invite you to join us at [our studio](http://nclud.com/contact/) for an awesome evening of competition (and a some partying too!).
