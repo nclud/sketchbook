@@ -1,1 +1,19 @@
 /* HEADER */
+header {
+    &.single-post {
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+
+        img,
+        .video-wrap {
+            width: 120%;
+            margin-left: -10%;
+            margin-bottom: 1.5rem;
+
+            @include breakpoint(mobile) {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}

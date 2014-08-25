@@ -1,1 +1,62 @@
 /* MAIN AREAS */
+.article-listing-single {
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.75rem;
+    border-bottom: 1px solid rgba($dark-blue,0.15);
+
+    &:last-child,
+    &:last-of-type {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+#pagination {
+    width: 100%;
+    padding-top: 3.5rem;
+}
+
+#post-content {
+    padding-bottom: 5.5rem;
+
+    img,
+    .fluid-width-video-wrapper,
+    iframe {
+        margin-bottom: 1.2em;
+    }
+
+    @include breakpoint(large) {
+        padding-bottom: 10rem;
+    }
+}
+
+.instagram {
+    margin-bottom: 1em;
+    text-align: center;
+    
+    iframe {
+        display: inline-block;
+    }
+}
+
+#post-footer {
+	background: $dark-blue;
+	border-radius: 2px;
+    margin: 3rem 0;
+    padding: 1.5rem;
+
+    .post-author-photo {
+    	float: right;
+    	display: block;
+        width: 14%;
+        margin-left: 5%;
+        margin-bottom: 0;
+        border-radius: 2px;
+
+        @include breakpoint(mobile) {
+        	width: 20%;
+        	margin-bottom: 3rem;
+        }
+    }
+}

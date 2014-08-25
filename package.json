@@ -1,7 +1,7 @@
 {
-  "name": "blank",
-  "version": "0.0.2",
-  "description": "Blank Gulp Project",
+  "name": "Sketchbook",
+  "version": "2.0",
+  "description": "nclud Sketchbook - total rebuild in Wordpress using Gulp as the build system.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

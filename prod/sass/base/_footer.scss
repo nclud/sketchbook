@@ -1,1 +1,54 @@
 /* FOOTER */
+footer {
+    background: darken($dark-blue,7%);
+    border-top: 1px solid darken($dark-blue,15%);
+    z-index: 5;
+    padding-top: 1.5rem;
+    padding-bottom: 2.75rem;
+
+    a {
+        opacity: 0.75;
+        @include transition(0.15s);
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .bottom-home {
+    	width: 100%;
+    	text-align: left;
+
+    	&:after {
+			clear: both;
+			content: ' ';
+			display: block;
+			font-size: 0;
+			line-height: 0;
+			visibility: hidden;
+			width: 0;
+			height: 0;
+		}
+    }
+
+    .bottom-menu {
+    	display: block;
+    	float: left;
+
+    	@include breakpoint(mobile) {
+    		float: none;
+    		width: 100%;
+    		padding-bottom: 2rem;
+    	}
+    }
+    .bottom-large-link {
+    	display: block;
+    	float: right;
+
+    	@include breakpoint(mobile) {
+    		float: none;
+    		width: 100%;
+    		text-align: center;
+    	}
+    }
+}
