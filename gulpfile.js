@@ -34,7 +34,7 @@ gulp.task('sass', function() {
         	noCache: true,
         	quiet: true
         }))
-        .pipe(gulp.dest('./prod/css'))
+        .pipe(gulp.dest('./prod'))
         .pipe(browserSync.reload({
         	stream: true
         }));

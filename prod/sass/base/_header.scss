@@ -8,7 +8,7 @@ header {
         .video-wrap {
             width: 120%;
             margin-left: -10%;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
 
             @include breakpoint(mobile) {
                 width: 100%;

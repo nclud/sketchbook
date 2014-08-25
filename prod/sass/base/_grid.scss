@@ -9,6 +9,13 @@ main {
     display: block;
     position: relative;
 }
+section,
+nav,
+article,
+header,
+main {
+	background: darken(white,1.5%);
+}
 
 section {
     z-index: 2;
