@@ -46,6 +46,3 @@ css
 Rakefile
 git-pull.sh
 temp
-
-# Ignore WP uploads
-public/wp-content/uploads
