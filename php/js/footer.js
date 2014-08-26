@@ -1,0 +1,1 @@
+$(document).ready(function(){{var t=$(window).width();$(window).height(),navigator.userAgent.match(/mobile/i)}FastClick.attach(document.body),t>640&&$("h1, h2, h3, li, p, figcaption").each(function(){$(this).html($(this).html().replace(/\s((?=(([^\s<>]|<[^>]*>)+))\2)\s*$/,"&nbsp;$1"))}),$("article, header").fitVids()});

@@ -54,7 +54,7 @@ gulp.task('minify', ['sass'], function() {
 		.pipe(minify({
 			keepSpecialComments: 0
 		}))
-		.pipe(gulp.dest('./dist/css'));
+		.pipe(gulp.dest('./dist'));
 });
 
 gulp.task('html', ['minify'], function() {
